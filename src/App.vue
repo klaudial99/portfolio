@@ -1,13 +1,17 @@
 <template>
-    <div id="nav">
-        <router-link to="/">Home</router-link> |
-        <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+<!--    <div id="nav">-->
+<!--        <router-link to="/">Home</router-link> |-->
+<!--        <router-link to="/about">About</router-link>-->
+<!--    </div>-->
+    <layout>
+        <router-view/>
+    </layout>
+
 </template>
 
 <style>
 @import "./assets/colors.css";
+
 #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -29,3 +33,9 @@
     color: #42b983;
 }
 </style>
+<script>
+import Layout from "@/components/Layout";
+export default {
+    components: {Layout}
+}
+</script>
