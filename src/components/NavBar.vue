@@ -11,10 +11,10 @@
                         <a class="nav-link active" aria-current="page" href="#">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">O MNIE</a>
+                        <a class="nav-link" href="#">ABOUT</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">PROJEKTY</a>
+                        <a class="nav-link" href="#">PROJECTS</a>
                     </li>
 
                 </ul>
