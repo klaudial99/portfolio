@@ -2,20 +2,55 @@
     <div class="home">
         <div class="welcome-page row">
             <div class="col left d-flex">
-                <div id="left-text">
-                    <span id="title">Hi, I'm Klaudia</span>
-                    <p id="about" class="text-start">Engeneer and computer science student based in Wroclaw, Poland.</p>
+                <div id="left-text" class="text-start">
+                    <span
+                        data-aos="zoom-in"
+                        data-aos-duration="1500"
+                        id="title"
+                        class="title-text"
+                    >
+                        Hi, I'm Klaudia.
+                    </span>
+                    <p
+                        data-aos="fade-up"
+                        data-aos-anchor=".title-text"
+                        data-aos-delay="800"
+                        data-aos-duration="700"
+                        data-aos-easing="ease"
+                        id="about"
+                        class="about-text"
+                    >
+                        Engineer and computer science student based in Wroclaw, Poland.
+                    </p>
 
                 </div>
 
             </div>
             <div class="col right d-flex justify-content-center align-items-center">
-                <img src="@/assets/design.svg" alt="svg" height="450" width="450"/>
+                <img
+                    data-aos="fade-up-left"
+                    data-aos-anchor=".about-text"
+                    data-aos-delay="1500"
+                    data-aos-duration="700"
+                    data-aos-easing="ease"
+                    class="picture"
+                    src="@/assets/design.svg"
+                    alt="svg"
+                    height="450"
+                    width="450"
+                />
 
             </div>
 
         </div>
-        <div class="scroll-row row d-flex justify-content-center align-items-center">
+        <div
+            data-aos="fade-up"
+            data-aos-anchor=".picture"
+            data-aos-delay="2000"
+            data-aos-duration="700"
+            data-aos-easing="ease"
+            class="scroll-row row d-flex justify-content-center align-items-center"
+        >
             <span>SCROLL DOWN</span>
             <i id="scroll-down-icon" class="fa fa-chevron-down"></i>
         </div>
@@ -42,7 +77,7 @@
 }
 
 #scroll-down-icon {
-    color: red;
+    color: #B40572;
     animation: pulse-animation 2s infinite;
 
 }
@@ -76,7 +111,7 @@
     position: absolute;
     top: 20%;
     right: 10%;
-    width: 70%;
+    /*width: 80%;*/
 }
 
 
