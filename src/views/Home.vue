@@ -10,13 +10,13 @@
                 </a>
 
             </div>
-            <div class="col-12 col-md-11 offset-md-1">
-                <div class="welcome-page mx-3 mx-sm-5 ms-md-0 pb-sm-5 d-flex flex-column">
-                    <div class="row">
-                        <div class="col-12 col-lg-6 left d-flex justify-content-center align-items-center">
-                            <div class="row justify-content-center">
-                                <div class="col-11 col-sm-10">
-                                    <div id="left-text" class="text-start ">
+            <div class="col-12 col-md-11 offset-md-1 p-0">
+                <div class="welcome-page mx-0 mx-sm-5 ms-md-0 pb-sm-5 d-flex flex-column">
+                    <div class="row h-100 mt-1 mt-lg-0">
+                        <div class="col-12 col-lg-7 left d-flex justify-content-center align-items-center mw-100 p-0">
+                            <div class="row d-flex justify-content-center p-0">
+                                <div class="col-9">
+                                    <div id="left-text" class="text-start mt-4">
                                         <span
                                             data-aos="zoom-in"
                                             data-aos-duration="1500"
@@ -34,7 +34,7 @@
                                             id="about"
                                             class="about-text"
                                         >
-                                            Engineer and computer science student based in Wroclaw, Poland. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris fringilla purus vitae pharetra varius. Phasellus ut lobortis neque. Donec iaculis augue vitae massa blandit, ac dignissim erat faucibus. Vestibulum dignissim erat consequat elit tristique, vel consequat diam luctus.
+                                            Engineer and applied computer science student based in Wroclaw, Poland. Great design enthusiast looking for a first job as a UX Designer.
                                         </p>
 
                                     </div>
@@ -43,7 +43,7 @@
 
 
                         </div>
-                        <div class="col-12 col-lg-6 right d-flex justify-content-center align-items-start align-items-md-center">
+                        <div class="col-12 col-lg-5 right d-flex justify-content-center align-items-start align-items-md-center p-0">
                             <img
                                 data-aos="fade-up-left"
                                 data-aos-anchor=".about-text"
@@ -123,7 +123,7 @@
 #title {
     font-weight: bold;
     background: rgb(2,84,128);
-    font-size: 400%;
+    font-size: 350%;
     background: linear-gradient(90deg, rgba(2,84,128,1) 0%, rgba(92,9,121,1) 25%, rgba(180,5,114,1) 50%, rgba(255,0,0,1) 75%, rgba(255,154,0,1) 100%);
     -webkit-background-clip: text;
     color: transparent;
@@ -160,8 +160,20 @@
     }
 }
 
+@media (min-width: 992px) {
+    #left-text {
+        position: relative;
+        top: -35%;
+    }
+
+    .picture {
+        position: relative;
+        top: 15%;
+    }
+}
+
 .picture {
-    max-width: 80%;
+    max-width: 75%;
 }
 
 .social-icon {

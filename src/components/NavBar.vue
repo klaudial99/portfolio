@@ -17,10 +17,10 @@
                                         <a class="nav-link active" aria-current="page" href="#">HOME</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">ABOUT</a>
+                                        <a class="nav-link" href="#">PROJECTS</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">PROJECTS</a>
+                                        <a class="nav-link" href="#">CONTACT</a>
                                     </li>
 
                                 </ul>
