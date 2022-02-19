@@ -15,6 +15,13 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import {faChevronDown} from "@fortawesome/free-solid-svg-icons/faChevronDown"
 library.add(faChevronDown)
 
+import {faBars} from "@fortawesome/free-solid-svg-icons/faBars"
+library.add(faBars)
+
+import {faLinkedin, faGithub} from "@fortawesome/free-brands-svg-icons";
+library.add(faLinkedin)
+library.add(faGithub)
+
 import { dom } from "@fortawesome/fontawesome-svg-core";
 dom.watch();
 
