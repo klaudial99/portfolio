@@ -1,6 +1,6 @@
 <template>
-    <div class="home container-fluid mw-100">
-        <div class="row ">
+    <div class="home container-fluid">
+        <div class="row">
             <div class="col-md-1 d-none d-md-flex flex-column justify-content-center align-items-center socials pb-5 position-fixed">
                 <a href="https://www.linkedin.com/in/klaudia-laskowska-10815022b/" target="_blank" rel="noopener noreferrer" class="d-block my-2">
                     <i class="fa-brands fa-linkedin fa-xl social-icon" size="2x"></i>
@@ -10,11 +10,11 @@
                 </a>
 
             </div>
-            <div class="col-12 col-md-11 offset-md-1 p-0">
+            <div class="col-12 col-md-11 offset-md-1">
                 <div class="welcome-page mx-0 mx-sm-5 ms-md-0 pb-sm-5 d-flex flex-column">
                     <div class="row h-100 mt-1 mt-lg-0">
-                        <div class="col-12 col-lg-7 left d-flex justify-content-center align-items-center mw-100 p-0">
-                            <div class="row d-flex justify-content-center p-0">
+                        <div class="col-12 col-lg-7 left d-flex justify-content-center align-items-center">
+                            <div class="row d-flex justify-content-center ">
                                 <div class="col-9">
                                     <div id="left-text" class="text-start mt-4">
                                         <span
@@ -43,7 +43,7 @@
 
 
                         </div>
-                        <div class="col-12 col-lg-5 right d-flex justify-content-center align-items-start align-items-md-center p-0">
+                        <div class="col-12 col-lg-5 right d-flex justify-content-center align-items-start align-items-md-center">
                             <img
                                 data-aos="fade-up-left"
                                 data-aos-anchor=".about-text"
@@ -73,7 +73,7 @@
                     </div>
                 </div>
 
-                <div class="about row">
+                <div class="about row mx-0 mx-sm-5 ms-md-0 pb-sm-5">
 
                 </div>
             </div>
@@ -88,6 +88,7 @@
     background-color: var(--LAVENDER);
     background-clip: content-box;
     height: 90vh;
+    min-height: 550px;
 }
 
 .left {
@@ -115,7 +116,6 @@
 }
 
 .about {
-    margin: 0px 30px 0px 30px;
     background-color: grey;
     height: 90vh;
 }
@@ -128,13 +128,6 @@
     -webkit-background-clip: text;
     color: transparent;
 
-}
-
-#left-text {
-    /*position: absolute;*/
-    /*top: 20%;*/
-    /*right: 15%;*/
-    /*width: 80%;*/
 }
 
 #about {
