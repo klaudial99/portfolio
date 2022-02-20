@@ -1,0 +1,65 @@
+<template>
+
+    <div class="home container-fluid">
+        <div class="row">
+
+            <div class="col-md-1 d-none d-md-flex flex-column justify-content-center align-items-center socials pb-5 position-fixed">
+                <a href="https://www.linkedin.com/in/klaudia-laskowska-10815022b/" target="_blank" rel="noopener noreferrer" class="d-block my-2">
+                    <i class="fa-brands fa-linkedin fa-xl social-icon" size="2x"></i>
+                </a>
+                <a href="https://github.com/klaudial99" target="_blank" rel="noopener noreferrer" class="d-block my-2">
+                    <i class="fa-brands fa-github fa-xl social-icon"></i>
+                </a>
+            </div>
+
+            <div class="col-12 col-md-11 offset-md-1">
+                <section class="home-section mx-0 mx-sm-5 ms-md-0 pb-sm-5 d-flex flex-column" id="home">
+                    <home/>
+                </section>
+
+                <section class="projects-section row mx-0 mx-sm-5 ms-md-0 pb-sm-5" id="projects">
+
+                </section>
+            </div>
+
+        </div>
+    </div>
+</template>
+
+<style>
+
+.socials {
+    height: 90vh;
+}
+
+.social-icon {
+    color: var(--BLACK);
+}
+
+section {
+    background-clip: content-box;
+    height: 90vh;
+    min-height: 550px;
+}
+
+.home-section {
+    background-color: var(--LAVENDER);
+}
+
+.projects-section {
+    background-color: grey;
+}
+
+</style>
+
+<script>
+// @ is an alias to /src
+import Home from "@/components/MainPage/Home";
+export default {
+    name: 'MainPage',
+    components: {
+        Home
+    }
+}
+</script>
+
