@@ -42,8 +42,10 @@
 
 section {
     background-clip: content-box;
-    height: 90vh;
+    height: 100vh;
     min-height: 550px;
+    padding-top: 10vh;
+    scroll-snap-align: start;
 }
 
 .home-section {
@@ -71,7 +73,7 @@ export default {
         Home,
         Projects,
         Contact
-    }
+    },
 }
 </script>
 

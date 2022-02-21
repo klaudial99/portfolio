@@ -41,53 +41,13 @@
 </template>
 
 <script>
-// import sections from "core-js/stable/dom-collections";
-// import navLi from "core-js/stable/dom-collections";
 
 export default {
     name: "NavBar",
     methods: {
         scrollTo(id) {
-            // const yOffset = document.querySelector('.navbar').offsetHeight;
-            // console.log(yOffset)
-            // document.getElementById(id).scrollIntoView({
-            //     behavior: "smooth",
-            //     offset: {top: -yOffset}
-            // });
-            document.getElementById(id).scrollIntoView(false);
-
-            // const yOffset = document.querySelector('.navbar').offsetHeight;
-            // const element = document.getElementById(id);
-            // const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
-            //
-            // window.scrollTo({top: y, behavior: 'smooth'});
-        },
-
-        setActiveClass() {
-            window.onscroll = () => {
-                let current = '';
-
-                let sections = document.querySelectorAll('section')
-                sections.forEach((section) => {
-                    const sectionTop = section.offsetTop;
-                    if (scrollY + 150 >= sectionTop ) {
-                        current = section.getAttribute('id')
-                        console.log(current)
-                    }
-                });
-
-                let navLinks = document.querySelectorAll('span.nav-link')
-                navLinks.forEach((li) => {
-                    li.classList.remove('active');
-                    if (li.classList.contains(current)) {
-                        li.classList.add('active');
-                    }
-                });
-            };
+            document.getElementById(id).scrollIntoView({behavior: 'smooth'});
         }
-    },
-    mounted() {
-        this.setActiveClass()
     }
 }
 </script>
