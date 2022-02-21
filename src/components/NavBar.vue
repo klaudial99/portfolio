@@ -17,13 +17,13 @@
                             <div class="collapse navbar-collapse" id="navbarNav">
                                 <ul class="navbar-nav ms-auto">
                                     <li class="nav-item">
-                                        <span class="nav-link active clickable" @click="scrollTo('home')" aria-current="page">HOME</span>
+                                        <span class="nav-link active clickable home" @click="scrollTo('home')" aria-current="page">HOME</span>
                                     </li>
                                     <li class="nav-item">
-                                        <span class="nav-link clickable" @click="scrollTo('projects')">PROJECTS</span>
+                                        <span class="nav-link clickable projects" @click="scrollTo('projects')">PROJECTS</span>
                                     </li>
                                     <li class="nav-item">
-                                        <span class="nav-link" @click="scrollTo('contact')">CONTACT</span>
+                                        <span class="nav-link clickable contact" @click="scrollTo('contact')">CONTACT</span>
                                     </li>
 
                                 </ul>
@@ -41,14 +41,53 @@
 </template>
 
 <script>
+// import sections from "core-js/stable/dom-collections";
+// import navLi from "core-js/stable/dom-collections";
+
 export default {
     name: "NavBar",
     methods: {
         scrollTo(id) {
-            document.getElementById(id).scrollIntoView({
-                behavior: "smooth"
-            });
+            // const yOffset = document.querySelector('.navbar').offsetHeight;
+            // console.log(yOffset)
+            // document.getElementById(id).scrollIntoView({
+            //     behavior: "smooth",
+            //     offset: {top: -yOffset}
+            // });
+            document.getElementById(id).scrollIntoView(false);
+
+            // const yOffset = document.querySelector('.navbar').offsetHeight;
+            // const element = document.getElementById(id);
+            // const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+            //
+            // window.scrollTo({top: y, behavior: 'smooth'});
+        },
+
+        setActiveClass() {
+            window.onscroll = () => {
+                let current = '';
+
+                let sections = document.querySelectorAll('section')
+                sections.forEach((section) => {
+                    const sectionTop = section.offsetTop;
+                    if (scrollY + 150 >= sectionTop ) {
+                        current = section.getAttribute('id')
+                        console.log(current)
+                    }
+                });
+
+                let navLinks = document.querySelectorAll('span.nav-link')
+                navLinks.forEach((li) => {
+                    li.classList.remove('active');
+                    if (li.classList.contains(current)) {
+                        li.classList.add('active');
+                    }
+                });
+            };
         }
+    },
+    mounted() {
+        this.setActiveClass()
     }
 }
 </script>
@@ -69,14 +108,6 @@ export default {
 
 .navbar-brand {
     font-size: 18px;
-}
-
-.red {
-    background-color: red;
-}
-
-.blue {
-    background-color: blue;
 }
 
 .clickable {

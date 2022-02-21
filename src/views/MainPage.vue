@@ -18,7 +18,11 @@
                 </section>
 
                 <section class="projects-section row mx-0 mx-sm-5 ms-md-0 pb-sm-5" id="projects">
+                    <projects/>
+                </section>
 
+                <section class="contact-section row mx-0 mx-sm-5 ms-md-0 pb-sm-5" id="contact">
+                    <contact/>
                 </section>
             </div>
 
@@ -50,15 +54,23 @@ section {
     background-color: grey;
 }
 
+.contact-section {
+    background-color: crimson;
+}
+
 </style>
 
 <script>
 // @ is an alias to /src
 import Home from "@/components/MainPage/Home";
+import Projects from "@/components/MainPage/Projects";
+import Contact from "@/components/MainPage/Contact";
 export default {
     name: 'MainPage',
     components: {
-        Home
+        Home,
+        Projects,
+        Contact
     }
 }
 </script>
