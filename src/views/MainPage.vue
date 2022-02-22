@@ -61,7 +61,7 @@ section {
 }
 
 .contact-section {
-    background-color: crimson;
+    background-color: var(--VIOLET);
 }
 
 
