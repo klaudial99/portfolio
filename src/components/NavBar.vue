@@ -17,13 +17,13 @@
                             <div class="collapse navbar-collapse" id="navbarNav">
                                 <ul class="navbar-nav ms-auto">
                                     <li class="nav-item">
-                                        <span class="nav-link active clickable home" @click="scrollTo('home')" aria-current="page">HOME</span>
+                                        <span class="nav-link active clickable home ps-0 me-3" @click="scrollTo('home')" aria-current="page">HOME</span>
                                     </li>
                                     <li class="nav-item">
-                                        <span class="nav-link clickable projects" @click="scrollTo('projects')">PROJECTS</span>
+                                        <span class="nav-link clickable projects ps-0 me-3" @click="scrollTo('projects')">PROJECTS</span>
                                     </li>
                                     <li class="nav-item">
-                                        <span class="nav-link clickable contact" @click="scrollTo('contact')">CONTACT</span>
+                                        <span class="nav-link clickable contact ps-0" @click="scrollTo('contact')">CONTACT</span>
                                     </li>
 
                                 </ul>
@@ -46,7 +46,18 @@ export default {
     name: "NavBar",
     methods: {
         scrollTo(id) {
-            document.getElementById(id).scrollIntoView({behavior: 'smooth'});
+            // if (window.innerWidth < 500) {
+            //     const yOffset = -100;
+            //     const element = document.getElementById(id);
+            //     console.log(element)
+            //     const y = element.getBoundingClientRect().top + window.scrollY + yOffset;
+            //     console.log(y)
+            //     window.scrollTo({top: y, behavior: 'smooth'});
+            //     console.log('czemu')
+            // }
+            // else {
+                document.getElementById(id).scrollIntoView({behavior: 'smooth'});
+            // }
         }
     }
 }
@@ -73,4 +84,5 @@ export default {
 .clickable {
     cursor: pointer;
 }
+
 </style>

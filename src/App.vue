@@ -23,8 +23,17 @@ html {
 .wrapper {
     height: 100vh;
     overflow-y: scroll;
-    scroll-snap-type: y mandatory;
+    /*scroll-snap-type: y mandatory;*/
     scroll-behavior: smooth;
+}
+
+@media (min-width: 768px) {
+    .wrapper {
+        /*height: 100vh;*/
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory;
+        scroll-behavior: smooth;
+    }
 }
 
 body {
@@ -45,7 +54,7 @@ export default {
             let sections = document.querySelectorAll('section')
             sections.forEach((section) => {
                 const sectionTop = section.offsetTop;
-                if (main.scrollTop + 10 > sectionTop ) {
+                if (main.scrollTop + 150 > sectionTop ) {
                     current = section.getAttribute('id')
                 }
             });

@@ -42,10 +42,14 @@
 
 section {
     background-clip: content-box;
-    height: 100vh;
-    min-height: 550px;
-    padding-top: 10vh;
+    min-height: 90vh;
     scroll-snap-align: start;
+}
+@media (min-width: 768px) {
+    section {
+        height: 100vh;
+        /*padding-top: 10vh;*/
+    }
 }
 
 .home-section {
@@ -53,12 +57,13 @@ section {
 }
 
 .projects-section {
-    background-color: grey;
+    background-color: var(--BLUE);
 }
 
 .contact-section {
     background-color: crimson;
 }
+
 
 </style>
 

@@ -54,6 +54,8 @@
         data-aos-duration="700"
         data-aos-easing="ease"
         class="scroll-row row d-flex justify-content-center align-items-center container-fluid mt-auto"
+        type="button"
+        @click="scrollDown"
     >
         <span>SCROLL DOWN</span>
         <i id="scroll-down-icon" class="fa fa-chevron-down"></i>
@@ -63,7 +65,12 @@
 
 <script>
 export default {
-    name: "Home"
+    name: "Home",
+    methods: {
+        scrollDown () {
+            document.getElementById('projects').scrollIntoView({behavior: 'smooth'});
+        }
+    }
 }
 </script>
 
@@ -122,7 +129,7 @@ export default {
 }
 
 #scroll-down-icon {
-    color: #B40572;
+    color: var(--VIOLET);
     animation: pulse-animation 2s infinite;
 }
 
