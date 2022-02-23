@@ -14,7 +14,7 @@
 
             <div class="col-12 col-md-11 offset-md-1">
                 <section class="home-section mx-0 mx-sm-5 ms-md-0 pb-sm-5 d-flex flex-column" id="home">
-                    <home/>
+                    <home />
                 </section>
 
                 <section class="projects-section row mx-0 mx-sm-5 ms-md-0 pb-sm-5" id="projects">
@@ -40,30 +40,20 @@
     color: var(--BLACK);
 }
 
-section {
+.home-section {
     background-clip: content-box;
     min-height: 90vh;
     scroll-snap-align: start;
 }
 @media (min-width: 768px) {
     section {
-        height: 100vh;
-        /*padding-top: 10vh;*/
+        height: 90vh;
     }
 }
 
 .home-section {
     background-color: var(--LAVENDER);
 }
-
-.projects-section {
-    background-color: var(--BLUE);
-}
-
-.contact-section {
-    background-color: var(--VIOLET);
-}
-
 
 </style>
 

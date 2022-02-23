@@ -1,5 +1,5 @@
 <template>
-    <layout class="wrapper">
+    <layout>
         <router-view/>
     </layout>
 
@@ -18,25 +18,7 @@ html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
-}
-
-.wrapper {
-    height: 100vh;
-    overflow-y: scroll;
-    /*scroll-snap-type: y mandatory;*/
-    scroll-behavior: smooth;
-}
-
-@media (min-width: 768px) {
-    .wrapper {
-        /*height: 100vh;*/
-        overflow-y: scroll;
-        scroll-snap-type: y mandatory;
-        scroll-behavior: smooth;
-    }
-}
-
-body {
+    padding-top: 10vh;
     color: var(--BLACK);
 }
 
@@ -46,31 +28,6 @@ import Layout from "@/components/Layout";
 export default {
     components: {
         Layout
-    },
-    methods: {
-        setActiveClass() {
-            let current = '';
-            const main = document.querySelector('.wrapper');
-            let sections = document.querySelectorAll('section')
-            sections.forEach((section) => {
-                const sectionTop = section.offsetTop;
-                if (main.scrollTop + 150 > sectionTop ) {
-                    current = section.getAttribute('id')
-                }
-            });
-
-            let navLinks = document.querySelectorAll('span.nav-link')
-            navLinks.forEach((li) => {
-                li.classList.remove('active');
-                if (li.classList.contains(current)) {
-                    li.classList.add('active');
-                }
-            });
-        }
-    },
-    mounted() {
-        const main = document.querySelector('.wrapper');
-        main.addEventListener('scroll', this.setActiveClass);
     }
 }
 </script>

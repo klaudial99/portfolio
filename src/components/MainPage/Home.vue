@@ -1,9 +1,9 @@
 <template>
 
-    <div class="row h-100 mt-1 mt-lg-0">
+    <div class="row h-100 w-100 mt-1 mt-lg-0">
 
         <div class="col-12 col-lg-7 left d-flex justify-content-center align-items-center">
-            <div class="row d-flex justify-content-center ">
+            <div class="row d-flex justify-content-center w-100">
                 <div class="col-9">
                     <div id="left-text" class="text-start mt-4">
                         <span
@@ -69,6 +69,13 @@ export default {
     methods: {
         scrollDown () {
             document.getElementById('projects').scrollIntoView({behavior: 'smooth'});
+            const id = 'projects';
+            const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+            const yOffset = 0.1*vh;
+            const element = document.getElementById(id);
+            const y = element.getBoundingClientRect().top + scrollY - yOffset;
+
+            window.scrollTo({top: y, behavior: 'smooth'});
         }
     }
 }
