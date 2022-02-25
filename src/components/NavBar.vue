@@ -6,7 +6,7 @@
                     <div class="row mx-1 mx-sm-5 ms-md-0">
                         <div class="col text-start ms-2">
                             <div class="row">
-                                <a class="navbar-brand ps-2 me-0" href="#">KLAUDIA LASKOWSKA</a>
+                                <a class="navbar-brand ms-4 ms-sm-0 ps-2 me-0" href="#">KLAUDIA LASKOWSKA</a>
                             </div>
 
                         </div>
@@ -47,7 +47,8 @@ export default {
     methods: {
         scrollTo(id) {
             const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
-            const yOffset = -0.1*vh;
+            // const yOffset = Math.min(-60, -0.1*vh)
+            const yOffset = -0.12*vh
             const element = document.getElementById(id);
             const y = element.getBoundingClientRect().top + window.scrollY + yOffset;
             window.scrollTo({top: y, behavior: 'smooth'});
@@ -60,7 +61,7 @@ export default {
                 sections.forEach((section) => {
                     const sectionTop = section.offsetTop;
                     const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
-                    const yOffset = 0.1*vh;
+                    const yOffset = 0.1*vh + 20
                     if (scrollY + yOffset >= sectionTop ) {
                         current = section.getAttribute("id"); }
                 });
@@ -85,6 +86,13 @@ export default {
 
 .navbar {
     min-height: max(60px, 10vh);
+
+}
+
+@media (min-width: 1px) and (max-width: 576px) {
+    .navbar {
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    }
 }
 
 .navbar-toggler {

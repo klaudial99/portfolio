@@ -100,6 +100,10 @@ export default {
     max-width: 75%;
 }
 
+.about-text {
+    font-size: 18px;
+}
+
 @media (min-width: 1px) and (max-width: 576px) {
     .left {
         position: static;
@@ -108,6 +112,8 @@ export default {
     #left-text {
         position: static;
         margin-top: 2.5rem;
+        text-align: justify;
+
     }
 
     #title {
@@ -116,6 +122,10 @@ export default {
 
     #about {
         margin-top: 1.5rem;
+    }
+
+    .picture {
+        margin-left: 2rem;
     }
 }
 
@@ -145,7 +155,7 @@ export default {
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-15px);
+        transform: translateY(-10px);
     }
 }
 

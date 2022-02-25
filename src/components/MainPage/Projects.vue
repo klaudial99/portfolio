@@ -1,15 +1,18 @@
 <template>
-    <div class="row align-items-md-center justify-content-sm-center title-row mt-3">
-        <div class="col">
-            <h1 class="text-center">PROJECTS</h1>
-        </div>
+    <div>
+        <div class="row align-items-md-center justify-content-sm-center title-row mb-3">
+            <div class="col">
+                <h1 class="text-center">PROJECTS</h1>
+            </div>
 
-    </div>
-    <div class="row justify-content-center projects-row mb-3">
-        <div class="col-9 col-sm-8 col-md-5 col-lg-4" v-for="project in projects" :key="project.projectId">
-            <project-card :project="project" class="mt-3"/>
+        </div>
+        <div class="row justify-content-center projects-row mb-3">
+            <div class="col-12 col-lg-6" v-for="project in projects" :key="project.projectId">
+                <project-card :project="project" class="my-3"/>
+            </div>
         </div>
     </div>
+
 </template>
 
 <script>
@@ -24,21 +27,27 @@ export default {
             projects: [
                 {
                     projectId: 1,
-                    pictureSource: '1458.png',
+                    pictureSource: 'tba.png',
+                    title: 'TBA',
+                    year: 2022
+                },
+                {
+                    projectId: 2,
+                    pictureSource: 'planszappka.png',
                     title: 'PlanszAppka',
                     year: 2021
                 },
                 {
-                    projectId: 2,
-                    pictureSource: '1458.png',
+                    projectId: 3,
+                    pictureSource: 'wellbeeing.png',
                     title: 'WellBeeing',
                     year: 2021
                 },
                 {
-                    projectId: 3,
-                    pictureSource: '1458.png',
-                    title: 'WellBeeing',
-                    year: 2021
+                    projectId: 4,
+                    pictureSource: 'soon.png',
+                    title: 'More projects soon',
+                    year: ''
                 }
             ]
         }
@@ -47,25 +56,13 @@ export default {
 </script>
 
 <style scoped>
-h1 {
-    color: var(--LAVENDER);
-}
 
-.title-row {
-    height: 35%;
-}
-
-.projects-row {
-    height: 65%;
-}
-
-@media (min-width: 1px) and (max-width: 992px) {
-    .title-row {
-        height: auto;
-    }
-
+@media (min-width: 1500px) {
     .projects-row {
-        height: auto;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
     }
 }
 </style>
