@@ -40,7 +40,7 @@
     color: var(--BLACK);
 }
 
-.home-section {
+.home-section, .contact-section {
     background-clip: content-box;
     min-height: 90vh;
     scroll-snap-align: start;

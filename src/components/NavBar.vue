@@ -48,7 +48,7 @@ export default {
         scrollTo(id) {
             const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
             // const yOffset = Math.min(-60, -0.1*vh)
-            const yOffset = -0.12*vh
+            const yOffset = -0.11*vh
             const element = document.getElementById(id);
             const y = element.getBoundingClientRect().top + window.scrollY + yOffset;
             window.scrollTo({top: y, behavior: 'smooth'});
@@ -61,7 +61,7 @@ export default {
                 sections.forEach((section) => {
                     const sectionTop = section.offsetTop;
                     const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
-                    const yOffset = 0.1*vh + 20
+                    const yOffset = 0.1*vh + 50
                     if (scrollY + yOffset >= sectionTop ) {
                         current = section.getAttribute("id"); }
                 });
