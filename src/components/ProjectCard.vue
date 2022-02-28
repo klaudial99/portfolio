@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <router-link :to="'/'+this.project.title" class="container">
         <div class="row">
             <div id="img-wrap" class="w-100 h-100 col p-0 mx-3">
                 <img :src="this.getImgSrc(this.project.pictureSource)" :alt="this.project.pictureSource">
@@ -10,7 +10,7 @@
             <h3 class="my-0">{{this.project.title}}</h3>
             <span>{{this.project.year}}</span>
         </div>
-    </div>
+    </router-link>
 </template>
 
 <script>
@@ -48,5 +48,9 @@ img {
     transform: scale(1.05);
 }
 
+a {
+    color: var(--BLACK);
+    text-decoration: none !important;
+}
 
 </style>
