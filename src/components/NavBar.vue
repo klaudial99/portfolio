@@ -17,7 +17,7 @@
                             <div class="collapse navbar-collapse" id="navbarNav">
                                 <ul class="navbar-nav ms-auto">
                                     <li class="nav-item">
-                                        <span class="nav-link active clickable home ps-0 me-3 me-lg-0" @click="scrollTo('home')" aria-current="page">HOME</span>
+                                        <span class="nav-link clickable home ps-0 me-3 me-lg-0" @click="scrollTo('home')" aria-current="page">HOME</span>
                                     </li>
                                     <li class="nav-item">
                                         <span class="nav-link clickable projects ps-0 ms-3 me-3 me-lg-0" @click="scrollTo('projects')">PROJECTS</span>
@@ -42,10 +42,24 @@
 
 <script>
 
+import router from "@/router";
+
 export default {
     name: "NavBar",
     methods: {
         scrollTo(id) {
+            if (this.$route.name !== 'MainPage') {
+                router.push('/')
+                window.setTimeout(() => {
+                    this.scroll(id)
+                    this.setActiveClass()
+                }, 100)
+            }
+            else {
+                this.scroll(id)
+            }
+        },
+        scroll (id) {
             const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
             // const yOffset = Math.min(-60, -0.1*vh)
             const yOffset = -0.11*vh
@@ -54,7 +68,9 @@ export default {
             window.scrollTo({top: y, behavior: 'smooth'});
         },
         setActiveClass () {
-            window.onscroll = () => {
+            console.log(this.$route.name)
+            if (this.$route.name === 'MainPage') {
+
                 let current = "";
 
                 let sections = document.querySelectorAll('section')
@@ -73,12 +89,32 @@ export default {
                         li.classList.add("active");
                     }
                 });
+            }
+        },
+        activeSectionAndNavbarShadowOnScroll () {
+
+            window.onscroll = () => {
+
+                // active classes
+                this.setActiveClass()
+
+                // navbar shadow
+                const nav = document.querySelector('.navbar');
+                if(window.scrollY>0){
+                    nav.classList.add("add-shadow");
+                }else{
+                    nav.classList.remove("add-shadow");
+                }
             };
-        }
+        },
     },
     mounted() {
-        this.setActiveClass()
-    }
+        this.activeSectionAndNavbarShadowOnScroll()
+        window.setTimeout(this.setActiveClass, 100)
+    },
+
+
+
 }
 </script>
 
@@ -93,6 +129,10 @@ export default {
     .navbar {
         box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
     }
+}
+
+.add-shadow {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 
 .navbar-toggler {
