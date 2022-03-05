@@ -14,7 +14,7 @@
 
             <div class="col-12 col-md-11 offset-md-1 px-0">
                 <section class="home-section mx-0 mx-sm-5 ms-md-0 pb-sm-5 d-flex flex-column" id="home">
-                    <home />
+                    <home/>
                 </section>
 
                 <section class="projects-section row mx-0 mx-sm-5 ms-md-0 pb-sm-5 mt-5 mt-sm-0" id="projects">
@@ -69,6 +69,13 @@ export default {
         Projects,
         Contact
     },
+    beforeRouteLeave(to, from, next) {
+        let navLinks = document.querySelectorAll('span.nav-link')
+        navLinks.forEach((li) => {
+            li.classList.remove("active")
+        })
+        next();
+    }
 }
 </script>
 

@@ -1,12 +1,13 @@
 <template>
 
-    <div class="row h-100 w-100 mt-1 mt-lg-0">
+    <div class="row h-100 w-100 mt-1 mt-lg-0" >
 
         <div class="col-12 col-lg-7 left d-flex justify-content-center align-items-center">
             <div class="row d-flex justify-content-center w-100">
                 <div class="col-9">
                     <div id="left-text" class="text-start mt-4">
                         <span
+                            v-if="isLoaded"
                             data-aos="zoom-in"
                             data-aos-duration="1500"
                             id="title"
@@ -15,8 +16,8 @@
                             Hi, I'm Klaudia.
                         </span>
                         <p
+                            v-if="isLoaded"
                             data-aos="fade-up"
-                            data-aos-anchor=".title-text"
                             data-aos-delay="800"
                             data-aos-duration="700"
                             data-aos-easing="ease"
@@ -33,8 +34,8 @@
 
         <div class="col-12 col-lg-5 right d-flex justify-content-center align-items-start align-items-md-center">
             <img
+                v-if="isLoaded"
                 data-aos="fade-up-left"
-                data-aos-anchor=".about-text"
                 data-aos-delay="1500"
                 data-aos-duration="700"
                 data-aos-easing="ease"
@@ -42,7 +43,6 @@
                 src="@/assets/design.svg"
                 alt="svg"
                 width="450"
-                height="auto"
             />
         </div>
 
@@ -66,6 +66,11 @@
 <script>
 export default {
     name: "Home",
+    data() {
+        return {
+            isLoaded: false
+        }
+    },
     methods: {
         scrollDown () {
             document.getElementById('projects').scrollIntoView({behavior: 'smooth'});
@@ -73,10 +78,14 @@ export default {
             const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
             const yOffset = 0.1*vh;
             const element = document.getElementById(id);
-            const y = element.getBoundingClientRect().top + scrollY - yOffset;
+            const y = element.
+            getBoundingClientRect().top + scrollY - yOffset;
 
             window.scrollTo({top: y, behavior: 'smooth'});
         }
+    },
+    mounted() {
+        this.isLoaded = true
     }
 }
 </script>
@@ -102,6 +111,7 @@ export default {
 
 .about-text {
     font-size: 18px;
+    text-align: justify;
 }
 
 @media (min-width: 1px) and (max-width: 576px) {

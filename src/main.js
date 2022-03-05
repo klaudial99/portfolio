@@ -8,6 +8,8 @@ import router from './router'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
+import VueApexCharts from "vue3-apexcharts";
+
 // fontawesome
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
@@ -28,6 +30,7 @@ dom.watch();
 const app = createApp(App).use(router);
 
 app.use(AOS.init());
+app.use(VueApexCharts);
 app.component('font-awesome-icon', FontAwesomeIcon)
 
 app.mount('#app')
