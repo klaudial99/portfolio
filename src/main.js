@@ -24,6 +24,9 @@ import {faLinkedin, faGithub} from "@fortawesome/free-brands-svg-icons";
 library.add(faLinkedin)
 library.add(faGithub)
 
+import {faArrowUp} from "@fortawesome/free-solid-svg-icons/faArrowUp"
+library.add(faArrowUp)
+
 import { dom } from "@fortawesome/fontawesome-svg-core";
 dom.watch();
 

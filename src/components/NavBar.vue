@@ -68,7 +68,6 @@ export default {
             window.scrollTo({top: y, behavior: 'smooth'});
         },
         setActiveClass () {
-            console.log(this.$route.name)
             if (this.$route.name === 'MainPage') {
 
                 let current = "";
