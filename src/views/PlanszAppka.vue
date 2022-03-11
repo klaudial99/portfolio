@@ -354,7 +354,7 @@
                     <span class="project-subtitle">Lessons learned</span>
                     <p class="project-text">This was my first project that focused on UX, done under the tutelage of a UX specialist. I had the opportunity to go through the process of User Centered Design and find out that this is something I want to see a future with and grow in this field. Approaching this task again, I would definitely deepen my knowledge and include more elements necessary during such design. However, I have to admit that it was a good introductory lesson for me.</p>
                 </section>
-                
+
             </div>
         </div>
 
