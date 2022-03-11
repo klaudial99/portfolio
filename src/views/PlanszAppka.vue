@@ -16,9 +16,10 @@
             </div>
         </section>
 
-        <section id="planszappka-basic-info" class="mt-5">
-            <div class="row section-row">
-                <div class="col-10 col-md-9">
+        <div class="row section-row">
+            <div class="col-10 col-md-9">
+
+                <section id="planszappka-basic-info" class="mt-5">
                     <div class="row w-100 m-0">
                         <div class="col-12 col-sm-6 col-md-3 text-start my-3">
                             <span class="basic-info-header">Role</span>
@@ -42,51 +43,30 @@
                             <span>Figma, Pen+Paper, 1:1 Interview</span>
                         </div>
                     </div>
-                </div>
+                </section>
 
-            </div>
-        </section>
-
-        <section id="planszappka-background" class="mt-5">
-            <div class="row section-row">
-                <div class="col-10 col-md-9">
+                <section id="planszappka-background" class="mt-5">
                     <span class="project-subtitle">Background</span>
                     <p class="project-text">The project has been done as part of a UX course in the final semester of my IT studies. Each person on the team was asked to think of a problem or need that they notice in their environment. Then the ideas were discussed as a team and together we decided which problem would the project concern.</p>
-                </div>
-            </div>
-        </section>
+                </section>
 
-        <section id="planszappka-problem" class="mt-5">
-            <div class="row section-row">
-                <div class="col-10 col-md-9">
+                <section id="planszappka-problem" class="mt-5">
                     <span class="project-subtitle">Problem</span>
                     <p class="project-text">As a team, we have decided to solve the problem of finding gaming companions concerning people who play board games, so that they can easily find other gamers and make friends with people with common interests.</p>
-                </div>
-            </div>
-        </section>
+                </section>
 
-        <section id="planszappka-goal" class="mt-5">
-            <div class="row section-row">
-                <div class="col-10 col-md-9">
+                <section id="planszappka-goal" class="mt-5">
                     <span class="project-subtitle">Goal</span>
                     <p class="project-text">Design a mobile app that will unite people who play board games and allow them to easily find gaming companions to enable gameplay.</p>
-                </div>
-            </div>
-        </section>
+                </section>
 
-        <section id="planszappka-target-audience" class="mt-5">
-            <div class="row section-row">
-                <div class="col-10 col-md-9">
+                <section id="planszappka-target-audience" class="mt-5">
                     <span class="project-subtitle">Target audience</span>
                     <p class="project-text">The audience are board game players. They are people of all ages, but a greater problem with finding playmates occurs among older people, who have already finished their education and find it difficult to find players among their friends. Additionally, some of the games require a large number of participants and a lot of time, which makes the task even more difficult. </p>
                     <p class="project-text">They are usually creative people, with well-developed imagination, willing to make new friends. They like healthy competition, but also cooperation with other players. Potential users face the described problem mainly in their free time, when they are looking for plans for spending a nice day.</p>
-                </div>
-            </div>
-        </section>
+                </section>
 
-        <section id="planszappka-in-depth" class="mt-5">
-            <div class="row section-row">
-                <div class="col-10 col-md-9">
+                <section id="planszappka-in-depth" class="mt-5">
                     <span class="project-subtitle">In-Depth Interviews</span>
                     <p class="project-text">We have interviewed 10 potential users of the app to gather information about their behavior when faced with the problem we wanted to solve. We have prepared a list of questions for our interviewees:</p>
                     <ul>
@@ -110,24 +90,16 @@
                         <li><span>Interviewees usually play with 3-5 people for about 3-4 hour.</span></li>
                         <li><span>Depending on the length of the game, people choose to play a different number of games.</span></li>
                     </ul>
-                </div>
-            </div>
-        </section>
+                </section>
 
-        <section id="planszappka-personas" class="mt-5">
-            <div class="row section-row">
-                <div class="col-10 col-md-9">
+                <section id="planszappka-personas" class="mt-5">
                     <span class="project-subtitle">Personas</span>
                     <p class="project-text">Based on the information obtained, we were able to prepare two personas presenting the characteristics of our users. Meet Natalia and Leopold! :)</p>
                     <img class="img" id="persona-natalia" src="@/assets/planszappka/persona-natalia.png" alt="persona-natalia"/>
                     <img class="img mt-4" id="persona-leopold" src="@/assets/planszappka/persona-leopold.png" alt="persona-leopold"/>
-                </div>
-            </div>
-        </section>
+                </section>
 
-        <section id="planszappka-user-stories" class="mt-5">
-            <div class="row section-row">
-                <div class="col-10 col-md-9">
+                <section id="planszappka-user-stories" class="mt-5">
                     <span class="project-subtitle">User stories</span>
                     <p class="project-text">We have prepared key user stories for our project:</p>
                     <ol>
@@ -139,23 +111,15 @@
                         <li><span>As a user, I want to be able to add others to my friends so that I can see their activity more easily.</span></li>
                         <li><span>As the owner of a board game rental company, I want to be able to advertise my services so that I can increase the income of my business.</span></li>
                     </ol>
-                </div>
-            </div>
-        </section>
+                </section>
 
-        <section id="planszappka-wireframes" class="mt-5">
-            <div class="row section-row">
-                <div class="col-10 col-md-9">
+                <section id="planszappka-wireframes" class="mt-5">
                     <span class="project-subtitle">Wireframes</span>
                     <p class="project-text">With the initial idea of the app, we have proceeded with paper prototyping. Below I present my sketches:</p>
                     <img class="img" id="wireframes" src="@/assets/planszappka/wireframes.jpg" alt="planszappka-wireframes"/>
-                </div>
-            </div>
-        </section>
+                </section>
 
-        <section id="planszappka-ui" class="mt-5">
-            <div class="row section-row">
-                <div class="col-10 col-md-9">
+                <section id="planszappka-ui" class="mt-5">
                     <span class="project-subtitle">UI Design</span>
                     <div class="row">
                         <div class="col-12 col-lg-6 col-xl-5">
@@ -200,16 +164,11 @@
                                     <span class="ms-2 mt-2">#363033</span>
                                 </div>
                             </div>
-
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
+                </section>
 
-        <section id="planszappka-tests-1" class="mt-5">
-            <div class="row section-row">
-                <div class="col-10 col-md-9">
+                <section id="planszappka-tests-1" class="mt-5">
                     <span class="project-subtitle">Usability tests #1</span>
                     <p class="project-text">After preparing the first version of the application prototype in Figma, we prepared a research scenario that we conducted with potential users. The tests were performed remotely using screen sharing, so we observed all the subsequent actions of the people taking part in the tests. We also encouraged them to comment on what they wanted to do to get to know their thought process.</p>
                     <p class="project-text">The scenario consisted of the following research tasks:</p>
@@ -268,13 +227,9 @@
                             <span class="project-text">There were no problems with navigating the application, only the aforementioned slight uncertainty when looking for a game rentals.</span>
                         </li>
                     </ol>
-                </div>
-            </div>
-        </section>
+                </section>
 
-        <section id="planszappka-heuristics" class="mt-5">
-            <div class="row section-row">
-                <div class="col-10 col-md-9">
+                <section id="planszappka-heuristics" class="mt-5">
                     <span class="project-subtitle">Nielsen’s Usability Heuristics</span>
                     <p class="project-text">After the first tests, we carefully reviewed all of the application screens for compliance with Nielsen’s Heuristics. We came across several shortcomings and deficiencies, which I then applied to the design in Figma. New capabilities have been added to the application:</p>
                     <ul>
@@ -289,14 +244,9 @@
                         <li><span>reporting bugs</span></li>
                         <li><span>tutorial to the application (in the project it is only possible to enable the tutorial option at the launch of the app)</span></li>
                     </ul>
+                </section>
 
-                </div>
-            </div>
-        </section>
-
-        <section id="planszappka-tests-2" class="mt-5">
-            <div class="row section-row">
-                <div class="col-10 col-md-9">
+                <section id="planszappka-tests-2" class="mt-5">
                     <span class="project-subtitle">Usability tests #2</span>
                     <p class="project-text">After the changes we conducted usability tests again on a different group of people. We repeated the research tasks from previous tests - the conclusions were very similar and this time no one pointed out that any of the elements was too small. In addition to the existing tasks we have added new ones:</p>
                     <ol start="4">
@@ -322,14 +272,9 @@
                             <span class="project-text">This time, the description of the context and the task were worded in such a way that the surveyed users understood our intentions and easily noticed the "Activity" tab, where the last activity of all friends is located.</span>
                         </li>
                     </ol>
+                </section>
 
-                </div>
-            </div>
-        </section>
-
-        <section id="planszappka-survey" class="mt-5">
-            <div class="row section-row">
-                <div class="col-10 col-md-9">
+                <section id="planszappka-survey" class="mt-5">
                     <span class="project-subtitle">Survey</span>
                     <p class="project-text">During the project presentation in class, we were suggested to focus on the appearance of a single tile presenting the most important information about a particular game. So we decided to conduct a survey to find out which form of information presentation is most user-friendly. The prepared questions and the results of the survey conducted on 16 people are presented below.</p>
                     <div class="row">
@@ -403,18 +348,15 @@
                     </div>
                     <p class="project-text mt-3">The results of the survey were in alignment with our initial assumptions about the appearance of the advertisement tile, but due to some different voices and predominant approval for the ability to edit the appearance of the tile, we decided that it would be appropriate to add such an option in the app settings.</p>
                     <div class="text-center figma">Now, if you haven't done it already, check out the project in Figma <a href="https://www.figma.com/proto/53UYySDn8CZLFmW2c6LoLL/Untitled?node-id=0%3A1" class="d-inline figma-here">here</a> :)</div>
-                </div>
-            </div>
-        </section>
+                </section>
 
-        <section id="planszappka-learnings" class="my-5">
-            <div class="row section-row">
-                <div class="col-10 col-md-9">
+                <section id="planszappka-learnings" class="my-5">
                     <span class="project-subtitle">Lessons learned</span>
                     <p class="project-text">This was my first project that focused on UX, done under the tutelage of a UX specialist. I had the opportunity to go through the process of User Centered Design and find out that this is something I want to see a future with and grow in this field. Approaching this task again, I would definitely deepen my knowledge and include more elements necessary during such design. However, I have to admit that it was a good introductory lesson for me.</p>
-                </div>
+                </section>
+                
             </div>
-        </section>
+        </div>
 
     </div>
 </template>
