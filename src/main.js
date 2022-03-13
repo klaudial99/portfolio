@@ -9,6 +9,7 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 
 import VueApexCharts from "vue3-apexcharts";
+import VueEasyLightbox from 'vue-easy-lightbox'
 
 // fontawesome
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -38,6 +39,7 @@ const app = createApp(App).use(router);
 
 app.use(AOS.init());
 app.use(VueApexCharts);
+app.use(VueEasyLightbox)
 app.component('font-awesome-icon', FontAwesomeIcon)
 
 app.mount('#app')

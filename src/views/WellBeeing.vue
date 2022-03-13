@@ -178,7 +178,7 @@
                     <p class="screen-title mt-5">HOMEPAGE</p>
                     <div id="home" class="row align-items-center">
                         <div class="col-12 col-lg-5">
-                            <img class="w-100" id="home-prototype" src="@/assets/wellbeeing/home-prototype.png" alt="wellbeeing-home-prototype"/>
+                            <img class="w-100" id="home-prototype" src="@/assets/wellbeeing/home-prototype.png" alt="wellbeeing-home-prototype" @click="showSingle('home-prototype.png')"/>
                         </div>
                         <div class="col-12 col-lg-2">
                             <div class="d-none d-lg-flex justify-content-center">
@@ -189,14 +189,14 @@
                             </div>
                         </div>
                         <div class="col-12 col-lg-5">
-                            <img class="w-100" id="home-screen" src="@/assets/wellbeeing/home-screen.png" alt="wellbeeing-home-screen"/>
+                            <img class="w-100" id="home-screen" src="@/assets/wellbeeing/home-screen.png" alt="wellbeeing-home-screen" @click="showSingle('home-screen.png')"/>
                         </div>
                     </div>
 
                     <p class="screen-title mt-5">PROFILE VIEW</p>
                     <div id="profile" class="row align-items-center">
                         <div class="col-12 col-lg-5">
-                            <img class="w-100" id="profile-prototype" src="@/assets/wellbeeing/profile-prototype.png" alt="wellbeeing-profile-prototype"/>
+                            <img class="w-100" id="profile-prototype" src="@/assets/wellbeeing/profile-prototype.png" alt="wellbeeing-profile-prototype" @click="showSingle('profile-prototype.png')"/>
                         </div>
                         <div class="col-12 col-lg-2">
                             <div class="d-none d-lg-flex justify-content-center">
@@ -207,14 +207,14 @@
                             </div>
                         </div>
                         <div class="col-12 col-lg-5">
-                            <img class="w-100" id="profile-screen" src="@/assets/wellbeeing/profile-screen.png" alt="wellbeeing-profile-screen"/>
+                            <img class="w-100" id="profile-screen" src="@/assets/wellbeeing/profile-screen.png" alt="wellbeeing-profile-screen" @click="showSingle('profile-screen.png')"/>
                         </div>
                     </div>
 
                     <p class="screen-title mt-5">SPECIALIST'S OPINIONS</p>
                     <div id="opinions" class="row align-items-center">
                         <div class="col-12 col-lg-5">
-                            <img class="w-100" id="opinions-prototype" src="@/assets/wellbeeing/opinions-prototype.png" alt="wellbeeing-opinions-prototype"/>
+                            <img class="w-100" id="opinions-prototype" src="@/assets/wellbeeing/opinions-prototype.png" alt="wellbeeing-opinions-prototype" @click="showSingle('opinions-prototype.png')"/>
                         </div>
                         <div class="col-12 col-lg-2">
                             <div class="d-none d-lg-flex justify-content-center">
@@ -225,14 +225,14 @@
                             </div>
                         </div>
                         <div class="col-12 col-lg-5">
-                            <img class="w-100" id="opinions-screen" src="@/assets/wellbeeing/opinions-screen.png" alt="wellbeeing-opinions-screen"/>
+                            <img class="w-100" id="opinions-screen" src="@/assets/wellbeeing/opinions-screen.png" alt="wellbeeing-opinions-screen" @click="showSingle('opinions-screen.png')"/>
                         </div>
                     </div>
 
                     <p class="screen-title mt-5">FRIENDS LIST</p>
                     <div id="friends" class="row align-items-center">
                         <div class="col-12 col-lg-5">
-                            <img class="w-100" id="friends-prototype" src="@/assets/wellbeeing/friends-prototype.png" alt="wellbeeing-friends-prototype"/>
+                            <img class="w-100" id="friends-prototype" src="@/assets/wellbeeing/friends-prototype.png" alt="wellbeeing-friends-prototype" @click="showSingle('friends-prototype.png')"/>
                         </div>
                         <div class="col-12 col-lg-2">
                             <div class="d-none d-lg-flex justify-content-center">
@@ -243,14 +243,14 @@
                             </div>
                         </div>
                         <div class="col-12 col-lg-5">
-                            <img class="w-100" id="friends-screen" src="@/assets/wellbeeing/friends-screen.png" alt="wellbeeing-friends-screen"/>
+                            <img class="w-100" id="friends-screen" src="@/assets/wellbeeing/friends-screen.png" alt="wellbeeing-friends-screen" @click="showSingle('friends-screen.png')"/>
                         </div>
                     </div>
 
                     <p class="screen-title mt-5">SPECIALIST ROLE REQUESTS PANEL</p>
                     <div id="requests" class="row align-items-center">
                         <div class="col-12 col-lg-5">
-                            <img class="w-100" id="requests-prototype" src="@/assets/wellbeeing/requests-prototype.png" alt="wellbeeing-requests-prototype"/>
+                            <img class="w-100" id="requests-prototype" src="@/assets/wellbeeing/requests-prototype.png" alt="wellbeeing-requests-prototype" @click="showSingle('requests-prototype.png')"/>
                         </div>
                         <div class="col-12 col-lg-2">
                             <div class="d-none d-lg-flex justify-content-center">
@@ -261,15 +261,23 @@
                             </div>
                         </div>
                         <div class="col-12 col-lg-5">
-                            <img class="w-100" id="requests-screen" src="@/assets/wellbeeing/requests-screen.png" alt="wellbeeing-requests-screen"/>
+                            <img class="w-100" id="requests-screen" src="@/assets/wellbeeing/requests-screen.png" alt="wellbeeing-requests-screen" @click="showSingle('requests-screen.png')"/>
                         </div>
                     </div>
 
-                    <div class="project-text mt-5">Due to organizational changes we had 2,5 months to implement the whole system and write an engineering thesis. As a result, the application is unfortunately not responsive, so I recommend opening it on larger screens. Demo available <a href="https://wellbeeing-app.herokuapp.com/" class="d-inline demo-here">here</a> :)</div>
+                    <vue-easy-lightbox
+                        moveDisabled
+                        :visible="visible"
+                        :imgs="imgs"
+                        :index="index"
+                        @hide="handleHide"
+                    ></vue-easy-lightbox>
+
+                    <div class="project-text mt-5">Due to organizational changes we had 2,5 months to implement the whole system and write an Engineering Thesis. As a result, the application is unfortunately not responsive, so I recommend opening it on larger screens. Demo available <a href="https://wellbeeing-app.herokuapp.com/" class="d-inline demo-here">here</a> :)</div>
 
                 </section>
 
-                <section id="wellbeeing-learnings" class="mt-5">
+                <section id="wellbeeing-learnings" class="my-5">
                     <span class="project-subtitle">Lessons learned</span>
                     <p class="project-text">This was my first project done in a group larger than two people and by far my biggest. It showed me how important it is to be systematic with a short deadline and many functionalities to be implemented. I've also had the opportunity to see that developing some collaborative principles for larger projects is crucial.</p>
                 </section>
@@ -282,8 +290,36 @@
 </template>
 
 <script>
+import VueEasyLightbox from 'vue-easy-lightbox'
 export default {
-    name: "WellBeeing"
+    name: "WellBeeing",
+    components: {
+        VueEasyLightbox
+    },
+    data() {
+        return {
+            imgs: '', // Img Url , string or Array of string
+            visible: false,
+            index: 0 // default: 0
+        }
+    },
+    methods: {
+        showSingle(img) {
+            this.imgs = require('@/assets/wellbeeing/' + img)
+            // or
+            // this.imgs = {
+            //     title: 'this is a placeholder',
+            //     src: 'http://via.placeholder.com/350x150'
+            // }
+            this.show()
+        },
+        show() {
+            this.visible = true
+        },
+        handleHide() {
+            this.visible = false
+        }
+    }
 }
 </script>
 
