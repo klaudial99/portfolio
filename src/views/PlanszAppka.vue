@@ -11,7 +11,7 @@
 
                 </div>
                 <div class="col-12 col-sm-5 my-4 my-sm-0">
-                    <img id="main-photo" src="@/assets/planszappka/main.png" alt="main-photo"/>
+                    <img id="planszappka-main-photo" src="@/assets/planszappka/main.png" alt="main-photo"/>
                 </div>
             </div>
         </section>
@@ -505,39 +505,19 @@ export default {
     }
 }
 
-#main-photo {
+#planszappka-main-photo {
     width: auto;
     height: 50vh;
 }
 
-.project-title {
-    font-size: 300%;
-}
 
-.project-subject {
-    font-size: 150%;
-}
-
-.section-row {
-    justify-content: center;
-    width: 100%;
-    margin: 0;
-    text-align: left;
-}
-
-.project-subtitle {
-    font-size: 200%;
-    margin-bottom: 1rem;
-}
 
 .ui-heading {
     font-size: 150%;
     font-weight: 600;
 }
 
-.project-text {
-    text-align: justify;
-}
+
 
 span {
     display: block;

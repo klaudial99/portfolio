@@ -21,7 +21,33 @@ html {
     color: var(--BLACK);
 }
 
+/*projects*/
+.project-title {
+    font-size: 300%;
+}
+
+.project-subject {
+    font-size: 150%;
+}
+
+.section-row {
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    text-align: left;
+}
+
+.project-subtitle {
+    font-size: 200%;
+    margin-bottom: 1rem;
+}
+
+.project-text {
+    text-align: justify;
+}
+
 </style>
+
 <script>
 import Layout from "@/components/Layout";
 export default {

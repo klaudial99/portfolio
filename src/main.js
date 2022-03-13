@@ -27,6 +27,10 @@ library.add(faGithub)
 import {faArrowUp} from "@fortawesome/free-solid-svg-icons/faArrowUp"
 library.add(faArrowUp)
 
+import {faArrowRightLong, faArrowDownLong} from "@fortawesome/free-solid-svg-icons"
+library.add(faArrowRightLong)
+library.add(faArrowDownLong)
+
 import { dom } from "@fortawesome/fontawesome-svg-core";
 dom.watch();
 
