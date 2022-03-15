@@ -279,7 +279,7 @@
                     <p class="project-text">During the project presentation in class, we were suggested to focus on the appearance of a single tile presenting the most important information about a particular game. So we decided to conduct a survey to find out which form of information presentation is most user-friendly. The prepared questions and the results of the survey conducted on 16 people are presented below.</p>
                     <div class="row">
 
-                        <div class="col-12 col-lg-6 mt-3">
+                        <div class="col-12 col-md-6 mt-3">
                             <ol class="charts-list">
                                 <li>
                                     <div>
@@ -290,7 +290,7 @@
                             </ol>
                         </div>
 
-                        <div class="col-12 col-lg-6 mt-3">
+                        <div class="col-12 col-md-6 mt-3">
                             <ol start="2" class="charts-list">
                                 <li>
                                     <div>

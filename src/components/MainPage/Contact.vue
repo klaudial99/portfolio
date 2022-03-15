@@ -4,22 +4,22 @@
             <div class="row w-100 h-100 justify-content-center mx-0">
                 <div class="col-12 col-sm-11 col-md-9 px-4 px-sm-0">
                     <div class="mb-4">
-                        <h3 class="text-start ms-2">Want to get in touch?  Message me:</h3>
+                        <h3 class="text-start ms-2">{{ $t("contact.heading") }}</h3>
                     </div>
                     <div class="mb-3">
-                        <label for="name-form" class="form-label">Your name:</label>
-                        <input v-model="name" name="name" type="text" class="form-control" id="name-form" placeholder="Your name">
+                        <label for="name-form" class="form-label">{{ $t("contact.name") }}</label>
+                        <input v-model="name" name="name" type="text" class="form-control" id="name-form" :placeholder="$t('contact.nameInput')">
                     </div>
                     <div class="mb-3">
-                        <label for="email-form" class="form-label">Your email address:</label>
-                        <input v-model="email" name="email" type="email" class="form-control" id="email-form" placeholder="Your email address">
+                        <label for="email-form" class="form-label">{{ $t("contact.mail") }}</label>
+                        <input v-model="email" name="email" type="email" class="form-control" id="email-form" :placeholder="$t('contact.mailInput')">
                     </div>
                     <div class="mb-5">
-                        <label for="message-form" class="form-label">Message:</label>
-                        <textarea v-model="message" name="message" class="form-control" id="message-form" rows="7" placeholder="Message"></textarea>
+                        <label for="message-form" class="form-label">{{ $t("contact.message") }}</label>
+                        <textarea v-model="message" name="message" class="form-control" id="message-form" rows="7" :placeholder="$t('contact.messageInput')"></textarea>
                     </div>
 
-                    <input type="submit" value="Send" @click="sendEmail">
+                    <input type="submit" :value="$t('contact.send')" @click="sendEmail">
                 </div>
             </div>
 

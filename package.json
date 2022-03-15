@@ -20,8 +20,10 @@
         "emailjs-com": "^3.2.0",
         "vue": "^3.0.0",
         "vue-easy-lightbox": "^1.4.1",
+        "vue-i18n": "^9.1.9",
         "vue-router": "^4.0.0-0",
-        "vue3-apexcharts": "^1.4.1"
+        "vue3-apexcharts": "^1.4.1",
+        "vuex": "^4.0.2"
     },
     "devDependencies": {
         "@vue/cli-plugin-babel": "~4.5.0",

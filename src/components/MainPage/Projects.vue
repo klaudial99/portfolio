@@ -2,7 +2,7 @@
     <div>
         <div class="row align-items-md-center justify-content-sm-center title-row mb-3">
             <div class="col">
-                <h1 class="text-center">PROJECTS</h1>
+                <h1 class="text-center">{{ $t("navbar.projects") }}</h1>
             </div>
 
         </div>

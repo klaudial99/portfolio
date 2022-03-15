@@ -24,7 +24,7 @@
                             id="about"
                             class="about-text"
                         >
-                            Engineer and applied computer science student based in Wroclaw, Poland. Great design enthusiast looking for a first job as a UX Designer.
+                            {{ $t("home.about") }}
                         </p>
 
                     </div>

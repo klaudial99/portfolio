@@ -20,10 +20,16 @@
                                         <span class="nav-link clickable home ps-0 me-3 me-lg-0" @click="scrollTo('home')" aria-current="page">HOME</span>
                                     </li>
                                     <li class="nav-item">
-                                        <span class="nav-link clickable projects ps-0 ms-3 me-3 me-lg-0" @click="scrollTo('projects')">PROJECTS</span>
+                                        <span class="nav-link clickable projects ps-0 ms-3 me-3 me-lg-0" @click="scrollTo('projects')">{{ $t("navbar.projects") }}</span>
                                     </li>
                                     <li class="nav-item">
-                                        <span class="nav-link clickable contact ps-0 ms-3 me-3 me-lg-0" @click="scrollTo('contact')">CONTACT</span>
+                                        <span class="nav-link clickable contact ps-0 ms-3 me-3 me-lg-0" @click="scrollTo('contact')">{{ $t("navbar.contact") }}</span>
+                                    </li>
+                                    <li class="nav-item">
+                                        <span class="nav-link clickable ps-0 ms-3 me-3 me-lg-0" @click="setLanguage('pl')">PL</span>
+                                    </li>
+                                    <li class="nav-item">
+                                        <span class="nav-link clickable ps-0 ms-3 me-3 me-lg-0" @click="setLanguage('en')">EN</span>
                                     </li>
 
                                 </ul>
@@ -54,8 +60,7 @@ export default {
                     this.scroll(id)
                     this.setActiveClass()
                 }, 100)
-            }
-            else {
+            } else {
                 this.scroll(id)
             }
         },
@@ -106,6 +111,12 @@ export default {
                 }
             };
         },
+        setLanguage(lan) {
+            this.$store.commit('setLanguage', lan);
+            console.log(this.$store.getters.getLanguage)
+
+            this.$i18n.locale = lan
+        }
     },
     mounted() {
         this.activeSectionAndNavbarShadowOnScroll()
