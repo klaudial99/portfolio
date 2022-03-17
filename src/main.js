@@ -58,216 +58,221 @@ const messages = {
         },
         planszappka: {
             heading: {
-                title: '',
-                subject: '',
-                figma: ''
+                title: 'PlanszAppka',
+                subject: 'UX/UI Design',
+                figma: 'Check out ',
+                link: 'Figma Project'
             },
             basicInfo: {
-                roleHeading: '',
-                roleInfo1: '',
-                roleInfo2: '',
-                timelineHeading: '',
-                timelineInfo1: '',
-                timelineInfo2: '',
-                platformHeading: '',
-                platformInfo: '',
-                toolsHeading: '',
-                toolsInfo: ''
+                roleHeading: 'Role',
+                roleInfo1: 'Main UX Designer,',
+                roleInfo2: 'Only UI Designer',
+                timelineHeading: 'Timeline',
+                timelineInfo1: '2 months',
+                timelineInfo2: 'Oct - Dec 2021',
+                platformHeading: 'Platform',
+                platformInfo: 'Mobile',
+                toolsHeading: 'Tools',
+                toolsInfo: 'Figma, Pen+Paper, 1:1 Interview'
             },
             background: {
-                title: '',
-                info: ''
+                title: 'Background',
+                info: 'The project has been done as part of a UX course in the final semester of my IT studies. Each person on the team was asked to think of a problem or need that they notice in their environment. Then the ideas were discussed as a team and together we decided which problem would the project concern.'
             },
             problem: {
-                title: '',
-                info: ''
+                title: 'Problem',
+                info: 'As a team, we have decided to solve the problem of finding gaming companions concerning people who play board games, so that they can easily find other gamers and make friends with people with common interests.'
             },
             goal: {
-                title: '',
-                info: ''
+                title: 'Goal',
+                info: 'Design a mobile app that will unite people who play board games and allow them to easily find gaming companions to enable gameplay.'
             },
             targetAudience: {
-                title: '',
-                info1: '',
-                info2: ''
+                title: 'Target audience',
+                info1: 'The audience are board game players. They are people of all ages, but a greater problem with finding playmates occurs among older people, who have already finished their education and find it difficult to find players among their friends. Additionally, some of the games require a large number of participants and a lot of time, which makes the task even more difficult.',
+                info2: 'They are usually creative people, with well-developed imagination, willing to make new friends. They like healthy competition, but also cooperation with other players. Potential users face the described problem mainly in their free time, when they are looking for plans for spending a nice day.'
             },
             interviews: {
-                title: '',
-                questions: '',
+                title: 'In-Depth Interviews',
+                questions: 'We have interviewed 10 potential users of the app to gather information about their behavior when faced with the problem we wanted to solve. We have prepared a list of questions for our interviewees:',
                 questionsList: {
-                    item1: '',
-                    item2: '',
-                    item3: '',
-                    item4: '',
-                    item5: '',
-                    item6: '',
-                    item7: '',
-                    item8: '',
-                    item9: ''
+                    item1: 'Do you play board games and how often?',
+                    item2: 'How many board games do you own?',
+                    item3: 'Where and on what occasions do you usually play board games?',
+                    item4: 'Do you have friends to play with? How is it that you have someone to play with?',
+                    item5: 'How many people do you usually play with, how long?',
+                    item6: 'How many games do you play?',
+                    item7: 'Has it ever happened that you didn\'t have enough people to play the game?',
+                    item8: 'Have you ever wanted to play a game that you didn\'t have? What have you done then?',
+                    item9: 'What do you do when you want to play but have no one to play with?'
                 },
-                conclusions: '',
+                conclusions: 'Based on the interviews, we have drawn the following conclusions:',
                 conclusionsList: {
-                    item1: '',
-                    item2: '',
-                    item3: '',
-                    item4: '',
-                    item5: '',
-                    item6: '',
-                    item7: ''
+                    item1: 'The vast majority of people at one time wanted to play a board game they didn\'t have - they decided to rent it or play it with someone who did.',
+                    item2: 'People who don\'t have anyone to play use social media to find other players, choose another game, or just let it go.',
+                    item3: 'About half of the interviewees lack people to play, usually this applies to people playing 3-4 with friends.',
+                    item4: 'People are divided into those who play often (about twice a week) and rarely (a few times a year).',
+                    item5: 'Typically, people have 3-6 board games at home.',
+                    item6: 'Interviewees usually play with 3-5 people for about 3-4 hour.',
+                    item7: 'Depending on the length of the game, people choose to play a different number of games.'
                 }
             },
             personas: {
-                title: '',
-                info: ''
+                title: 'Personas',
+                info: 'Based on the information obtained, we were able to prepare two personas presenting the characteristics of our users. Meet Natalia and Leopold! :)',
+                personaImgPath1: 'persona-natalia.png',
+                personaImgPath2: 'persona-leopold.png'
             },
             userStories: {
-                title: '',
-                info: '',
+                title: 'User stories',
+                info: 'We have prepared key user stories for our project:',
                 userStoriesList: {
-                    item1: '',
-                    item2: '',
-                    item3: '',
-                    item4: '',
-                    item5: '',
-                    item6: '',
-                    item7: ''
+                    item1: 'As a user, I want to be able to find people who own games that interest me so that I can play games that I don\'t own.',
+                    item2: 'As a user, I want to find people willing to play to reach the number of players required so that I can play a game.',
+                    item3: 'As a user, I want to meet people with similar interests to have someone so that I can play with in the future.',
+                    item4: 'As a user, I want to be able to communicate with other users so that I can agree on meeting details.',
+                    item5: 'As a user, I want to be able to browse games that are being played nearby so that I can experience new games.',
+                    item6: 'As a user, I want to be able to add others to my friends so that I can see their activity more easily.',
+                    item7: 'As the owner of a board game rental company, I want to be able to advertise my services so that I can increase the income of my business.'
                 }
             },
             wireframes: {
-                title: '',
-                info: ''
+                title: 'Wireframes',
+                info: 'With the initial idea of the app, we have proceeded with paper prototyping. Below I present my sketches:'
             },
             ui: {
-                title: '',
+                title: 'UI Design',
                 typography: {
-                    title: '',
+                    title: 'Typography',
                     headings: {
-                        title: '',
-                        heading1: '',
-                        heading2: '',
-                        heading3: '',
-                        heading4: ''
+                        title: 'Headings',
+                        heading1: 'Heading 1 (26)',
+                        heading2: 'Heading 2 (20)',
+                        heading3: 'Heading 3 (18)',
+                        heading4: 'Heading 4 (18)'
                     },
                     bodyText: {
-                        title: '',
-                        body1: '',
-                        body2: '',
-                        body3: ''
+                        title: 'Body text',
+                        body1: 'Body text 1 (16)',
+                        body2: 'Body text 2 (14)',
+                        body3: 'Body text 3 (12)'
                     }
                 },
                 colors: {
-                    title: '',
-                    color1: '',
-                    color2: '',
-                    color3: '',
-                    color4: '',
-                    color5: '',
+                    title: 'Colors',
+                    color1: '#303633',
+                    color2: '#EDF0DA',
+                    color3: '#AA4465',
+                    color4: '#F18F01',
+                    color5: '#363033',
                 }
             },
             tests1: {
-                title: '',
-                info: '',
-                scenarios: '',
+                title: 'Usability tests #1',
+                info: 'After preparing the first version of the application prototype in Figma, we prepared a research scenario that we conducted with potential users. The tests were performed remotely using screen sharing, so we observed all the subsequent actions of the people taking part in the tests. We also encouraged them to comment on what they wanted to do to get to know their thought process.',
+                scenarios: 'The scenario consisted of the following research tasks:',
                 scenario1: {
-                    contextHeading: '',
-                    contextInfo: '',
-                    taskHeading: '',
-                    taskInfo: ''
+                    contextHeading: 'Context description:',
+                    contextInfo: 'Imagine that you live in Tarnogaj, Wrocław. It\'s Friday night and you still don’t have any plans for it. Recently you\'ve heard about the board game "Avalon" and found it very interesting. You don\'t want to buy the game right away until you\'ve tested it, but unfortunately none of your friends have it. You have no problem meeting new people to play with, but you\'d prefer not to travel too far from where you live.',
+                    taskHeading: 'Task:',
+                    taskInfo: 'Join the gameplay of the game "Avalon" that is played closest to you.'
                 },
                 scenario2: {
-                    contextHeading: '',
-                    contextInfo: '',
-                    taskHeading: '',
-                    taskInfo: ''
+                    contextHeading: 'Context description:',
+                    contextInfo: 'You have recently bought the board game "Avalon", but you lack 4 people to play with. Unfortunately you have no friends interested in playing.',
+                    taskHeading: 'Task:',
+                    taskInfo: 'Create an announcement in which you specify the date and time only after you have found all the players and agreed on a date.'
                 },
                 scenario3: {
-                    contextHeading: '',
-                    contextInfo: '',
-                    taskHeading: '',
-                    taskInfo: ''
+                    contextHeading: 'Context description:',
+                    contextInfo: 'You have heard from a friend that there are board game rentals. You are curious if they are also available in your city.',
+                    taskHeading: 'Task:',
+                    taskInfo: 'Find out if there are board game rentals in your city. If so, check their location.'
                 },
-                conclusions: '',
+                conclusions: 'Based on the tests, we have drawn the following conclusions:',
                 conclusionsList: {
-                    item1: '',
-                    item2: '',
-                    item3: ''
+                    item1: 'No one had problems with the task, quite a few people wanted to use filters. Unfortunately, they are not fully supported in the prototype, but this is a sign that they would have no problems finding the advertisement in a working application. There were supporters of both map and list view - everyone would find something for themselves.',
+                    item2: 'People testing the prototype did very well with this task, they liked the selection of fields in the form when creating an advertisement (e.g. age of the players). For one person the checkbox seemed a bit small, they had slight problems with hitting it - this was corrected later.',
+                    item3: 'We weren\'t sure if placing rentals in the "Games" tab would be entirely intuitive, but most handled the task well, saying that this tab fit best. A couple of people initially tried the "Search" tab from the navigation menu, but in it there is a large "Game Search" heading at the top that immediately suggested they wouldn\'t find what they were looking for here, and the second choice was just the "Games" tab.'
                 },
                 survey: {
-                    info: '',
+                    info: 'We also prepared a short post-test survey:',
                     question1: {
-                        questionHeading: '',
-                        questionInfo: '',
-                        conclusionHeading: '',
-                        conclusionInfo: ''
+                        questionHeading: 'Question:',
+                        questionInfo: 'How would you rate the intuitiveness of the app?',
+                        conclusionHeading: 'Conclusion:',
+                        conclusionInfo: 'The vast majority of people found the application very intuitive, adapted with known standards. One person said that the icons for the number of players and the number of friends in the game can be slightly unintuitive, but this is only a view of the announcement tile, where it needs to be described briefly. Once you get into the details of the announcement, everything is explained in words. We decided not to make changes here, after using the app for a short time users should easily learn the accepted designations.'
                     },
                     question2: {
-                        questionHeading: '',
-                        questionInfo: '',
-                        conclusionHeading: '',
-                        conclusionInfo: ''
+                        questionHeading: 'Question:',
+                        questionInfo: 'Are the navigation menu captions unambiguous?',
+                        conclusionHeading: 'Conclusion:',
+                        conclusionInfo: 'Users appreciated that the icons have captions, which makes them more intuitive. At first glance, a few people had some uncertainty about what is hidden in the "Games" tab - when creating the project, naming it also caused us the most problems, unfortunately there is no room for more tabs in the menu and separation of some content, so this name seems to be the best possible.'
                     },
                     question3: {
-                        questionHeading: '',
-                        questionInfo: '',
-                        conclusionHeading: '',
-                        conclusionInfo: ''
+                        questionHeading: 'Question:',
+                        questionInfo: 'Did you have any trouble navigating the app? If so, what was it and how would you have solved it differently?',
+                        conclusionHeading: 'Conclusion:',
+                        conclusionInfo: 'There were no problems with navigating the application, only the aforementioned slight uncertainty when looking for a game rentals.'
                     }
                 }
             },
             heuristics: {
-                title: '',
-                info: '',
+                title: 'Nielsen’s Usability Heuristics',
+                info: 'After the first tests, we carefully reviewed all of the application screens for compliance with Nielsen’s Heuristics. We came across several shortcomings and deficiencies, which I then applied to the design in Figma. New capabilities have been added to the application:',
                 fixList: {
-                    fix1: '',
-                    fix2: '',
-                    fix3: '',
-                    fix4: '',
-                    fix5: '',
-                    fix6: '',
-                    fix7: '',
-                    fix8: '',
-                    fix9: '',
-                    fix10: ''
+                    fix1: 'adding and removing owned games and games from the wishlist,',
+                    fix2: 'searching for advertisements related only to games from the wishlist,',
+                    fix3: 'voice searching,',
+                    fix4: 'searching for ads with the game being viewed,',
+                    fix5: 'choosing a theme,',
+                    fix6: 'inviting the user to friends from the user\'s profile,',
+                    fix7: 'deleting notifications,',
+                    fix8: 'if no results are returned for a search, displaying information about the missing results and suggesting applying changes to the criteria,',
+                    fix9: 'reporting bugs,',
+                    fix10: 'tutorial to the application (in the project it is only possible to enable the tutorial option at the launch of the app)'
                 }
             },
             tests2: {
-                title: '',
-                info1: '',
+                title: 'Usability tests #2',
+                info1: 'After the changes we conducted usability tests again on a different group of people. We repeated the research tasks from previous tests - the conclusions were very similar and this time no one pointed out that any of the elements was too small. In addition to the existing tasks we have added new ones:',
                 scenario4: {
-                    contextHeading: '',
-                    contextInfo: '',
-                    taskHeading: '',
-                    taskInfo: '',
-                    conclusionHeading: '',
-                    conclusionInfo: ''
+                    contextHeading: 'Context description:',
+                    contextInfo: 'A friend recommended you this application. You have already added each other as friends, her nickname is "natalka25". You are wondering if she has recently participated in a board game.',
+                    taskHeading: 'Task:',
+                    taskInfo: 'Check out the recent activity of your friend with the nickname "natalka25".',
+                    conclusionHeading: 'Conclusion:',
+                    conclusionInfo: 'The task did not cause any problems to anyone, although arranging it we assumed a different way of solving it. We were thinking of going to Friends -> Activity, but as many people have noticed, from the Friends tab you can go to a user\'s profile and check their recent games.'
                 },
-                info2: '',
+                info2: 'Therefore, we decided to add one more similar task, but better reflecting what we originally meant. We examined new people.',
                 scenario5: {
-                    contextHeading: '',
-                    contextInfo: '',
-                    taskHeading: '',
-                    taskInfo: '',
-                    conclusionHeading: '',
-                    conclusionInfo: ''
+                    contextHeading: 'Context description:',
+                    contextInfo: 'Some friends have recommended the application to you. You have installed the application and added each other as friends. You are wondering what your friends\' recent activities in the application were.',
+                    taskHeading: 'Task:',
+                    taskInfo: 'Check your friends\' recent activities in the app (who did what).',
+                    conclusionHeading: 'Conclusion:',
+                    conclusionInfo: 'This time, the description of the context and the task were worded in such a way that the surveyed users understood our intentions and easily noticed the "Activity" tab, where the last activity of all friends is located.'
                 },
             },
             survey: {
-                title: '',
+                title: 'Survey',
                 info1: '',
                 questions: {
-                    question1: '',
-                    question2: '',
-                    question3: '',
-                    question4: '',
-                    question5: '',
-                    question6: '',
+                    question1: 'Which element in the ad do you pay particular attention to?',
+                    question2: 'Which form seems more user-friendly to you?',
+                    question3: 'Which form seems more user-friendly to you?',
+                    question4: 'Which form seems more user-friendly to you?',
+                    question5: 'Do you think that each advertisement should additionally have a title (created by the author), is the information provided sufficient?',
+                    question6: 'Would you like there to be an option to customize the appearance of the ad tile for the user (issues raised in previous questions)?',
                 },
-                info2: '',
-                figma: ''
+                info2: 'The results of the survey were in alignment with our initial assumptions about the appearance of the advertisement tile, but due to some different voices and predominant approval for the ability to edit the appearance of the tile, we decided that it would be appropriate to add such an option in the app settings.',
+                figma1: 'Now, if you haven\'t done it already, check out the project in Figma ',
+                link: 'here',
+                figma2: ' :)'
             },
             learnings: {
-                title: '',
-                info: ''
+                title: 'Lessons learned',
+                info: 'This was my first project that strictly focused on UX, done under the tutelage of a UX specialist. I had the opportunity to go through the process of User Centered Design and find out that this is something I want to see a future with and grow in this field. Approaching this task again, I would definitely deepen my knowledge and include more elements necessary during such design. However, I have to admit that it was a good introductory lesson for me.'
             }
         },
 
@@ -440,216 +445,221 @@ const messages = {
         },
         planszappka: {
             heading: {
-                title: '',
-                subject: '',
-                figma: ''
+                title: 'PlanszAppka',
+                subject: 'UX/UI Design',
+                figma: 'Projekt w Figmie dostępny ',
+                link: 'tutaj'
             },
             basicInfo: {
-                roleHeading: '',
-                roleInfo1: '',
-                roleInfo2: '',
-                timelineHeading: '',
-                timelineInfo1: '',
-                timelineInfo2: '',
-                platformHeading: '',
-                platformInfo: '',
-                toolsHeading: '',
-                toolsInfo: ''
+                roleHeading: 'Rola',
+                roleInfo1: 'Głowny UX Designer,',
+                roleInfo2: 'Jedyny UI Designer',
+                timelineHeading: 'Czas',
+                timelineInfo1: '2 miesiące',
+                timelineInfo2: 'październik - grudzień 2021',
+                platformHeading: 'Platforma',
+                platformInfo: 'Mobile',
+                toolsHeading: 'Narzędzia',
+                toolsInfo: 'Figma, kartka+długopis, wywiady 1:1'
             },
             background: {
-                title: '',
-                info: ''
+                title: 'Kontekst',
+                info: 'Projekt został wykonany w ramach kursu związanego z UX na ostatnim semestrze studiów informatycznych. Każda z osób w zespole miała zastanowić się nad jakimś problemem lub potrzebą do zaspokojenia, które zauważa w swoim środowisku. Następnie pomysły były omawiane w zespole i wspólnie podejmowaliśmy decyzję, którego problemu będzie dotyczył projekt.'
             },
             problem: {
-                title: '',
-                info: ''
+                title: 'Problem',
+                info: 'Jako zespół zdecydowaliśmy się rozwiązać problem szukania kompanów do gry występujący w grupie osób grających w gry planszowe, aby w prosty sposób mogły znaleźć innych graczy i zawrzeć znajomości z osobami o wspólnych zainteresowaniach. '
             },
             goal: {
-                title: '',
-                info: ''
+                title: 'Cel',
+                info: 'Stworzenie projektu aplikacji mobilnej, która zjednoczy osoby grające w gry planszowe i pozwoli im w prosty sposób znaleźć kompanów do gry, aby umożliwić rozgrywkę.'
             },
             targetAudience: {
-                title: '',
-                info1: '',
-                info2: ''
+                title: 'Grupa odbiorców',
+                info1: 'Grupa odbiorców to gracze gier planszowych. Są to osoby w każdym wieku, lecz większy problem ze znalezieniem kompanów do gry występuje u osób starszych, które zakończyły już edukację i trudno znaleźć im graczy wśród znajomych. Dodatkowo niektóre z gier wymagają dużej liczby uczestników oraz poświęcenia sporej ilości czasu, co jeszcze bardziej utrudnia zadanie.',
+                info2: 'Są to zazwyczaj osoby kreatywne, z dobrze rozwinięta wyobraźnią, chęcią nawiązania nowych znajomości. Lubią zdrową rywalizację, ale także współpracę z innymi graczami. Potencjalni użytkownicy mierzą się z opisywanym problemem głównie w czasie wolnym, kiedy szukają planów na miłe spędzenie dnia.'
             },
             interviews: {
-                title: '',
-                questions: '',
+                title: 'Wywiady pogłębione',
+                questions: 'Przeprowadziliśmy wywiady z 10 potencjalnymi użytkownikami aplikacji, aby zebrać informacje o ich zachowaniach w sytuacji problemu, który chcieliśmy rozwiązać. Przygotowaliśmy listę pytań dla naszych rozmówców:',
                 questionsList: {
-                    item1: '',
-                    item2: '',
-                    item3: '',
-                    item4: '',
-                    item5: '',
-                    item6: '',
-                    item7: '',
-                    item8: '',
-                    item9: ''
+                    item1: 'Czy i jak często grasz w gry planszowe?',
+                    item2: 'Ile gier planszowych posiadasz?',
+                    item3: 'Gdzie i przy jakiej okazji zazwyczaj grasz w gry planszowe?',
+                    item4: 'Masz znajomych, z którymi możesz zagrać? Jak to się dzieje że masz z kim grać?',
+                    item5: 'W ile osób zazwyczaj grasz, jak długo?',
+                    item6: 'Ile partii rozgrywacie?',
+                    item7: 'Czy zdarzyło się, że nie miałeś wystarczającej liczby osób potrzebnej do rozegrania gry?',
+                    item8: 'Czy chciałeś kiedyś zagrać w grę, której nie miałeś, ale nie chciałeś jej jeszcze kupować?',
+                    item9: 'Co robisz, kiedy chcesz zagrać, ale nie masz z kim?'
                 },
-                conclusions: '',
+                conclusions: 'Na podstawie wywiadów wyciągnęliśmy następujące wnioski:',
                 conclusionsList: {
-                    item1: '',
-                    item2: '',
-                    item3: '',
-                    item4: '',
-                    item5: '',
-                    item6: '',
-                    item7: ''
+                    item1: 'Znaczna większość osób chciała kiedyś zagrać w grę planszową, której nie miała - decydowała się na jej wypożyczenie lub grała u kogoś, kto ją posiadał.',
+                    item2: 'Osoby nie mające z kim zagrać, sięgają do mediów społecznościowych w poszukiwaniu innych graczy, wybierają inną grę lub po prostu odpuszczają.',
+                    item3: 'Około połowie ankietowanych brakuje osób do gry, zazwyczaj dotyczy to osób grających w 3-4 osoby u znajomych.',
+                    item4: 'Ludzie dzielą się na tych którzy grają często (ok. 2 razy w tygodniu) i rzadko (parę razy do roku).',
+                    item5: 'Zazwyczaj osoby mają po 3-6 gier planszowych w domu.',
+                    item6: 'Ankietowani grają zazwyczaj w 3-5 osób po ok. 3-4h.',
+                    item7: 'Zależnie od czasu rozgrywki, osoby decydują się na różną liczbę partii.'
                 }
             },
             personas: {
-                title: '',
-                info: ''
+                title: 'Persony',
+                info: 'Na podstawie pozyskanych informacji byliśmy w stanie przygotować dwie persony, prezentujące cechy naszych użytkowników. Poznaj Natalię i Leopolda! :)',
+                personaImgPath1: 'persona-natalia.png',
+                personaImgPath2: 'persona-leopold.png'
             },
             userStories: {
-                title: '',
-                info: '',
+                title: 'Historyjki użytkownika',
+                info: 'Przygotowaliśmy kluczowe dla naszego projektu historyjki użytkownika:',
                 userStoriesList: {
-                    item1: '',
-                    item2: '',
-                    item3: '',
-                    item4: '',
-                    item5: '',
-                    item6: '',
-                    item7: ''
+                    item1: 'Jako użytkownik, chcę mieć możliwość znalezienia osób posiadających gry, które mnie interesują, aby zagrać w gry, których nie posiadam.',
+                    item2: 'Jako użytkownik, chcę znaleźć osoby chętne do gry, aby osiągnąć liczbę graczy wymaganą do rozegrania partii.',
+                    item3: 'Jako użytkownik, chcę poznać osoby o podobnych zainteresowaniach, aby mieć z kim zagrać w przyszłości.',
+                    item4: 'Jako użytkownik, chcę mieć możliwość komunikacji z innymi użytkownikami, aby uzgadniać szczegóły spotkań.',
+                    item5: 'Jako użytkownik, chcę mieć możliwość przeglądania gier, które są rozgrywane w pobliżu, aby móc poznać nowe gry.',
+                    item6: 'Jako użytkownik, chcę mieć możliwość dodawania innych do znajomych, aby mieć łatwiejszy wgląd w ich aktywność.',
+                    item7: 'Jako właściciel wypożyczalni gier planszowych, chcę mieć możliwość reklamowania swoich usług, aby zwiększyć dochód swojej wypożyczalni.'
                 }
             },
             wireframes: {
-                title: '',
-                info: ''
+                title: 'Wireframe\'y',
+                info: 'Mając już początkowy zamysł aplikacji przystąpiliśmy do papierowego prototypowania. Poniżej przedstawiam moje szkice:'
             },
             ui: {
-                title: '',
+                title: 'UI Design',
                 typography: {
-                    title: '',
+                    title: 'Typografia',
                     headings: {
-                        title: '',
-                        heading1: '',
-                        heading2: '',
-                        heading3: '',
-                        heading4: ''
+                        title: 'Nagłówki',
+                        heading1: 'Nagłówek 1 (26)',
+                        heading2: 'Nagłówek 2 (20)',
+                        heading3: 'Nagłówek 3 (18)',
+                        heading4: 'Nagłówek 4 (18)'
                     },
                     bodyText: {
-                        title: '',
-                        body1: '',
-                        body2: '',
-                        body3: ''
+                        title: 'Tekst podstawowy',
+                        body1: 'Tekst podstawowy 1 (16)',
+                        body2: 'Tekst podstawowy 2 (14)',
+                        body3: 'Tekst podstawowy 3 (12)'
                     }
                 },
                 colors: {
-                    title: '',
-                    color1: '',
-                    color2: '',
-                    color3: '',
-                    color4: '',
-                    color5: '',
+                    title: 'Kolory',
+                    color1: '#303633',
+                    color2: '#EDF0DA',
+                    color3: '#AA4465',
+                    color4: '#F18F01',
+                    color5: '#363033',
                 }
             },
             tests1: {
-                title: '',
-                info: '',
-                scenarios: '',
+                title: 'Badania użyteczności #1',
+                info: 'Po sporządzeniu pierwszej wersji prototypu aplikacji w Figmie przygotowaliśmy scenariusz badań, które przeprowadzaliśmy z potencjalnymi użytkownikami. Testy wykonywane były zdalnie z wykorzystaniem udostępniania ekranu, więc obserwowaliśmy wszystkie kolejne działania osób biorących udział w testach. Zachęcaliśmy ich także do komentowania tego, co chcą zrobić, aby poznać ich tok myślenia.',
+                scenarios: 'Scenariusz składał się z następujących zadań badawczych:',
                 scenario1: {
-                    contextHeading: '',
-                    contextInfo: '',
-                    taskHeading: '',
-                    taskInfo: ''
+                    contextHeading: 'Opis kontekstu:',
+                    contextInfo: 'Wyobraź sobie, że mieszkasz na Tarnogaju we Wrocławiu. Jest piątkowy wieczór, a Ty nadal nie masz na niego planów. Ostatnio usłyszałeś(-aś) o grze planszowej “Avalon” i bardzo Cię zainteresowała. Nie chcesz od razu kupować gry, póki jej nie przetestujesz, ale niestety żaden ze znajomych jej nie ma. Nie masz problemu z poznaniem nowych ludzi, z którymi mógłbyś/mogłabyś zagrać, ale najchętniej nie przemieszczał(a)byś się za daleko od miejsca zamieszkania.',
+                    taskHeading: 'Zadanie:',
+                    taskInfo: 'Dołącz do rozgrywki w grę “Avalon”, która rozgrywana jest najbliżej Ciebie.'
                 },
                 scenario2: {
-                    contextHeading: '',
-                    contextInfo: '',
-                    taskHeading: '',
-                    taskInfo: ''
+                    contextHeading: 'Opis kontekstu:',
+                    contextInfo: 'Kupiłeś(-aś) ostatnio grę planszową “Avalon”, ale brakuje Ci 4 osób do gry. Niestety nie masz znajomych zainteresowanych rozgrywką.',
+                    taskHeading: 'Zadanie:',
+                    taskInfo: 'Utwórz ogłoszenie, w którym datę i godzinę określisz dopiero po znalezieniu wszystkich graczy i ustaleniu terminu.'
                 },
                 scenario3: {
-                    contextHeading: '',
-                    contextInfo: '',
-                    taskHeading: '',
-                    taskInfo: ''
+                    contextHeading: 'Opis kontekstu:',
+                    contextInfo: 'Usłyszałeś(-aś) od znajomego, że istnieją wypożyczalnie gier planszowych. Jesteś ciekaw, czy są one dostępne także w Twoim mieście.',
+                    taskHeading: 'Zadanie:',
+                    taskInfo: 'Dowiedz się czy w Twoim mieście znajdują się wypożyczalnie gier planszowych. Jeśli tak, to sprawdź ich lokalizację.'
                 },
-                conclusions: '',
+                conclusions: 'Na podstawie przeprowadzonych testów wyciągnęliśmy następujące wnioski:',
                 conclusionsList: {
-                    item1: '',
-                    item2: '',
-                    item3: ''
+                    item1: 'Nikt nie miał problemów z zadaniem, spora część osób chciała użyć filtrów. Niestety w prototypie nie są one w pełni obsługiwane, ale to znak, że w działającej aplikacji nie mieliby problemów ze znalezieniem ogłoszenia. Pojawili się zwolennicy zarówno widoku mapki jak i listy – każdy znalazłaby coś dla siebie.',
+                    item2: 'Osoby testujące prototyp bardzo dobrze poradziły sobie z tym zadaniem, podobał im się dobór pól w formularzu podczas tworzenia ogłoszenia (np. wiek graczy). Dla jednej z osób checkbox wydawał się nieco mały, miała lekkie problemy z kliknięciem – zostało to później poprawione.',
+                    item3: 'Nie byliśmy pewni czy umieszczenie wypożyczalni w zakładce „Gry” będzie w pełni intuicyjne, ale większość poradziła sobie z zadaniem, mówiąc, że ta zakładka pasuje najbardziej. Parę osób próbowało początkowo w zakładce „Szukaj” z menu nawigacyjnego, jednak w nim na górze znajduje się duży nagłówek „Wyszukiwanie rozgrywki”, który od razu sugerował, że nie znajdą tu tego, czego szukają, a drugim wyborem była właśnie zakładka „Gry”.'
                 },
                 survey: {
-                    info: '',
+                    info: 'Przygotowaliśmy też krótką ankietę potestową:',
                     question1: {
-                        questionHeading: '',
-                        questionInfo: '',
-                        conclusionHeading: '',
-                        conclusionInfo: ''
+                        questionHeading: 'Pytanie:',
+                        questionInfo: 'Jak ocenił(a)byś intuicyjność aplikacji?',
+                        conclusionHeading: 'Wnioski:',
+                        conclusionInfo: 'Osoby w zdecydowanej większości oceniły aplikację na bardzo intuicyjną, dostosowaną do znanych standardów. Jedna osoba powiedziała, że ikonki liczby graczy oraz liczby znajomych w rozgrywce mogą być lekko nieintuicyjne, ale jest to jedynie widok kafelka z ogłoszeniem, gdzie musi być ono opisane skrótowo. Po wejściu w szczegóły ogłoszenia wszystko jest wyjaśnione słownie. Uznaliśmy, że nie będziemy wprowadzać tu zmian, po krótkim użytkowaniu aplikacji użytkownicy powinni z łatwością nauczyć się przyjętych oznaczeń.'
                     },
                     question2: {
-                        questionHeading: '',
-                        questionInfo: '',
-                        conclusionHeading: '',
-                        conclusionInfo: ''
+                        questionHeading: 'Pytanie:',
+                        questionInfo: 'Czy podpisy w menu nawigacyjnym są jednoznaczne?',
+                        conclusionHeading: 'Wnioski:',
+                        conclusionInfo: 'Użytkownicy docenili, że są ikonki posiadają podpisy, co zwiększa intuicyjność. U paru osób pojawiła się na pierwszy rzut oka niepewność co kryje się w zakładce „Gry” – przy tworzeniu projektu nazwanie jej również sprawiło nam najwięcej problemów, niestety nie ma miejsca na więcej zakładek w menu i wydzielenie części zawartości, więc ta nazwa wydaje się być najlepszą z możliwych.'
                     },
                     question3: {
-                        questionHeading: '',
-                        questionInfo: '',
-                        conclusionHeading: '',
-                        conclusionInfo: ''
+                        questionHeading: 'Pytanie:',
+                        questionInfo: 'Czy poruszanie się po aplikacji sprawiło Ci jakiś kłopot? Jeśli tak to jaki i jak inaczej byś go rozwiązał(a)?',
+                        conclusionHeading: 'Wnioski:',
+                        conclusionInfo: 'Nie było problemów z nawigacją po aplikacji, jedynie wspomniana wcześniej drobna niepewność przy szukaniu wypożyczalni gier.'
                     }
                 }
             },
             heuristics: {
-                title: '',
-                info: '',
+                title: 'Heurystyki Nielsena',
+                info: 'Po pierwszych testach przejrzeliśmy dokładnie wszystkie ekrany aplikacji pod kątem zgodności z heurystykami Nielsena. Natknęliśmy się na kilka niedociągnięć i braków, które następnie naniosłam do projektu w Figmie. W aplikacji pojawiły się nowe możliwości:',
                 fixList: {
-                    fix1: '',
-                    fix2: '',
-                    fix3: '',
-                    fix4: '',
-                    fix5: '',
-                    fix6: '',
-                    fix7: '',
-                    fix8: '',
-                    fix9: '',
-                    fix10: ''
+                    fix1: 'dodawanie i usuwanie posiadanych gier i gier z wishlisty,',
+                    fix2: 'wyszukanie ogłoszeń dotyczących tylko gier z wishlisty,',
+                    fix3: 'wyszukiwanie głosowe,',
+                    fix4: 'wyszukiwanie ogłoszeń z przeglądaną grą,',
+                    fix5: 'wybór motywu,',
+                    fix6: 'zapraszanie użytkownika do znajomych z poziomu jego profilu,',
+                    fix7: 'usuwanie powiadomień,',
+                    fix8: 'w przypadku zwrócenia braku wyników przy wyszukiwaniu, wyświetlenie informacji o braku wyników i zasugerowanie zmiany kryteriów,',
+                    fix9: 'zgłaszanie błędów,',
+                    fix10: 'samouczek do aplikacji (w projekcie możliwość włączenia opcji samouczka przy uruchomieniu).'
                 }
             },
             tests2: {
-                title: '',
-                info1: '',
+                title: 'Badania użyteczności #2',
+                info1: 'Po zmianach przeprowadziliśmy ponowne badania użyteczności na innej grupie osób. Powtórzyliśmy zadania badawcze z poprzednich testów – wnioski były bardzo zbliżone i dodatkowo tym razem nikt nie zwrócił uwagi, aby któryś z elementów był zbyt mały. Poza istniejącymi zadaniami dodaliśmy nowe:',
                 scenario4: {
-                    contextHeading: '',
-                    contextInfo: '',
-                    taskHeading: '',
-                    taskInfo: '',
-                    conclusionHeading: '',
-                    conclusionInfo: ''
+                    contextHeading: 'Opis kontekstu:',
+                    contextInfo: 'Znajoma poleciła Ci przedstawianą przez nas aplikację. Dodaliście się już do znajomych, jej nick to „natalka25”. Zastanawiasz się czy brała ostatnio udział w jakiejś grze planszowej.',
+                    taskHeading: 'Zadanie:',
+                    taskInfo: 'Sprawdź ostatnią aktywność/działania swojej znajomej o nicku „natalka25”. ',
+                    conclusionHeading: 'Wnioski:',
+                    conclusionInfo: 'Zadanie nie sprawiło nikomu żadnych kłopotów, choć układając je zakładaliśmy inny sposób rozwiązania. Mieliśmy na myśli wejście kolejno Znajomi -> Aktywność, ale jak słusznie wiele osób zauważyło z zakładki znajomi można przejść na profil użytkownika i sprawdzić jego ostatnie rozgrywki.'
                 },
-                info2: '',
+                info2: 'W związku z tym zdecydowaliśmy się dodać jeszcze jedno zbliżone zadanie, ale lepiej oddające to, co początkowo mieliśmy na myśli. Badaniu poddaliśmy nowe osoby.',
                 scenario5: {
-                    contextHeading: '',
-                    contextInfo: '',
-                    taskHeading: '',
-                    taskInfo: '',
-                    conclusionHeading: '',
-                    conclusionInfo: ''
+                    contextHeading: 'Opis kontekstu:',
+                    contextInfo: 'Kilku znajomych poleciło Ci przedstawianą przez nas aplikację. Zainstalowałeś(-aś) aplikację i dodaliście się do znajomych. Zastanawiasz się jakie były ostatnie działania Twoich znajomych w aplikacji.',
+                    taskHeading: 'Zadanie:',
+                    taskInfo: 'Sprawdź ostatnie działania swoich znajomych w aplikacji (kto i co zrobił).',
+                    conclusionHeading: 'Wnioski:',
+                    conclusionInfo: 'Tym razem opis kontekstu i zadanie były sformułowane w taki sposób, że badani użytkownicy zrozumieli nasze intencje i bez problemu od razu zauważyli zakładkę „Aktywność”, na której znajduje się ostatnia aktywność wszystkich znajomych.'
                 },
             },
             survey: {
-                title: '',
-                info1: '',
+                title: 'Ankieta',
+                info1: 'Podczas prezentacji projektu na zajęciach zasugerowano nam skupić się na wyglądzie pojedynczego kafelka prezentującego najważniejsze informacje o konkretnej rozgrywce. Postanowiliśmy więc przeprowadzić ankietę, aby dowiedzieć się, jaka forma prezentacji informacji jest dla użytkowników najbardziej przyjazna. Poniżej przedstawiono przygotowane pytania wraz z wynikami przeprowadzonej na 16 osobach ankiety.',
                 questions: {
-                    question1: '',
-                    question2: '',
-                    question3: '',
-                    question4: '',
-                    question5: '',
-                    question6: '',
+                    question1: 'Na który element ogłoszenia zwracasz szczególną uwagę?',
+                    question2: 'Która forma jest dla Ciebie bardziej przyjazna?',
+                    question3: 'Która forma jest dla Ciebie bardziej przyjazna?',
+                    question4: 'Która forma jest dla Ciebie bardziej przyjazna?',
+                    question5: 'Czy uważasz, że każde ogłoszenie powinno dodatkowo posiadać tytuł (tworzony przez autora), czy podane informacje są wystarczające?',
+                    question6: 'Czy chciał(a)byś mieć mozliwość dostosowania wyglądu kafelka ogłoszenia (kwestie poruszane w poprzednich pytaniach)?',
                 },
-                info2: '',
-                figma: ''
+                info2: 'Wyniki ankiety pokryły się z początkowymi założeniami dotyczącymi wyglądu kafelka ogłoszenia, ale ze względu na niektóre odmienne głosy i przeważającą aprobatę co do możliwości edycji wyglądu kafelka, stwierdziliśmy, że należałoby dodać taką opcję w ustawieniach aplikacji.',
+                figma1: 'A teraz, jeśli jeszcze tego nie zrobiłeś, obejrzyj projekt w Figmie ',
+                link: 'tutaj',
+                figma2: ' :)'
             },
             learnings: {
-                title: '',
-                info: ''
+                title: 'Zdobyte doświadczenia',
+                info: 'Był to mój pierwszy projekt ściśle związany z UX, realizowany pod okiem specjalisty w tej dziedzinie. Miałam okazję przejść przez proces projektowania zorientowanego na użytkownika i przekonać się, że jest to coś, z czym chcę wiązać przyszłość i rozwijać się w tej dziedzinie. Podchodząc ponownie do tego zadania na pewno pogłębiłabym wiedzę i zawarła więcej elementów niezbędnych podczas takiego projektowania. Jednak muszę przyznać, że była to dla mnie dobra wprowadzająca lekcja.'
             }
         },
 
