@@ -120,8 +120,8 @@ const messages = {
             personas: {
                 title: 'Personas',
                 info: 'Based on the information obtained, we were able to prepare two personas presenting the characteristics of our users. Meet Natalia and Leopold! :)',
-                personaImgPath1: 'persona-natalia.png',
-                personaImgPath2: 'persona-leopold.png'
+                personaImgPath1: 'persona-natalia-en.png',
+                personaImgPath2: 'persona-leopold-en.png'
             },
             userStories: {
                 title: 'User stories',
@@ -410,14 +410,12 @@ const messages = {
             },
             prototypes: {
                 title: 'Prototypes and outcome',
-                info1: 'Below I present selected screens at prototype level in Adobe XD and corresponding implemented versions:',
+                info: 'Below I present selected screens at prototype level in Adobe XD and corresponding implemented versions:',
                 home: 'HOMEPAGE',
                 profile: 'PROFILE VIEW',
                 opinions: 'SPECIALIST\'S OPINIONS',
                 friends: 'FRIENDS LIST',
-                roleRequests: 'SPECIALIST ROLE REQUESTS PANEL',
-                info2: 'Due to organizational changes we had 2,5 months to implement the whole system and write an Engineering Thesis. As a result, the application is unfortunately not responsive, so I recommend opening it on larger screens. Demo available ',
-                link: 'here'
+                roleRequests: 'SPECIALIST ROLE REQUESTS PANEL'
             },
             learnings: {
                 title: 'Lessons learned',
@@ -507,8 +505,8 @@ const messages = {
             personas: {
                 title: 'Persony',
                 info: 'Na podstawie pozyskanych informacji byliśmy w stanie przygotować dwie persony, prezentujące cechy naszych użytkowników. Poznaj Natalię i Leopolda! :)',
-                personaImgPath1: 'persona-natalia.png',
-                personaImgPath2: 'persona-leopold.png'
+                personaImgPath1: 'persona-natalia-pl.png',
+                personaImgPath2: 'persona-leopold-pl.png'
             },
             userStories: {
                 title: 'Historyjki użytkownika',
@@ -797,14 +795,12 @@ const messages = {
             },
             prototypes: {
                 title: 'Prototypy i rezultaty końcowe',
-                info1: 'Poniżej prezentuję wybrane ekrany na poziomie prototypu w Adobe XD oraz odpowiadających zaimplementowanych wersji:',
+                info: 'Poniżej prezentuję wybrane ekrany na poziomie prototypu w Adobe XD oraz odpowiadających zaimplementowanych wersji:',
                 home: 'STRONA GŁÓWNA',
                 profile: 'WIDOK PROFILU',
                 opinions: 'OPINIE SPECJALISTY',
                 friends: 'LISTA ZNAJOMYCH',
-                roleRequests: 'PANEL PRÓŚB O NADANIE ROLI SPECJALISTY',
-                info2: 'W związku ze zmianami organizacyjnymi na implementację całego systemu oraz napisanie pracy inżynierskiej mieliśmy 2,5 miesiąca czasu. W związku z tym aplikacja niestety nie jest responsywna, więc polecam otwierać na większych ekranach. Demo dostępne ',
-                link: 'tutaj'
+                roleRequests: 'PANEL PRÓŚB O NADANIE ROLI SPECJALISTY'
             },
             learnings: {
                 title: 'Zdobyte doświadczenia',

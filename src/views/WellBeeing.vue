@@ -174,7 +174,7 @@
 
                 <section id="wellbeeing-prototypes-screens" class="mt-5">
                     <span class="project-subtitle">{{ $t("wellbeeing.prototypes.title") }}</span>
-                    <p class="project-text">{{ $t("wellbeeing.prototypes.info1") }}</p>
+                    <p class="project-text">{{ $t("wellbeeing.prototypes.info") }}</p>
 
                     <p class="screen-title mt-5 mb-4">{{ $t("wellbeeing.prototypes.home") }}</p>
                     <div id="home" class="row align-items-center">
@@ -273,8 +273,6 @@
                         :index="index"
                         @hide="handleHide"
                     ></vue-easy-lightbox>
-
-                    <div class="project-text mt-5">{{ $t("wellbeeing.prototypes.info2") }}<a href="https://wellbeeing-app.herokuapp.com/" class="d-inline demo-here">{{ $t("wellbeeing.prototypes.link") }}</a> :)</div>
 
                 </section>
 
