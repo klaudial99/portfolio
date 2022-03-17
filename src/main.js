@@ -55,6 +55,365 @@ const messages = {
             message: 'Message:',
             messageInput: 'Message',
             send: 'Send'
+        },
+        planszappka: {
+            heading: {
+                title: '',
+                subject: '',
+                figma: ''
+            },
+            basicInfo: {
+                roleHeading: '',
+                roleInfo1: '',
+                roleInfo2: '',
+                timelineHeading: '',
+                timelineInfo1: '',
+                timelineInfo2: '',
+                platformHeading: '',
+                platformInfo: '',
+                toolsHeading: '',
+                toolsInfo: ''
+            },
+            background: {
+                title: '',
+                info: ''
+            },
+            problem: {
+                title: '',
+                info: ''
+            },
+            goal: {
+                title: '',
+                info: ''
+            },
+            targetAudience: {
+                title: '',
+                info1: '',
+                info2: ''
+            },
+            interviews: {
+                title: '',
+                questions: '',
+                questionsList: {
+                    item1: '',
+                    item2: '',
+                    item3: '',
+                    item4: '',
+                    item5: '',
+                    item6: '',
+                    item7: '',
+                    item8: '',
+                    item9: ''
+                },
+                conclusions: '',
+                conclusionsList: {
+                    item1: '',
+                    item2: '',
+                    item3: '',
+                    item4: '',
+                    item5: '',
+                    item6: '',
+                    item7: ''
+                }
+            },
+            personas: {
+                title: '',
+                info: ''
+            },
+            userStories: {
+                title: '',
+                info: '',
+                userStoriesList: {
+                    item1: '',
+                    item2: '',
+                    item3: '',
+                    item4: '',
+                    item5: '',
+                    item6: '',
+                    item7: ''
+                }
+            },
+            wireframes: {
+                title: '',
+                info: ''
+            },
+            ui: {
+                title: '',
+                typography: {
+                    title: '',
+                    headings: {
+                        title: '',
+                        heading1: '',
+                        heading2: '',
+                        heading3: '',
+                        heading4: ''
+                    },
+                    bodyText: {
+                        title: '',
+                        body1: '',
+                        body2: '',
+                        body3: ''
+                    }
+                },
+                colors: {
+                    title: '',
+                    color1: '',
+                    color2: '',
+                    color3: '',
+                    color4: '',
+                    color5: '',
+                }
+            },
+            tests1: {
+                title: '',
+                info: '',
+                scenarios: '',
+                scenario1: {
+                    contextHeading: '',
+                    contextInfo: '',
+                    taskHeading: '',
+                    taskInfo: ''
+                },
+                scenario2: {
+                    contextHeading: '',
+                    contextInfo: '',
+                    taskHeading: '',
+                    taskInfo: ''
+                },
+                scenario3: {
+                    contextHeading: '',
+                    contextInfo: '',
+                    taskHeading: '',
+                    taskInfo: ''
+                },
+                conclusions: '',
+                conclusionsList: {
+                    item1: '',
+                    item2: '',
+                    item3: ''
+                },
+                survey: {
+                    info: '',
+                    question1: {
+                        questionHeading: '',
+                        questionInfo: '',
+                        conclusionHeading: '',
+                        conclusionInfo: ''
+                    },
+                    question2: {
+                        questionHeading: '',
+                        questionInfo: '',
+                        conclusionHeading: '',
+                        conclusionInfo: ''
+                    },
+                    question3: {
+                        questionHeading: '',
+                        questionInfo: '',
+                        conclusionHeading: '',
+                        conclusionInfo: ''
+                    }
+                }
+            },
+            heuristics: {
+                title: '',
+                info: '',
+                fixList: {
+                    fix1: '',
+                    fix2: '',
+                    fix3: '',
+                    fix4: '',
+                    fix5: '',
+                    fix6: '',
+                    fix7: '',
+                    fix8: '',
+                    fix9: '',
+                    fix10: ''
+                }
+            },
+            tests2: {
+                title: '',
+                info1: '',
+                scenario4: {
+                    contextHeading: '',
+                    contextInfo: '',
+                    taskHeading: '',
+                    taskInfo: '',
+                    conclusionHeading: '',
+                    conclusionInfo: ''
+                },
+                info2: '',
+                scenario5: {
+                    contextHeading: '',
+                    contextInfo: '',
+                    taskHeading: '',
+                    taskInfo: '',
+                    conclusionHeading: '',
+                    conclusionInfo: ''
+                },
+            },
+            survey: {
+                title: '',
+                info1: '',
+                questions: {
+                    question1: '',
+                    question2: '',
+                    question3: '',
+                    question4: '',
+                    question5: '',
+                    question6: '',
+                },
+                info2: '',
+                figma: ''
+            },
+            learnings: {
+                title: '',
+                info: ''
+            }
+        },
+
+        wellbeeing: {
+            heading: {
+                title: '',
+                subject: '',
+                code: ''
+            },
+            basicInfo: {
+                roleHeading: '',
+                roleInfo1: '',
+                roleInfo2: '',
+                timelineHeading: '',
+                timelineInfo1: '',
+                timelineInfo2: '',
+                platformHeading: '',
+                platformInfo: '',
+                toolsHeading: '',
+                toolsInfo: ''
+            },
+            overwiew: {
+                title: '',
+                info1: '',
+                modulesList: {
+                    item1: '',
+                    item2: '',
+                    item3: '',
+                    item4: ''
+                },
+                info2: ''
+            },
+            problem: {
+                title: '',
+                info1: '',
+                info2: '',
+                info3: '',
+                info4: '',
+            },
+            idea: {
+                title: '',
+                info1: ''
+            },
+            actors: {
+                title: '',
+                info: '',
+                usersList: {
+                    item1: '',
+                    item2: '',
+                    item3: '',
+                }
+            },
+            userStories: {
+                title: '',
+                info: '',
+                basicUser: '',
+                basicUserList: {
+                    item1: '',
+                    item2: '',
+                    item3: '',
+                    item4: '',
+                    item5: '',
+                    item6: '',
+                    item7: '',
+                    item8: '',
+                    item9: '',
+                    item10: '',
+                    item11: '',
+                    item12: '',
+                    item13: '',
+                    item14: '',
+                    item15: '',
+                },
+                admin: '',
+                adminList: {
+                    item1: '',
+                    item2: '',
+                },
+                specialist: '',
+                specialistList: {
+                    item1: ''
+                }
+            },
+            useCases: {
+                title: '',
+                info: '',
+                basicUserNotLogged: '',
+                basicUserNotLoggedList: {
+                    item1: '',
+                    item2: '',
+                    item3: ''
+                },
+                basicUser: '',
+                basicUserList: {
+                    item1: '',
+                    item2: '',
+                    item3: '',
+                    item4: '',
+                    item5: '',
+                    item6: '',
+                    item7: '',
+                    item8: '',
+                    item9: '',
+                    item10: '',
+                    item11: '',
+                    item12: '',
+                    item13: '',
+                    item14: '',
+                    item15: '',
+                    item16: '',
+                    item17: '',
+                    item18: '',
+                    item19: '',
+                    item20: '',
+                    item21: '',
+                    item22: '',
+                    item23: ''
+                },
+                adminNotLogged: '',
+                adminNotLoggedList: {
+                    item1: ''
+                },
+                admin: '',
+                adminList: {
+                    item1: '',
+                    item2: ''
+                },
+                specialist: '',
+                specialistList: {
+                    item1: ''
+                }
+            },
+            prototypes: {
+                title: '',
+                info1: '',
+                home: '',
+                profile: '',
+                opinions: '',
+                friends: '',
+                roleRequests: '',
+                info2: ''
+            },
+            learnings: {
+                title: '',
+                info: ''
+            }
         }
     },
     pl: {
@@ -74,16 +433,373 @@ const messages = {
             message: 'Wiadomość:',
             messageInput: 'Wiadomość',
             send: 'Wyślij'
+        },
+        planszappka: {
+            heading: {
+                title: '',
+                subject: '',
+                figma: ''
+            },
+            basicInfo: {
+                roleHeading: '',
+                roleInfo1: '',
+                roleInfo2: '',
+                timelineHeading: '',
+                timelineInfo1: '',
+                timelineInfo2: '',
+                platformHeading: '',
+                platformInfo: '',
+                toolsHeading: '',
+                toolsInfo: ''
+            },
+            background: {
+                title: '',
+                info: ''
+            },
+            problem: {
+                title: '',
+                info: ''
+            },
+            goal: {
+                title: '',
+                info: ''
+            },
+            targetAudience: {
+                title: '',
+                info1: '',
+                info2: ''
+            },
+            interviews: {
+                title: '',
+                questions: '',
+                questionsList: {
+                    item1: '',
+                    item2: '',
+                    item3: '',
+                    item4: '',
+                    item5: '',
+                    item6: '',
+                    item7: '',
+                    item8: '',
+                    item9: ''
+                },
+                conclusions: '',
+                conclusionsList: {
+                    item1: '',
+                    item2: '',
+                    item3: '',
+                    item4: '',
+                    item5: '',
+                    item6: '',
+                    item7: ''
+                }
+            },
+            personas: {
+                title: '',
+                info: ''
+            },
+            userStories: {
+                title: '',
+                info: '',
+                userStoriesList: {
+                    item1: '',
+                    item2: '',
+                    item3: '',
+                    item4: '',
+                    item5: '',
+                    item6: '',
+                    item7: ''
+                }
+            },
+            wireframes: {
+                title: '',
+                info: ''
+            },
+            ui: {
+                title: '',
+                typography: {
+                    title: '',
+                    headings: {
+                        title: '',
+                        heading1: '',
+                        heading2: '',
+                        heading3: '',
+                        heading4: ''
+                    },
+                    bodyText: {
+                        title: '',
+                        body1: '',
+                        body2: '',
+                        body3: ''
+                    }
+                },
+                colors: {
+                    title: '',
+                    color1: '',
+                    color2: '',
+                    color3: '',
+                    color4: '',
+                    color5: '',
+                }
+            },
+            tests1: {
+                title: '',
+                info: '',
+                scenarios: '',
+                scenario1: {
+                    contextHeading: '',
+                    contextInfo: '',
+                    taskHeading: '',
+                    taskInfo: ''
+                },
+                scenario2: {
+                    contextHeading: '',
+                    contextInfo: '',
+                    taskHeading: '',
+                    taskInfo: ''
+                },
+                scenario3: {
+                    contextHeading: '',
+                    contextInfo: '',
+                    taskHeading: '',
+                    taskInfo: ''
+                },
+                conclusions: '',
+                conclusionsList: {
+                    item1: '',
+                    item2: '',
+                    item3: ''
+                },
+                survey: {
+                    info: '',
+                    question1: {
+                        questionHeading: '',
+                        questionInfo: '',
+                        conclusionHeading: '',
+                        conclusionInfo: ''
+                    },
+                    question2: {
+                        questionHeading: '',
+                        questionInfo: '',
+                        conclusionHeading: '',
+                        conclusionInfo: ''
+                    },
+                    question3: {
+                        questionHeading: '',
+                        questionInfo: '',
+                        conclusionHeading: '',
+                        conclusionInfo: ''
+                    }
+                }
+            },
+            heuristics: {
+                title: '',
+                info: '',
+                fixList: {
+                    fix1: '',
+                    fix2: '',
+                    fix3: '',
+                    fix4: '',
+                    fix5: '',
+                    fix6: '',
+                    fix7: '',
+                    fix8: '',
+                    fix9: '',
+                    fix10: ''
+                }
+            },
+            tests2: {
+                title: '',
+                info1: '',
+                scenario4: {
+                    contextHeading: '',
+                    contextInfo: '',
+                    taskHeading: '',
+                    taskInfo: '',
+                    conclusionHeading: '',
+                    conclusionInfo: ''
+                },
+                info2: '',
+                scenario5: {
+                    contextHeading: '',
+                    contextInfo: '',
+                    taskHeading: '',
+                    taskInfo: '',
+                    conclusionHeading: '',
+                    conclusionInfo: ''
+                },
+            },
+            survey: {
+                title: '',
+                info1: '',
+                questions: {
+                    question1: '',
+                    question2: '',
+                    question3: '',
+                    question4: '',
+                    question5: '',
+                    question6: '',
+                },
+                info2: '',
+                figma: ''
+            },
+            learnings: {
+                title: '',
+                info: ''
+            }
+        },
+
+        wellbeeing: {
+            heading: {
+                title: '',
+                subject: '',
+                code: ''
+            },
+            basicInfo: {
+                roleHeading: '',
+                roleInfo1: '',
+                roleInfo2: '',
+                timelineHeading: '',
+                timelineInfo1: '',
+                timelineInfo2: '',
+                platformHeading: '',
+                platformInfo: '',
+                toolsHeading: '',
+                toolsInfo: ''
+            },
+            overwiew: {
+                title: '',
+                info1: '',
+                modulesList: {
+                    item1: '',
+                    item2: '',
+                    item3: '',
+                    item4: ''
+                },
+                info2: ''
+            },
+            problem: {
+                title: '',
+                info1: '',
+                info2: '',
+                info3: '',
+                info4: '',
+            },
+            idea: {
+                title: '',
+                info1: ''
+            },
+            actors: {
+                title: '',
+                info: '',
+                usersList: {
+                    item1: '',
+                    item2: '',
+                    item3: '',
+                }
+            },
+            userStories: {
+                title: '',
+                info: '',
+                basicUser: '',
+                basicUserList: {
+                    item1: '',
+                    item2: '',
+                    item3: '',
+                    item4: '',
+                    item5: '',
+                    item6: '',
+                    item7: '',
+                    item8: '',
+                    item9: '',
+                    item10: '',
+                    item11: '',
+                    item12: '',
+                    item13: '',
+                    item14: '',
+                    item15: '',
+                },
+                admin: '',
+                adminList: {
+                    item1: '',
+                    item2: '',
+                },
+                specialist: '',
+                specialistList: {
+                    item1: ''
+                }
+            },
+            useCases: {
+                title: '',
+                info: '',
+                basicUserNotLogged: '',
+                basicUserNotLoggedList: {
+                    item1: '',
+                    item2: '',
+                    item3: ''
+                },
+                basicUser: '',
+                basicUserList: {
+                    item1: '',
+                    item2: '',
+                    item3: '',
+                    item4: '',
+                    item5: '',
+                    item6: '',
+                    item7: '',
+                    item8: '',
+                    item9: '',
+                    item10: '',
+                    item11: '',
+                    item12: '',
+                    item13: '',
+                    item14: '',
+                    item15: '',
+                    item16: '',
+                    item17: '',
+                    item18: '',
+                    item19: '',
+                    item20: '',
+                    item21: '',
+                    item22: '',
+                    item23: ''
+                },
+                adminNotLogged: '',
+                adminNotLoggedList: {
+                    item1: ''
+                },
+                admin: '',
+                adminList: {
+                    item1: '',
+                    item2: ''
+                },
+                specialist: '',
+                specialistList: {
+                    item1: ''
+                }
+            },
+            prototypes: {
+                title: '',
+                info1: '',
+                home: '',
+                profile: '',
+                opinions: '',
+                friends: '',
+                roleRequests: '',
+                info2: ''
+            },
+            learnings: {
+                title: '',
+                info: ''
+            }
         }
     }
 }
 
 const i18n = createI18n({
-    locale: 'pl', // set locale
-    fallbackLocale: 'en', // set fallback locale
-    messages, // set locale messages
-    // If you need to specify other options, you can set other options
-    // ...
+    locale: 'pl',
+    fallbackLocale: 'en',
+    messages
 })
 
 const store = createStore({

@@ -298,19 +298,14 @@ export default {
     },
     data() {
         return {
-            imgs: '', // Img Url , string or Array of string
+            imgs: '',
             visible: false,
-            index: 0 // default: 0
+            index: 0
         }
     },
     methods: {
         showSingle(img) {
             this.imgs = require('@/assets/wellbeeing/' + img)
-            // or
-            // this.imgs = {
-            //     title: 'this is a placeholder',
-            //     src: 'http://via.placeholder.com/350x150'
-            // }
             this.show()
         },
         show() {
