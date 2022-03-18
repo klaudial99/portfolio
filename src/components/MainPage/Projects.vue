@@ -11,6 +11,16 @@
                 <project-card :project="project" class="my-3"/>
             </div>
         </div>
+        <div class="row">
+            <div class="col d-flex justify-content-center">
+                <p class="d-inline">
+                    <span class="align-middle">{{ $t("projects.info") }}</span>
+                    <img id="nerd-face" class="align-middle" src="@/assets/nerd-face.png" alt="nerd-face"/>
+                </p>
+            </div>
+
+
+        </div>
     </div>
 
 </template>
@@ -25,12 +35,12 @@ export default {
     data () {
         return {
             projects: [
-                {
-                    projectId: 1,
-                    pictureSource: 'tba.png',
-                    title: 'TBA',
-                    year: 2022
-                },
+                // {
+                //     projectId: 1,
+                //     pictureSource: 'tba.png',
+                //     title: 'TBA',
+                //     year: 2022
+                // },
                 {
                     projectId: 2,
                     pictureSource: 'planszappka.png',
@@ -39,16 +49,16 @@ export default {
                 },
                 {
                     projectId: 3,
-                    pictureSource: 'wellbeeing.png',
+                    pictureSource: 'wellbeeing-temp.png',
                     title: 'WellBeeing',
                     year: 2021
                 },
-                {
-                    projectId: 4,
-                    pictureSource: 'soon.png',
-                    title: 'More projects soon',
-                    year: ''
-                }
+                // {
+                //     projectId: 4,
+                //     pictureSource: 'soon.png',
+                //     title: 'More projects soon',
+                //     year: ''
+                // }
             ]
         }
     }
@@ -64,5 +74,14 @@ export default {
         padding-left: 3rem;
         padding-right: 3rem;
     }
+}
+
+img {
+    height: 1em;
+    width: auto;
+}
+
+p, span {
+    font-size: 32px;
 }
 </style>

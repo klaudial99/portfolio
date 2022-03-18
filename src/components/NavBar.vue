@@ -25,11 +25,11 @@
                                     <li class="nav-item">
                                         <span class="nav-link clickable contact ps-0 ms-3 me-3 me-lg-0" @click="scrollTo('contact')">{{ $t("navbar.contact") }}</span>
                                     </li>
-                                    <li class="nav-item">
-                                        <span class="nav-link clickable ps-0 ms-3 me-3 me-lg-0" @click="setLanguage('pl')">PL</span>
+                                    <li class="nav-item ms-4">
+                                        <span class="nav-link clickable ps-0 ms-3 me-3 me-lg-0" id="polish" @click="setLanguage('pl')">PL</span>
                                     </li>
                                     <li class="nav-item">
-                                        <span class="nav-link clickable ps-0 ms-3 me-3 me-lg-0" @click="setLanguage('en')">EN</span>
+                                        <span class="nav-link clickable ps-0 ms-3 me-3 me-lg-0" id="english" @click="setLanguage('en')">EN</span>
                                     </li>
 
                                 </ul>
@@ -113,13 +113,29 @@ export default {
         },
         setLanguage(lan) {
             this.$store.commit('setLanguage', lan);
-            console.log(this.$store.getters.getLanguage)
 
             this.$i18n.locale = lan
+
+            const polish = document.getElementById('polish')
+            const english = document.getElementById('english')
+            if (lan === 'pl') {
+                polish.classList.add("active-language")
+                english.classList.remove("active-language")
+            } else if (lan === 'en') {
+                english.classList.add("active-language")
+                polish.classList.remove("active-language")
+            }
+        },
+        checkLanguage () {
+            if (this.$store.getters.getLanguage === 'en')
+                document.getElementById('english').classList.add("active-language")
+            else if (this.$store.getters.getLanguage === 'pl')
+                document.getElementById('polish').classList.add("active-language")
         }
     },
     mounted() {
         this.activeSectionAndNavbarShadowOnScroll()
+        this.checkLanguage()
         window.setTimeout(this.setActiveClass, 100)
     },
 
@@ -159,6 +175,10 @@ export default {
 
 .clickable {
     cursor: pointer;
+}
+
+.active-language {
+    color: rgba(0, 0, 0, 0.8) !important;
 }
 
 </style>

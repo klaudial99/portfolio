@@ -1,6 +1,7 @@
 import { createApp } from 'vue'
 import { createI18n } from 'vue-i18n'
 import { createStore } from 'vuex'
+import createPersistedState from "vuex-persistedstate";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap'
 import App from './App.vue'
@@ -45,6 +46,9 @@ const messages = {
         },
         home: {
             about: 'Engineer and applied computer science student based in Wroclaw, Poland. Great design enthusiast looking for a first job as a UX Designer.'
+        },
+        projects: {
+            info: 'MORE PROJECTS SOON '
         },
         contact: {
             heading: 'Want to get in touch? Message me:',
@@ -120,8 +124,8 @@ const messages = {
             personas: {
                 title: 'Personas',
                 info: 'Based on the information obtained, we were able to prepare two personas presenting the characteristics of our users. Meet Natalia and Leopold! :)',
-                personaImgPath1: 'persona-natalia.png',
-                personaImgPath2: 'persona-leopold.png'
+                personaImgPath1: 'persona-natalia-en.png',
+                personaImgPath2: 'persona-leopold-en.png'
             },
             userStories: {
                 title: 'User stories',
@@ -256,14 +260,124 @@ const messages = {
             },
             survey: {
                 title: 'Survey',
-                info1: '',
+                info1: 'During the project presentation in class, we were suggested to focus on the appearance of a single tile presenting the most important information about a particular game. So we decided to conduct a survey to find out which form of information presentation is most user-friendly. The prepared questions and the results of the survey conducted on 16 people are presented below.',
                 questions: {
-                    question1: 'Which element in the ad do you pay particular attention to?',
-                    question2: 'Which form seems more user-friendly to you?',
-                    question3: 'Which form seems more user-friendly to you?',
-                    question4: 'Which form seems more user-friendly to you?',
+                    question1: 'Which ad element do you pay special attention to?',
+                    question2: 'Which form seems to be more user-friendly to you?',
+                    question3: 'Which form seems to be more user-friendly to you?',
+                    question4: 'Which form seems to be more user-friendly to you?',
                     question5: 'Do you think that each advertisement should additionally have a title (created by the author), is the information provided sufficient?',
                     question6: 'Would you like there to be an option to customize the appearance of the ad tile for the user (issues raised in previous questions)?',
+                },
+                charts: {
+                    options1: `{'{'}
+                        "colors": [ "#AA4465", "#303633", "#F18F01", "#EDF0DA"],
+                        "chart": {'{'}
+                            "type": "pie"
+                        {'}'},
+                        "legend": {'{'}
+                            "position": "bottom"
+                        {'}'},
+                        "labels": ["name of the board game", "game time", "place of the game", "all equally important"],
+                        "responsive": [{'{'}
+                            "breakpoint": 992,
+                            "options": {'{'}
+                                "chart": {'{'}
+                                    "height": 400
+                                {'}'}
+                            {'}'}
+                        {'}'}]
+                    {'}'}`,
+                    options2: `{'{'}
+                        "colors": [ "#AA4465", "#303633", "#F18F01", "#EDF0DA"],
+                        "chart": {'{'}
+                            "type": "pie"
+                        {'}'},
+                        "legend": {'{'}
+                            "position": "bottom"
+                        {'}'},
+                        "labels": ["Wrocław, Tarnogaj", "<1km from you (this information can also be found in the ad details)"],
+                        "responsive": [{'{'}
+                            "breakpoint": 992,
+                            "options": {'{'}
+                                "chart": {'{'}
+                                    "height": 400
+                                {'}'}
+                            {'}'}
+                        {'}'}]
+                    {'}'}`,
+                    options3: `{'{'}
+                        "colors": [ "#AA4465", "#303633", "#F18F01", "#EDF0DA"],
+                        "chart": {'{'}
+                            "type": "pie"
+                        {'}'},
+                        "legend": {'{'}
+                            "position": "bottom"
+                        {'}'},
+                        "labels": ["05.11.2012 6pm", "tomorrow/the day after tomorrow/in 3 days at 6pm", "tomorrow/the day after tomorrow/on Tuesday at 6pm"],
+                        "responsive": [{'{'}
+                            "breakpoint": 992,
+                            "options": {'{'}
+                                "chart": {'{'}
+                                    "height": 400
+                                {'}'}
+                            {'}'}
+                        {'}'}]
+                    {'}'}`,
+                    options4: `{'{'}
+                        "colors": [ "#AA4465", "#303633", "#F18F01", "#EDF0DA"],
+                        "chart": {'{'}
+                            "type": "pie"
+                        {'}'},
+                        "legend": {'{'}
+                            "position": "bottom"
+                        {'}'},
+                        "labels": ["4/6 users have joined the game", "2 slots available"],
+                        "responsive": [{'{'}
+                            "breakpoint": 992,
+                            "options": {'{'}
+                                "chart": {'{'}
+                                    "height": 400
+                                {'}'}
+                            {'}'}
+                        {'}'}]
+                    {'}'}`,
+                    options5: `{'{'}
+                        "colors": [ "#AA4465", "#303633", "#F18F01", "#EDF0DA"],
+                        "chart": {'{'}
+                            "type": "pie"
+                        {'}'},
+                        "legend": {'{'}
+                            "position": "bottom"
+                        {'}'},
+                        "labels": ["better with the title", "better without a title"],
+                        "responsive": [{'{'}
+                            "breakpoint": 992,
+                            "options": {'{'}
+                                "chart": {'{'}
+                                    "height": 400
+                                {'}'}
+                            {'}'}
+                        {'}'}]
+                    {'}'}`,
+                    options6: `{'{'}
+                        "colors": [ "#AA4465", "#303633", "#F18F01", "#EDF0DA"],
+                        "chart": {'{'}
+                            "type": "pie"
+                        {'}'},
+                        "legend": {'{'}
+                            "position": "bottom"
+                        {'}'},
+                        "labels": ["yes", "no"],
+                        "responsive": [{'{'}
+                            "breakpoint": 992,
+                            "options": {'{'}
+                                "chart": {'{'}
+                                    "height": 400
+                                {'}'}
+                            {'}'}
+                        {'}'}]
+                    {'}'}`
                 },
                 info2: 'The results of the survey were in alignment with our initial assumptions about the appearance of the advertisement tile, but due to some different voices and predominant approval for the ability to edit the appearance of the tile, we decided that it would be appropriate to add such an option in the app settings.',
                 figma1: 'Now, if you haven\'t done it already, check out the project in Figma ',
@@ -410,14 +524,12 @@ const messages = {
             },
             prototypes: {
                 title: 'Prototypes and outcome',
-                info1: 'Below I present selected screens at prototype level in Adobe XD and corresponding implemented versions:',
+                info: 'Below I present selected screens at prototype level in Adobe XD and corresponding implemented versions:',
                 home: 'HOMEPAGE',
                 profile: 'PROFILE VIEW',
                 opinions: 'SPECIALIST\'S OPINIONS',
                 friends: 'FRIENDS LIST',
-                roleRequests: 'SPECIALIST ROLE REQUESTS PANEL',
-                info2: 'Due to organizational changes we had 2,5 months to implement the whole system and write an Engineering Thesis. As a result, the application is unfortunately not responsive, so I recommend opening it on larger screens. Demo available ',
-                link: 'here'
+                roleRequests: 'SPECIALIST ROLE REQUESTS PANEL'
             },
             learnings: {
                 title: 'Lessons learned',
@@ -431,7 +543,10 @@ const messages = {
             contact: 'KONTAKT'
         },
         home: {
-            about: 'Studiuję Informatykę Stosowaną na drugim stopniu na Politechnice Wrocławskiej, posiadam tytuł inżyniera. Doceniam dobry design i aktualnie szukam pierwszej pracy jako UX Designer.'
+            about: 'Jestem studentką Informatyki Stosowanej drugiego stopnia na Politechnice Wrocławskiej, posiadam tytuł inżyniera. Doceniam dobry design i aktualnie szukam pierwszej pracy jako UX Designer.'
+        },
+        projects: {
+            info: 'WIĘCEJ PROJEKTÓW WKRÓTCE '
         },
         contact: {
             heading: 'Chcesz się z skontaktować? Wyślij wiadomość:',
@@ -507,8 +622,8 @@ const messages = {
             personas: {
                 title: 'Persony',
                 info: 'Na podstawie pozyskanych informacji byliśmy w stanie przygotować dwie persony, prezentujące cechy naszych użytkowników. Poznaj Natalię i Leopolda! :)',
-                personaImgPath1: 'persona-natalia.png',
-                personaImgPath2: 'persona-leopold.png'
+                personaImgPath1: 'persona-natalia-pl.png',
+                personaImgPath2: 'persona-leopold-pl.png'
             },
             userStories: {
                 title: 'Historyjki użytkownika',
@@ -646,11 +761,121 @@ const messages = {
                 info1: 'Podczas prezentacji projektu na zajęciach zasugerowano nam skupić się na wyglądzie pojedynczego kafelka prezentującego najważniejsze informacje o konkretnej rozgrywce. Postanowiliśmy więc przeprowadzić ankietę, aby dowiedzieć się, jaka forma prezentacji informacji jest dla użytkowników najbardziej przyjazna. Poniżej przedstawiono przygotowane pytania wraz z wynikami przeprowadzonej na 16 osobach ankiety.',
                 questions: {
                     question1: 'Na który element ogłoszenia zwracasz szczególną uwagę?',
-                    question2: 'Która forma jest dla Ciebie bardziej przyjazna?',
-                    question3: 'Która forma jest dla Ciebie bardziej przyjazna?',
-                    question4: 'Która forma jest dla Ciebie bardziej przyjazna?',
+                    question2: 'Która forma jest w Twoim odczuciu bardziej przyjazna?',
+                    question3: 'Która forma jest w Twoim odczuciu bardziej przyjazna?',
+                    question4: 'Która forma jest w Twoim odczuciu bardziej przyjazna?',
                     question5: 'Czy uważasz, że każde ogłoszenie powinno dodatkowo posiadać tytuł (tworzony przez autora), czy podane informacje są wystarczające?',
                     question6: 'Czy chciał(a)byś mieć mozliwość dostosowania wyglądu kafelka ogłoszenia (kwestie poruszane w poprzednich pytaniach)?',
+                },
+                charts: {
+                    options1: `{'{'}
+                        "colors": [ "#AA4465", "#303633", "#F18F01", "#EDF0DA"],
+                        "chart": {'{'}
+                            "type": "pie"
+                        {'}'},
+                        "legend": {'{'}
+                            "position": "bottom"
+                        {'}'},
+                        "labels": ["nazwa gry planszowej", "czas rozgrywki", "miejsce rozgrywki", "wszystko równie ważne"],
+                        "responsive": [{'{'}
+                            "breakpoint": 992,
+                            "options": {'{'}
+                                "chart": {'{'}
+                                    "height": 400
+                                {'}'}
+                            {'}'}
+                        {'}'}]
+                    {'}'}`,
+                    options2: `{'{'}
+                        "colors": [ "#AA4465", "#303633", "#F18F01", "#EDF0DA"],
+                        "chart": {'{'}
+                            "type": "pie"
+                        {'}'},
+                        "legend": {'{'}
+                            "position": "bottom"
+                        {'}'},
+                        "labels": ["Wrocław, Tarnogaj", "<1km od Ciebie (ta informacja znajduje się również w szczegółach ogłoszenia)"],
+                        "responsive": [{'{'}
+                            "breakpoint": 992,
+                            "options": {'{'}
+                                "chart": {'{'}
+                                    "height": 400
+                                {'}'}
+                            {'}'}
+                        {'}'}]
+                    {'}'}`,
+                    options3: `{'{'}
+                        "colors": [ "#AA4465", "#303633", "#F18F01", "#EDF0DA"],
+                        "chart": {'{'}
+                            "type": "pie"
+                        {'}'},
+                        "legend": {'{'}
+                            "position": "bottom"
+                        {'}'},
+                        "labels": ["05.11.2012 18:00", "jutro/pojutrze/za 3 dni o 18:00", "jutro/pojutrze/we wtorek o 18:00"],
+                        "responsive": [{'{'}
+                            "breakpoint": 992,
+                            "options": {'{'}
+                                "chart": {'{'}
+                                    "height": 400
+                                {'}'}
+                            {'}'}
+                        {'}'}]
+                    {'}'}`,
+                    options4: `{'{'}
+                        "colors": [ "#AA4465", "#303633", "#F18F01", "#EDF0DA"],
+                        "chart": {'{'}
+                            "type": "pie"
+                        {'}'},
+                        "legend": {'{'}
+                            "position": "bottom"
+                        {'}'},
+                        "labels": ["4/6 użytkowników dołączyło do rozgrywki", "2 wolne miejsca"],
+                        "responsive": [{'{'}
+                            "breakpoint": 992,
+                            "options": {'{'}
+                                "chart": {'{'}
+                                    "height": 400
+                                {'}'}
+                            {'}'}
+                        {'}'}]
+                    {'}'}`,
+                    options5: `{'{'}
+                        "colors": [ "#AA4465", "#303633", "#F18F01", "#EDF0DA"],
+                        "chart": {'{'}
+                            "type": "pie"
+                        {'}'},
+                        "legend": {'{'}
+                            "position": "bottom"
+                        {'}'},
+                        "labels": ["lepiej z tytułem", "lepiej bez"],
+                        "responsive": [{'{'}
+                            "breakpoint": 992,
+                            "options": {'{'}
+                                "chart": {'{'}
+                                    "height": 400
+                                {'}'}
+                            {'}'}
+                        {'}'}]
+                    {'}'}`,
+                    options6: `{'{'}
+                        "colors": [ "#AA4465", "#303633", "#F18F01", "#EDF0DA"],
+                        "chart": {'{'}
+                            "type": "pie"
+                        {'}'},
+                        "legend": {'{'}
+                            "position": "bottom"
+                        {'}'},
+                        "labels": ["tak", "nie"],
+                        "responsive": [{'{'}
+                            "breakpoint": 992,
+                            "options": {'{'}
+                                "chart": {'{'}
+                                    "height": 400
+                                {'}'}
+                            {'}'}
+                        {'}'}]
+                    {'}'}`
                 },
                 info2: 'Wyniki ankiety pokryły się z początkowymi założeniami dotyczącymi wyglądu kafelka ogłoszenia, ale ze względu na niektóre odmienne głosy i przeważającą aprobatę co do możliwości edycji wyglądu kafelka, stwierdziliśmy, że należałoby dodać taką opcję w ustawieniach aplikacji.',
                 figma1: 'A teraz, jeśli jeszcze tego nie zrobiłeś, obejrzyj projekt w Figmie ',
@@ -797,14 +1022,12 @@ const messages = {
             },
             prototypes: {
                 title: 'Prototypy i rezultaty końcowe',
-                info1: 'Poniżej prezentuję wybrane ekrany na poziomie prototypu w Adobe XD oraz odpowiadających zaimplementowanych wersji:',
+                info: 'Poniżej prezentuję wybrane ekrany na poziomie prototypu w Adobe XD oraz odpowiadających zaimplementowanych wersji:',
                 home: 'STRONA GŁÓWNA',
                 profile: 'WIDOK PROFILU',
                 opinions: 'OPINIE SPECJALISTY',
                 friends: 'LISTA ZNAJOMYCH',
-                roleRequests: 'PANEL PRÓŚB O NADANIE ROLI SPECJALISTY',
-                info2: 'W związku ze zmianami organizacyjnymi na implementację całego systemu oraz napisanie pracy inżynierskiej mieliśmy 2,5 miesiąca czasu. W związku z tym aplikacja niestety nie jest responsywna, więc polecam otwierać na większych ekranach. Demo dostępne ',
-                link: 'tutaj'
+                roleRequests: 'PANEL PRÓŚB O NADANIE ROLI SPECJALISTY'
             },
             learnings: {
                 title: 'Zdobyte doświadczenia',
@@ -814,11 +1037,7 @@ const messages = {
     }
 }
 
-const i18n = createI18n({
-    locale: 'en',
-    fallbackLocale: 'en',
-    messages
-})
+
 
 const store = createStore({
     state () {
@@ -835,7 +1054,14 @@ const store = createStore({
         getLanguage(state) {
             return state.language;
         }
-    }
+    },
+    plugins: [createPersistedState()]
+})
+
+const i18n = createI18n({
+    locale: store.getters.getLanguage,
+    // fallbackLocale: 'en',
+    messages
 })
 
 const app = createApp(App).use(router);
