@@ -29,7 +29,7 @@
                                         <span class="nav-link clickable ps-0 ms-3 me-3 me-lg-0" id="polish" @click="setLanguage('pl')">PL</span>
                                     </li>
                                     <li class="nav-item">
-                                        <span class="nav-link clickable active-language ps-0 ms-3 me-3 me-lg-0" id="english" @click="setLanguage('en')">EN</span>
+                                        <span class="nav-link clickable ps-0 ms-3 me-3 me-lg-0" id="english" @click="setLanguage('en')">EN</span>
                                     </li>
 
                                 </ul>
@@ -113,7 +113,6 @@ export default {
         },
         setLanguage(lan) {
             this.$store.commit('setLanguage', lan);
-            console.log(this.$store.getters.getLanguage)
 
             this.$i18n.locale = lan
 
@@ -126,10 +125,17 @@ export default {
                 english.classList.add("active-language")
                 polish.classList.remove("active-language")
             }
+        },
+        checkLanguage () {
+            if (this.$store.getters.getLanguage === 'en')
+                document.getElementById('english').classList.add("active-language")
+            else if (this.$store.getters.getLanguage === 'pl')
+                document.getElementById('polish').classList.add("active-language")
         }
     },
     mounted() {
         this.activeSectionAndNavbarShadowOnScroll()
+        this.checkLanguage()
         window.setTimeout(this.setActiveClass, 100)
     },
 

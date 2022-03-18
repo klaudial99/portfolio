@@ -1,6 +1,7 @@
 import { createApp } from 'vue'
 import { createI18n } from 'vue-i18n'
 import { createStore } from 'vuex'
+import createPersistedState from "vuex-persistedstate";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap'
 import App from './App.vue'
@@ -265,6 +266,26 @@ const messages = {
                     question5: 'Do you think that each advertisement should additionally have a title (created by the author), is the information provided sufficient?',
                     question6: 'Would you like there to be an option to customize the appearance of the ad tile for the user (issues raised in previous questions)?',
                 },
+                charts: {
+                    options1: {
+                        colors: [ '#AA4465', '#303633', '#F18F01', '#EDF0DA'],
+                        chart: {
+                            type: 'pie',
+                        },
+                        legend: {
+                            position: 'bottom'
+                        },
+                        labels: ['name of the board game', 'game time', 'place of the game', 'all equally important'],
+                        responsive: [{
+                            breakpoint: 992,
+                            options: {
+                                chart: {
+                                    height: 400
+                                }
+                            }
+                        }]
+                    }
+                },
                 info2: 'The results of the survey were in alignment with our initial assumptions about the appearance of the advertisement tile, but due to some different voices and predominant approval for the ability to edit the appearance of the tile, we decided that it would be appropriate to add such an option in the app settings.',
                 figma1: 'Now, if you haven\'t done it already, check out the project in Figma ',
                 link: 'here',
@@ -429,7 +450,7 @@ const messages = {
             contact: 'KONTAKT'
         },
         home: {
-            about: 'Studiuję Informatykę Stosowaną na drugim stopniu na Politechnice Wrocławskiej, posiadam tytuł inżyniera. Doceniam dobry design i aktualnie szukam pierwszej pracy jako UX Designer.'
+            about: 'Jestem studentką Informatyki Stosowanej drugiego stopnia na Politechnice Wrocławskiej, posiadam tytuł inżyniera. Doceniam dobry design i aktualnie szukam pierwszej pracy jako UX Designer.'
         },
         contact: {
             heading: 'Chcesz się z skontaktować? Wyślij wiadomość:',
@@ -650,6 +671,26 @@ const messages = {
                     question5: 'Czy uważasz, że każde ogłoszenie powinno dodatkowo posiadać tytuł (tworzony przez autora), czy podane informacje są wystarczające?',
                     question6: 'Czy chciał(a)byś mieć mozliwość dostosowania wyglądu kafelka ogłoszenia (kwestie poruszane w poprzednich pytaniach)?',
                 },
+                charts: {
+                    options1: {
+                        colors: [ '#AA4465', '#303633', '#F18F01', '#EDF0DA'],
+                        chart: {
+                            type: 'pie',
+                        },
+                        legend: {
+                            position: 'bottom'
+                        },
+                        labels: ['nazwa gry planszowej', 'czas rozgrywki', 'miejsce rozgrywki', 'wszystko równie ważne'],
+                        responsive: [{
+                            breakpoint: 992,
+                            options: {
+                                chart: {
+                                    height: 400
+                                }
+                            }
+                        }]
+                    }
+                },
                 info2: 'Wyniki ankiety pokryły się z początkowymi założeniami dotyczącymi wyglądu kafelka ogłoszenia, ale ze względu na niektóre odmienne głosy i przeważającą aprobatę co do możliwości edycji wyglądu kafelka, stwierdziliśmy, że należałoby dodać taką opcję w ustawieniach aplikacji.',
                 figma1: 'A teraz, jeśli jeszcze tego nie zrobiłeś, obejrzyj projekt w Figmie ',
                 link: 'tutaj',
@@ -810,11 +851,7 @@ const messages = {
     }
 }
 
-const i18n = createI18n({
-    locale: 'en',
-    fallbackLocale: 'en',
-    messages
-})
+
 
 const store = createStore({
     state () {
@@ -831,7 +868,14 @@ const store = createStore({
         getLanguage(state) {
             return state.language;
         }
-    }
+    },
+    plugins: [createPersistedState()]
+})
+
+const i18n = createI18n({
+    locale: store.getters.getLanguage,
+    // fallbackLocale: 'en',
+    messages
 })
 
 const app = createApp(App).use(router);
