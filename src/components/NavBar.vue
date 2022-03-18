@@ -25,7 +25,7 @@
                                     <li class="nav-item">
                                         <span class="nav-link clickable contact ps-0 ms-3 me-3 me-lg-0" @click="scrollTo('contact')">{{ $t("navbar.contact") }}</span>
                                     </li>
-                                    <li class="nav-item">
+                                    <li class="nav-item ms-4">
                                         <span class="nav-link clickable ps-0 ms-3 me-3 me-lg-0" id="polish" @click="setLanguage('pl')">PL</span>
                                     </li>
                                     <li class="nav-item">
