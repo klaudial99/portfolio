@@ -284,7 +284,8 @@
                                 <li>
                                     <div>
                                         <p class="project-text">{{ $t("planszappka.survey.questions.question1") }}</p>
-                                        <apexchart type="pie" :options="options1" :series="series1"></apexchart>
+<!--                                        <p>{{$t("planszappka.survey.charts.options1")}}</p>-->
+                                        <apexchart type="pie" :options="JSON.parse($t('planszappka.survey.charts.options1'))" :series="series1"></apexchart>
                                     </div>
                                 </li>
                             </ol>
@@ -295,7 +296,7 @@
                                 <li>
                                     <div>
                                         <p class="project-text">{{ $t("planszappka.survey.questions.question2") }}</p>
-                                        <apexchart type="pie" :options="options2" :series="series2"></apexchart>
+                                        <apexchart type="pie" :options="JSON.parse($t('planszappka.survey.charts.options2'))" :series="series2"></apexchart>
                                     </div>
                                 </li>
                             </ol>
@@ -306,7 +307,7 @@
                                 <li>
                                     <div>
                                         <p class="project-text">{{ $t("planszappka.survey.questions.question3") }}</p>
-                                        <apexchart type="pie" :options="options3" :series="series3"></apexchart>
+                                        <apexchart type="pie" :options="JSON.parse($t('planszappka.survey.charts.options3'))" :series="series3"></apexchart>
                                     </div>
                                 </li>
                             </ol>
@@ -317,7 +318,7 @@
                                 <li>
                                     <div>
                                         <p class="project-text">{{ $t("planszappka.survey.questions.question4") }}</p>
-                                        <apexchart type="pie" :options="options4" :series="series4"></apexchart>
+                                        <apexchart type="pie" :options="JSON.parse($t('planszappka.survey.charts.options4'))" :series="series4"></apexchart>
                                     </div>
                                 </li>
                             </ol>
@@ -328,7 +329,7 @@
                                 <li>
                                     <div>
                                         <p class="project-text">{{ $t("planszappka.survey.questions.question5") }}</p>
-                                        <apexchart type="pie" :options="options5" :series="series5"></apexchart>
+                                        <apexchart type="pie" :options="JSON.parse($t('planszappka.survey.charts.options5'))" :series="series5"></apexchart>
                                     </div>
                                 </li>
                             </ol>
@@ -339,7 +340,7 @@
                                 <li>
                                     <div>
                                         <p class="project-text">{{ $t("planszappka.survey.questions.question6") }}</p>
-                                        <apexchart type="pie" :options="options6" :series="series6"></apexchart>
+                                        <apexchart type="pie" :options="JSON.parse($t('planszappka.survey.charts.options6'))" :series="series6"></apexchart>
                                     </div>
                                 </li>
                             </ol>
@@ -362,131 +363,17 @@
 </template>
 
 <script>
+
 export default {
     name: "PlanszAppka",
     data () {
         return {
-
             series1: [13, 1, 2, 0],
-            options1: {
-                colors: [ '#AA4465', '#303633', '#F18F01', '#EDF0DA'],
-                chart: {
-                    type: 'pie',
-                },
-                legend: {
-                    position: 'bottom'
-                },
-                labels: ['name of the board game', 'game time', 'place of the game', 'all equally important'],
-                responsive: [{
-                    breakpoint: 992,
-                    options: {
-                        chart: {
-                            height: 400
-                        }
-                    }
-                }]
-            },
-
             series2: [8, 8],
-            options2: {
-                colors: [ '#AA4465', '#303633', '#F18F01', '#EDF0DA'],
-                chart: {
-                    type: 'pie',
-                },
-                legend: {
-                    position: 'bottom'
-                },
-                labels: ['Wrocław, Tarnogaj', '<1km from you (this information can also be found in the ad details)'],
-                responsive: [{
-                    breakpoint: 992,
-                    options: {
-                        chart: {
-                            height: 400
-                        }
-                    }
-                }]
-            },
-
             series3: [8, 6, 2],
-            options3: {
-                colors: [ '#AA4465', '#303633', '#F18F01', '#EDF0DA'],
-                chart: {
-                    type: 'pie',
-                },
-                legend: {
-                    position: 'bottom'
-                },
-                labels: ['05.11.2012 6pm', ' tomorrow/the day after tomorrow/in 3 days at 6pm', 'tomorrow/the day after tomorrow/on Tuesday at 6pm'],
-                responsive: [{
-                    breakpoint: 992,
-                    options: {
-                        chart: {
-                            height: 400
-                        }
-                    }
-                }]
-            },
-
             series4: [15, 1],
-            options4: {
-                colors: [ '#AA4465', '#303633', '#F18F01', '#EDF0DA'],
-                chart: {
-                    type: 'pie',
-                },
-                legend: {
-                    position: 'bottom'
-                },
-                labels: ['4/6 users have joined the game', '2 slots available'],
-                responsive: [{
-                    breakpoint: 992,
-                    options: {
-                        chart: {
-                            height: 400
-                        }
-                    }
-                }]
-            },
-
             series5: [14, 2],
-            options5: {
-                colors: [ '#AA4465', '#303633', '#F18F01', '#EDF0DA'],
-                chart: {
-                    type: 'pie',
-                },
-                legend: {
-                    position: 'bottom'
-                },
-                labels: ['better with the title', 'better without a title'],
-                responsive: [{
-                    breakpoint: 992,
-                    options: {
-                        chart: {
-                            height: 400
-                        }
-                    }
-                }]
-            },
-
-            series6: [11, 5],
-            options6: {
-                colors: [ '#AA4465', '#303633', '#F18F01', '#EDF0DA'],
-                chart: {
-                    type: 'pie',
-                },
-                legend: {
-                    position: 'bottom'
-                },
-                labels: ['yes', 'no'],
-                responsive: [{
-                    breakpoint: 992,
-                    options: {
-                        chart: {
-                            height: 400
-                        }
-                    }
-                }]
-            }
-
+            series6: [11, 5]
         }
     }
 }
@@ -510,14 +397,10 @@ export default {
     height: 50vh;
 }
 
-
-
 .ui-heading {
     font-size: 150%;
     font-weight: 600;
 }
-
-
 
 span {
     display: block;

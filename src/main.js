@@ -260,34 +260,124 @@ const messages = {
             },
             survey: {
                 title: 'Survey',
-                info1: '',
+                info1: 'During the project presentation in class, we were suggested to focus on the appearance of a single tile presenting the most important information about a particular game. So we decided to conduct a survey to find out which form of information presentation is most user-friendly. The prepared questions and the results of the survey conducted on 16 people are presented below.',
                 questions: {
-                    question1: 'Which element in the ad do you pay particular attention to?',
-                    question2: 'Which form seems more user-friendly to you?',
-                    question3: 'Which form seems more user-friendly to you?',
-                    question4: 'Which form seems more user-friendly to you?',
+                    question1: 'Which ad element do you pay special attention to?',
+                    question2: 'Which form seems to be more user-friendly to you?',
+                    question3: 'Which form seems to be more user-friendly to you?',
+                    question4: 'Which form seems to be more user-friendly to you?',
                     question5: 'Do you think that each advertisement should additionally have a title (created by the author), is the information provided sufficient?',
                     question6: 'Would you like there to be an option to customize the appearance of the ad tile for the user (issues raised in previous questions)?',
                 },
                 charts: {
-                    options1: {
-                        colors: [ '#AA4465', '#303633', '#F18F01', '#EDF0DA'],
-                        chart: {
-                            type: 'pie',
-                        },
-                        legend: {
-                            position: 'bottom'
-                        },
-                        labels: ['name of the board game', 'game time', 'place of the game', 'all equally important'],
-                        responsive: [{
-                            breakpoint: 992,
-                            options: {
-                                chart: {
-                                    height: 400
-                                }
-                            }
-                        }]
-                    }
+                    options1: `{'{'}
+                        "colors": [ "#AA4465", "#303633", "#F18F01", "#EDF0DA"],
+                        "chart": {'{'}
+                            "type": "pie"
+                        {'}'},
+                        "legend": {'{'}
+                            "position": "bottom"
+                        {'}'},
+                        "labels": ["name of the board game", "game time", "place of the game", "all equally important"],
+                        "responsive": [{'{'}
+                            "breakpoint": 992,
+                            "options": {'{'}
+                                "chart": {'{'}
+                                    "height": 400
+                                {'}'}
+                            {'}'}
+                        {'}'}]
+                    {'}'}`,
+                    options2: `{'{'}
+                        "colors": [ "#AA4465", "#303633", "#F18F01", "#EDF0DA"],
+                        "chart": {'{'}
+                            "type": "pie"
+                        {'}'},
+                        "legend": {'{'}
+                            "position": "bottom"
+                        {'}'},
+                        "labels": ["Wrocław, Tarnogaj", "<1km from you (this information can also be found in the ad details)"],
+                        "responsive": [{'{'}
+                            "breakpoint": 992,
+                            "options": {'{'}
+                                "chart": {'{'}
+                                    "height": 400
+                                {'}'}
+                            {'}'}
+                        {'}'}]
+                    {'}'}`,
+                    options3: `{'{'}
+                        "colors": [ "#AA4465", "#303633", "#F18F01", "#EDF0DA"],
+                        "chart": {'{'}
+                            "type": "pie"
+                        {'}'},
+                        "legend": {'{'}
+                            "position": "bottom"
+                        {'}'},
+                        "labels": ["05.11.2012 6pm", "tomorrow/the day after tomorrow/in 3 days at 6pm", "tomorrow/the day after tomorrow/on Tuesday at 6pm"],
+                        "responsive": [{'{'}
+                            "breakpoint": 992,
+                            "options": {'{'}
+                                "chart": {'{'}
+                                    "height": 400
+                                {'}'}
+                            {'}'}
+                        {'}'}]
+                    {'}'}`,
+                    options4: `{'{'}
+                        "colors": [ "#AA4465", "#303633", "#F18F01", "#EDF0DA"],
+                        "chart": {'{'}
+                            "type": "pie"
+                        {'}'},
+                        "legend": {'{'}
+                            "position": "bottom"
+                        {'}'},
+                        "labels": ["4/6 users have joined the game", "2 slots available"],
+                        "responsive": [{'{'}
+                            "breakpoint": 992,
+                            "options": {'{'}
+                                "chart": {'{'}
+                                    "height": 400
+                                {'}'}
+                            {'}'}
+                        {'}'}]
+                    {'}'}`,
+                    options5: `{'{'}
+                        "colors": [ "#AA4465", "#303633", "#F18F01", "#EDF0DA"],
+                        "chart": {'{'}
+                            "type": "pie"
+                        {'}'},
+                        "legend": {'{'}
+                            "position": "bottom"
+                        {'}'},
+                        "labels": ["better with the title", "better without a title"],
+                        "responsive": [{'{'}
+                            "breakpoint": 992,
+                            "options": {'{'}
+                                "chart": {'{'}
+                                    "height": 400
+                                {'}'}
+                            {'}'}
+                        {'}'}]
+                    {'}'}`,
+                    options6: `{'{'}
+                        "colors": [ "#AA4465", "#303633", "#F18F01", "#EDF0DA"],
+                        "chart": {'{'}
+                            "type": "pie"
+                        {'}'},
+                        "legend": {'{'}
+                            "position": "bottom"
+                        {'}'},
+                        "labels": ["yes", "no"],
+                        "responsive": [{'{'}
+                            "breakpoint": 992,
+                            "options": {'{'}
+                                "chart": {'{'}
+                                    "height": 400
+                                {'}'}
+                            {'}'}
+                        {'}'}]
+                    {'}'}`
                 },
                 info2: 'The results of the survey were in alignment with our initial assumptions about the appearance of the advertisement tile, but due to some different voices and predominant approval for the ability to edit the appearance of the tile, we decided that it would be appropriate to add such an option in the app settings.',
                 figma1: 'Now, if you haven\'t done it already, check out the project in Figma ',
@@ -671,31 +761,121 @@ const messages = {
                 info1: 'Podczas prezentacji projektu na zajęciach zasugerowano nam skupić się na wyglądzie pojedynczego kafelka prezentującego najważniejsze informacje o konkretnej rozgrywce. Postanowiliśmy więc przeprowadzić ankietę, aby dowiedzieć się, jaka forma prezentacji informacji jest dla użytkowników najbardziej przyjazna. Poniżej przedstawiono przygotowane pytania wraz z wynikami przeprowadzonej na 16 osobach ankiety.',
                 questions: {
                     question1: 'Na który element ogłoszenia zwracasz szczególną uwagę?',
-                    question2: 'Która forma jest dla Ciebie bardziej przyjazna?',
-                    question3: 'Która forma jest dla Ciebie bardziej przyjazna?',
-                    question4: 'Która forma jest dla Ciebie bardziej przyjazna?',
+                    question2: 'Która forma jest w Twoim odczuciu bardziej przyjazna?',
+                    question3: 'Która forma jest w Twoim odczuciu bardziej przyjazna?',
+                    question4: 'Która forma jest w Twoim odczuciu bardziej przyjazna?',
                     question5: 'Czy uważasz, że każde ogłoszenie powinno dodatkowo posiadać tytuł (tworzony przez autora), czy podane informacje są wystarczające?',
                     question6: 'Czy chciał(a)byś mieć mozliwość dostosowania wyglądu kafelka ogłoszenia (kwestie poruszane w poprzednich pytaniach)?',
                 },
                 charts: {
-                    options1: {
-                        colors: [ '#AA4465', '#303633', '#F18F01', '#EDF0DA'],
-                        chart: {
-                            type: 'pie',
-                        },
-                        legend: {
-                            position: 'bottom'
-                        },
-                        labels: ['nazwa gry planszowej', 'czas rozgrywki', 'miejsce rozgrywki', 'wszystko równie ważne'],
-                        responsive: [{
-                            breakpoint: 992,
-                            options: {
-                                chart: {
-                                    height: 400
-                                }
-                            }
-                        }]
-                    }
+                    options1: `{'{'}
+                        "colors": [ "#AA4465", "#303633", "#F18F01", "#EDF0DA"],
+                        "chart": {'{'}
+                            "type": "pie"
+                        {'}'},
+                        "legend": {'{'}
+                            "position": "bottom"
+                        {'}'},
+                        "labels": ["nazwa gry planszowej", "czas rozgrywki", "miejsce rozgrywki", "wszystko równie ważne"],
+                        "responsive": [{'{'}
+                            "breakpoint": 992,
+                            "options": {'{'}
+                                "chart": {'{'}
+                                    "height": 400
+                                {'}'}
+                            {'}'}
+                        {'}'}]
+                    {'}'}`,
+                    options2: `{'{'}
+                        "colors": [ "#AA4465", "#303633", "#F18F01", "#EDF0DA"],
+                        "chart": {'{'}
+                            "type": "pie"
+                        {'}'},
+                        "legend": {'{'}
+                            "position": "bottom"
+                        {'}'},
+                        "labels": ["Wrocław, Tarnogaj", "<1km od Ciebie (ta informacja znajduje się również w szczegółach ogłoszenia)"],
+                        "responsive": [{'{'}
+                            "breakpoint": 992,
+                            "options": {'{'}
+                                "chart": {'{'}
+                                    "height": 400
+                                {'}'}
+                            {'}'}
+                        {'}'}]
+                    {'}'}`,
+                    options3: `{'{'}
+                        "colors": [ "#AA4465", "#303633", "#F18F01", "#EDF0DA"],
+                        "chart": {'{'}
+                            "type": "pie"
+                        {'}'},
+                        "legend": {'{'}
+                            "position": "bottom"
+                        {'}'},
+                        "labels": ["05.11.2012 18:00", "jutro/pojutrze/za 3 dni o 18:00", "jutro/pojutrze/we wtorek o 18:00"],
+                        "responsive": [{'{'}
+                            "breakpoint": 992,
+                            "options": {'{'}
+                                "chart": {'{'}
+                                    "height": 400
+                                {'}'}
+                            {'}'}
+                        {'}'}]
+                    {'}'}`,
+                    options4: `{'{'}
+                        "colors": [ "#AA4465", "#303633", "#F18F01", "#EDF0DA"],
+                        "chart": {'{'}
+                            "type": "pie"
+                        {'}'},
+                        "legend": {'{'}
+                            "position": "bottom"
+                        {'}'},
+                        "labels": ["4/6 użytkowników dołączyło do rozgrywki", "2 wolne miejsca"],
+                        "responsive": [{'{'}
+                            "breakpoint": 992,
+                            "options": {'{'}
+                                "chart": {'{'}
+                                    "height": 400
+                                {'}'}
+                            {'}'}
+                        {'}'}]
+                    {'}'}`,
+                    options5: `{'{'}
+                        "colors": [ "#AA4465", "#303633", "#F18F01", "#EDF0DA"],
+                        "chart": {'{'}
+                            "type": "pie"
+                        {'}'},
+                        "legend": {'{'}
+                            "position": "bottom"
+                        {'}'},
+                        "labels": ["lepiej z tytułem", "lepiej bez"],
+                        "responsive": [{'{'}
+                            "breakpoint": 992,
+                            "options": {'{'}
+                                "chart": {'{'}
+                                    "height": 400
+                                {'}'}
+                            {'}'}
+                        {'}'}]
+                    {'}'}`,
+                    options6: `{'{'}
+                        "colors": [ "#AA4465", "#303633", "#F18F01", "#EDF0DA"],
+                        "chart": {'{'}
+                            "type": "pie"
+                        {'}'},
+                        "legend": {'{'}
+                            "position": "bottom"
+                        {'}'},
+                        "labels": ["tak", "nie"],
+                        "responsive": [{'{'}
+                            "breakpoint": 992,
+                            "options": {'{'}
+                                "chart": {'{'}
+                                    "height": 400
+                                {'}'}
+                            {'}'}
+                        {'}'}]
+                    {'}'}`
                 },
                 info2: 'Wyniki ankiety pokryły się z początkowymi założeniami dotyczącymi wyglądu kafelka ogłoszenia, ale ze względu na niektóre odmienne głosy i przeważającą aprobatę co do możliwości edycji wyglądu kafelka, stwierdziliśmy, że należałoby dodać taką opcję w ustawieniach aplikacji.',
                 figma1: 'A teraz, jeśli jeszcze tego nie zrobiłeś, obejrzyj projekt w Figmie ',
