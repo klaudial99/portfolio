@@ -1,6 +1,6 @@
 <template>
     <div class="container w-100">
-        <form>
+        <form @submit.prevent="sendEmail">
             <div class="row w-100 h-100 justify-content-center mx-0">
                 <div class="col-12 col-sm-11 col-md-9 px-4 px-sm-0">
                     <div class="mb-4">
@@ -19,7 +19,8 @@
                         <textarea v-model="message" name="message" class="form-control" id="message-form" rows="7" :placeholder="$t('contact.messageInput')"></textarea>
                     </div>
 
-                    <input type="submit" :value="$t('contact.send')" @click="sendEmail">
+                    <input class="send" type="submit" :value="$t('contact.send')">
+
                 </div>
             </div>
 
@@ -40,13 +41,14 @@ export default {
         }
     },
     methods: {
-        sendEmail() {
+        sendEmail(e) {
             try {
-                emailjs.send("service_fj5nhyx","template_ofkdzho",{
+                emailjs.sendForm("service_fj5nhyx","template_ofkdzho",e.target,'user_uxtURyv8E1KWpkAgLRoWl',
+                    {
                     name: this.name,
                     email: this.email,
                     message: this.message
-                }, 'user_uxtURyv8E1KWpkAgLRoWl');
+                });
 
             } catch(error) {
                 console.log({error})
@@ -71,7 +73,7 @@ label {
     margin-left: 0.5rem;
 }
 
-input[type=submit] {
+.send {
     background-color: var(--VIOLET);
     color: white;
     padding: 12px 26px;
@@ -79,7 +81,7 @@ input[type=submit] {
     border-radius: 5px;
 }
 
-input[type=submit]:hover {
+.send:hover {
     background-color: var(--BLACK)
 }
 </style>
