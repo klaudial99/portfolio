@@ -142,7 +142,7 @@ export default {
 @media (min-width: 992px) {
     #left-text {
         position: relative;
-        top: -35%;
+        top: -15%;
     }
 
     .picture {

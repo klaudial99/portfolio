@@ -45,7 +45,7 @@ const messages = {
             contact: 'CONTACT'
         },
         home: {
-            about: 'Engineer and applied computer science student based in Wroclaw, Poland. Great design enthusiast looking for a first job as a UX Designer.'
+            about: 'Engineer and Applied Computer Science student living in Wroclaw, Poland. I am a great design enthusiast currently looking for my first professional job to increase my experience.'
         },
         projects: {
             info: 'MORE PROJECTS SOON '
@@ -543,7 +543,7 @@ const messages = {
             contact: 'KONTAKT'
         },
         home: {
-            about: 'Jestem studentką Informatyki Stosowanej drugiego stopnia na Politechnice Wrocławskiej, posiadam tytuł inżyniera. Doceniam dobry design i aktualnie szukam pierwszej pracy jako UX Designer.'
+            about: 'Jestem inżynierem i studentką Informatyki Stosowanej z Wrocławia. Doceniam dobry design i aktualnie szukam pierwszej pracy w zawodzie, która pozwoli mi zwiększyć swoje doświadczenie.'
         },
         projects: {
             info: 'WIĘCEJ PROJEKTÓW WKRÓTCE '
