@@ -53,12 +53,12 @@
             data-aos-delay="2000"
             data-aos-duration="700"
             data-aos-easing="ease"
-            class="row d-flex justify-content-center align-items-center container-fluid h-15 pb-3"
+            class="row d-flex justify-content-center align-items-center container-fluid h-15 pb-3 mx-0 px-0"
             type="button"
             @click="scrollDown"
         >
             <span>SCROLL DOWN</span>
-            <i id="scroll-down-icon" class="fa fa-chevron-down"></i>
+            <i id="scroll-down-icon" class="fa fa-chevron-down p-0"></i>
         </div>
     </div>
 </template>
