@@ -3,7 +3,7 @@
         <nav-bar/>
         <slot/>
         <button class="scroll-top" id="scroll-btn" @click="scrollTop">
-            <i class="fa fa-arrow-up" size="3x"></i>
+            <i class="fa fa-arrow-up"></i>
         </button>
     </div>
 </template>
