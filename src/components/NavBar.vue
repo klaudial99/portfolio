@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top" id="navbar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top" id="navbar">
         <div class="container-fluid p-0 m-0 w-100">
             <div class="row w-100">
                 <div class="col-12 col-md-11 offset-md-1 pe-0">

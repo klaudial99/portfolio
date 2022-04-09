@@ -1,5 +1,4 @@
 <template>
-
     <div class="home container-fluid">
         <div class="row">
 
@@ -42,13 +41,8 @@
 
 .home-section, .contact-section {
     background-clip: content-box;
-    min-height: 90vh;
+    height: 90vh;
     scroll-snap-align: start;
-}
-@media (min-width: 768px) {
-    .home-section {
-        height: 90vh;
-    }
 }
 
 .home-section {

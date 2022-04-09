@@ -17,7 +17,6 @@ html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
-    padding-top: 10vh;
     color: var(--BLACK);
 }
 
