@@ -6,7 +6,7 @@
             </div>
 
         </div>
-        <div class="row justify-content-center justify-content-md-start mb-3">
+        <div class="row justify-content-center justify-content-md-start mb-3 gy-3">
             <div class="col-10 col-md-6 col-lg-4" v-for="project in projects" :key="project.projectId">
                 <project-card :project="project" class="my-3 px-0"/>
             </div>
@@ -52,7 +52,8 @@ export default {
                     projectId: 3,
                     pictureSource: 'wellbeeing-temp.png',
                     title: 'WellBeeing',
-                    year: 2021
+                    year: 2021,
+                    about: this.$t('wellbeeing.about'),
                 },
                 // {
                 //     projectId: 4,
@@ -61,6 +62,17 @@ export default {
                 //     year: ''
                 // }
             ]
+        }
+    },
+    computed: {
+        language() {
+            return this.$store.getters.getLanguage
+        }
+    },
+    watch: {
+        language() {
+            this.projects[1].about = this.$i18n.t('planszappka.about');
+            this.projects[2].about = this.$i18n.t('wellbeeing.about');
         }
     }
 }

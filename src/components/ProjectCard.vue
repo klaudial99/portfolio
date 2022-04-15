@@ -8,10 +8,10 @@
             </div>
 
         </div>
-        <div class="row mt-2 text-start">
+        <div class="row mt-3 text-start">
             <div>
                 <router-link :to="'/'+this.project.title">
-                    <h3 class="my-0 d-inline">{{this.project.title}}</h3>
+                    <h3 class="my-0 d-inline fw-bolder">{{this.project.title}}</h3>
                 </router-link>
                 <span class="ms-2">/ {{this.project.year}}</span>
             </div>
@@ -62,7 +62,7 @@ a {
 }
 
 .about {
-    text-align: justify;
+    text-align: left;
 }
 
 </style>

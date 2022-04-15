@@ -61,7 +61,7 @@ const messages = {
             send: 'Send'
         },
         planszappka: {
-            about: 'UX research and prototype of a mobile app uniting people who play board games, allowing them to find companions to play with',
+            about: 'UX research and prototype of a mobile app uniting people who play board games.',
             heading: {
                 title: 'PlanszAppka',
                 subject: 'UX/UI Design',
@@ -392,6 +392,7 @@ const messages = {
         },
 
         wellbeeing: {
+            about: 'A web service that allows you to take care of your health.',
             heading: {
                 title: 'WeelBeeing',
                 subject: 'Web Development',
@@ -560,7 +561,7 @@ const messages = {
             send: 'Wyślij'
         },
         planszappka: {
-            about: 'Badania UX i prototyp aplikacji mobilnej zrzeszającej osoby grające w gry planszowe, umożliwiającej im znalezienie kompanów do wspólnej gry',
+            about: 'Badania UX i prototyp aplikacji mobilnej zrzeszającej osoby grające w gry planszowe.',
             heading: {
                 title: 'PlanszAppka',
                 subject: 'UX/UI Design',
@@ -891,6 +892,7 @@ const messages = {
         },
 
         wellbeeing: {
+            about: 'Serwis internetowy umożliwiający zadbanie o swoje zdrowie.',
             heading: {
                 title: 'WeelBeeing',
                 subject: 'Web Development',
