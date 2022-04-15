@@ -21,19 +21,18 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import {faChevronDown} from "@fortawesome/free-solid-svg-icons/faChevronDown"
 library.add(faChevronDown)
 
-import {faBars} from "@fortawesome/free-solid-svg-icons/faBars"
-library.add(faBars)
+
 
 import {faLinkedin, faGithub} from "@fortawesome/free-brands-svg-icons";
 library.add(faLinkedin)
 library.add(faGithub)
 
-import {faArrowUp} from "@fortawesome/free-solid-svg-icons/faArrowUp"
-library.add(faArrowUp)
 
-import {faArrowRightLong, faArrowDownLong} from "@fortawesome/free-solid-svg-icons"
+import {faArrowRightLong, faArrowDownLong, faBars, faArrowUp} from "@fortawesome/free-solid-svg-icons"
 library.add(faArrowRightLong)
 library.add(faArrowDownLong)
+library.add(faBars)
+library.add(faArrowUp)
 
 import { dom } from "@fortawesome/fontawesome-svg-core";
 dom.watch();
@@ -51,7 +50,9 @@ const messages = {
             info: 'MORE PROJECTS SOON '
         },
         contact: {
-            heading: 'Want to get in touch? Message me:',
+            heading1: 'Want to get ',
+            headingHighlight: 'in touch',
+            heading2: 'Message me:',
             name: 'Your name:',
             nameInput: 'Your name',
             mail: 'Your email address:',
@@ -554,7 +555,9 @@ const messages = {
             info: 'WIĘCEJ PROJEKTÓW WKRÓTCE '
         },
         contact: {
-            heading: 'Chcesz się z skontaktować? Wyślij wiadomość:',
+            heading1: 'Chcesz się ',
+            headingHighlight: 'skontaktować',
+            heading2: 'Wyślij wiadomość:',
             name: 'Twoje imię:',
             nameInput: 'Twoje imię',
             mail: 'Twój adres e-mail:',

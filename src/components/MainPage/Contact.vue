@@ -1,10 +1,16 @@
 <template>
-    <div class="container w-100">
+    <div class="container">
         <form @submit.prevent="sendEmail">
             <div class="row w-100 h-100 justify-content-center mx-0">
                 <div class="col-12 col-sm-11 col-md-9 px-4 px-sm-0">
-                    <div class="mb-4">
-                        <h3 class="text-start ms-2">{{ $t("contact.heading") }}</h3>
+                    <div class="mb-4 text-start">
+                        <h1 class="ms-2">
+                            {{ $t("contact.heading1") }}
+                            <span class="contact-highlight">
+                                {{ $t("contact.headingHighlight") }}
+                            </span>?
+                        </h1>
+                        <h4 class="ms-2">{{ $t("contact.heading2") }}</h4>
                     </div>
                     <div class="mb-3">
                         <label for="name-form" class="form-label">{{ $t("contact.name") }}</label>
@@ -23,8 +29,6 @@
 
                 </div>
             </div>
-
-
         </form>
     </div>
 </template>
@@ -43,8 +47,7 @@ export default {
     methods: {
         sendEmail(e) {
             try {
-                emailjs.sendForm("service_fj5nhyx","template_ofkdzho",e.target,'user_uxtURyv8E1KWpkAgLRoWl',
-                    {
+                emailjs.sendForm("service_fj5nhyx","template_ofkdzho",e.target,'user_uxtURyv8E1KWpkAgLRoWl', {
                     name: this.name,
                     email: this.email,
                     message: this.message
@@ -83,5 +86,15 @@ label {
 
 .send:hover {
     background-color: var(--BLACK)
+}
+
+.contact-highlight {
+    color: var(--VIOLET);
+}
+
+.form-control:hover,
+.form-control:focus {
+    box-shadow: none;
+    border-color: var(--VIOLET);
 }
 </style>

@@ -11,16 +11,14 @@
                 <project-card :project="project" class="my-3 px-0"/>
             </div>
         </div>
-        <div class="row mt-4 mt-sm-5">
-            <div class="col d-flex justify-content-center">
-                <p class="d-inline">
-                    <span class="align-middle">{{ $t("projects.info") }}</span>
-                    <img id="nerd-face" class="align-middle" src="@/assets/nerd-face.png" alt="nerd-face"/>
-                </p>
-            </div>
-
-
-        </div>
+<!--        <div class="row mt-4">-->
+<!--            <div class="col d-flex justify-content-center">-->
+<!--                <h2 class="d-inline">-->
+<!--                    <span class="align-middle">{{ $t("projects.info") }}</span>-->
+<!--                    <img id="nerd-face" class="align-middle" src="@/assets/nerd-face.png" alt="nerd-face"/>-->
+<!--                </h2>-->
+<!--            </div>-->
+<!--        </div>-->
     </div>
 
 </template>
@@ -81,7 +79,7 @@ img {
     width: auto;
 }
 
-p, span {
-    font-size: 32px;
-}
+/*p, span {*/
+/*    font-size: 32px;*/
+/*}*/
 </style>
