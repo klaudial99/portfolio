@@ -7,11 +7,11 @@
 
         </div>
         <div class="row justify-content-center justify-content-md-start mb-3 gy-3">
-            <div class="col-10 col-md-6 col-lg-4" v-for="project in projects" :key="project.projectId">
+            <div class="col-11 col-md-6 col-lg-4" v-for="project in projects" :key="project.projectId">
                 <project-card :project="project" class="my-3 px-0"/>
             </div>
         </div>
-        <div class="row mt-5">
+        <div class="row mt-4 mt-sm-5">
             <div class="col d-flex justify-content-center">
                 <p class="d-inline">
                     <span class="align-middle">{{ $t("projects.info") }}</span>
@@ -37,9 +37,10 @@ export default {
             projects: [
                 {
                     projectId: 1,
-                    pictureSource: 'tba.png',
+                    pictureSource: 'rent4events.png',
                     title: 'rent4events',
-                    year: 2022
+                    year: 2022,
+                    about: this.$i18n.t('rent4events.about'),
                 },
                 {
                     projectId: 2,
@@ -50,17 +51,11 @@ export default {
                 },
                 {
                     projectId: 3,
-                    pictureSource: 'wellbeeing-temp.png',
+                    pictureSource: 'wellbeeing.png',
                     title: 'WellBeeing',
                     year: 2021,
                     about: this.$t('wellbeeing.about'),
-                },
-                // {
-                //     projectId: 4,
-                //     pictureSource: 'soon.png',
-                //     title: 'More projects soon',
-                //     year: ''
-                // }
+                }
             ]
         }
     },
@@ -71,6 +66,7 @@ export default {
     },
     watch: {
         language() {
+            this.projects[0].about = this.$i18n.t('rent4events.about');
             this.projects[1].about = this.$i18n.t('planszappka.about');
             this.projects[2].about = this.$i18n.t('wellbeeing.about');
         }

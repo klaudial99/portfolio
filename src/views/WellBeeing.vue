@@ -344,7 +344,7 @@ span {
 }
 
 .github-heading-link {
-    color: #FFDD00;
+    color: #655a7c;
     text-decoration: none;
 }
 

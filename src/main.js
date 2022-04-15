@@ -60,6 +60,9 @@ const messages = {
             messageInput: 'Message',
             send: 'Send'
         },
+        rent4events: {
+            about: 'Web application supporting management of event rental company.',
+        },
         planszappka: {
             about: 'UX research and prototype of a mobile app uniting people who play board games.',
             heading: {
@@ -559,6 +562,9 @@ const messages = {
             message: 'Wiadomość:',
             messageInput: 'Wiadomość',
             send: 'Wyślij'
+        },
+        rent4events: {
+            about: 'Aplikacja webowa wspomagająca zarządzanie wypożyczalnią eventową.',
         },
         planszappka: {
             about: 'Badania UX i prototyp aplikacji mobilnej zrzeszającej osoby grające w gry planszowe.',
