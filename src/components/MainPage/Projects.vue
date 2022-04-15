@@ -1,17 +1,17 @@
 <template>
-    <div>
+    <div class="container px-sm-0 ">
         <div class="row align-items-md-center justify-content-sm-center title-row mb-3">
             <div class="col">
                 <h1 class="text-center">{{ $t("navbar.projects") }}</h1>
             </div>
 
         </div>
-        <div class="row justify-content-center projects-row mb-3">
-            <div class="col-12 col-lg-6" v-for="project in projects" :key="project.projectId">
-                <project-card :project="project" class="my-3"/>
+        <div class="row justify-content-center justify-content-md-start mb-3">
+            <div class="col-10 col-md-6 col-lg-4" v-for="project in projects" :key="project.projectId">
+                <project-card :project="project" class="my-3 px-0"/>
             </div>
         </div>
-        <div class="row">
+        <div class="row mt-5">
             <div class="col d-flex justify-content-center">
                 <p class="d-inline">
                     <span class="align-middle">{{ $t("projects.info") }}</span>
@@ -35,17 +35,18 @@ export default {
     data () {
         return {
             projects: [
-                // {
-                //     projectId: 1,
-                //     pictureSource: 'tba.png',
-                //     title: 'TBA',
-                //     year: 2022
-                // },
+                {
+                    projectId: 1,
+                    pictureSource: 'tba.png',
+                    title: 'rent4events',
+                    year: 2022
+                },
                 {
                     projectId: 2,
                     pictureSource: 'planszappka.png',
                     title: 'PlanszAppka',
-                    year: 2021
+                    year: 2021,
+                    about: this.$i18n.t('planszappka.about'),
                 },
                 {
                     projectId: 3,
@@ -66,15 +67,6 @@ export default {
 </script>
 
 <style scoped>
-
-@media (min-width: 1500px) {
-    .projects-row {
-        margin-left: 3rem;
-        margin-right: 3rem;
-        padding-left: 3rem;
-        padding-right: 3rem;
-    }
-}
 
 img {
     height: 1em;

@@ -61,6 +61,7 @@ const messages = {
             send: 'Send'
         },
         planszappka: {
+            about: 'UX research and prototype of a mobile app uniting people who play board games, allowing them to find companions to play with',
             heading: {
                 title: 'PlanszAppka',
                 subject: 'UX/UI Design',
@@ -559,6 +560,7 @@ const messages = {
             send: 'Wyślij'
         },
         planszappka: {
+            about: 'Badania UX i prototyp aplikacji mobilnej zrzeszającej osoby grające w gry planszowe, umożliwiającej im znalezienie kompanów do wspólnej gry',
             heading: {
                 title: 'PlanszAppka',
                 subject: 'UX/UI Design',

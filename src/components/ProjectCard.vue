@@ -1,16 +1,23 @@
 <template>
-    <router-link :to="'/'+this.project.title" class="container">
+    <div class="container">
         <div class="row">
-            <div id="img-wrap" class="w-100 h-100 col p-0 mx-3">
-                <img :src="this.getImgSrc(this.project.pictureSource)" :alt="this.project.pictureSource">
+            <div id="img-wrap" class="w-100 h-100 col px-0">
+                <router-link :to="'/'+this.project.title">
+                    <img :src="this.getImgSrc(this.project.pictureSource)" :alt="this.project.pictureSource">
+                </router-link>
             </div>
 
         </div>
-        <div class="row mt-2">
-            <h3 class="my-0">{{this.project.title}}</h3>
-            <span>{{this.project.year}}</span>
+        <div class="row mt-2 text-start">
+            <div>
+                <router-link :to="'/'+this.project.title">
+                    <h3 class="my-0 d-inline">{{this.project.title}}</h3>
+                </router-link>
+                <span class="ms-2">/ {{this.project.year}}</span>
+            </div>
+            <span class="about mt-2">{{this.project.about}}</span>
         </div>
-    </router-link>
+    </div>
 </template>
 
 <script>
@@ -31,6 +38,7 @@ export default {
 
 #img-wrap {
     overflow: hidden;
+    margin: 0 12px;
 }
 
 img {
@@ -51,6 +59,10 @@ img {
 a {
     color: var(--BLACK);
     text-decoration: none !important;
+}
+
+.about {
+    text-align: justify;
 }
 
 </style>

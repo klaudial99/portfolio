@@ -45,6 +45,10 @@ html {
     text-align: justify;
 }
 
+.red {
+    background-color: red;
+}
+
 </style>
 
 <script>
