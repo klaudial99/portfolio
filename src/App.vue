@@ -36,13 +36,39 @@ html {
     text-align: left;
 }
 
+.basic-info-header {
+    font-weight: 600;
+}
+
 .project-subtitle {
     font-size: 200%;
+    font-weight: 600;
     margin-bottom: 1rem;
+}
+
+.project-subtitle-2 {
+    font-weight: 600;
+    font-size: 115%;
+    margin-bottom: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.project-subtitle-3 {
+    font-weight: 500;
+    font-size: 105%;
+    margin-bottom: 0;
+}
+
+li span, li div {
+    color: var(--BLACK);
 }
 
 .project-text {
     text-align: justify;
+}
+
+.red {
+    background-color: red;
 }
 
 </style>

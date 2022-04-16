@@ -16,11 +16,11 @@
                     <home/>
                 </section>
 
-                <section class="projects-section row mx-0 mx-sm-5 ms-md-0 pb-sm-5 mt-5 mt-sm-0" id="projects">
+                <section class="projects-section mx-0 mx-sm-5 ms-md-0 pb-sm-5 mt-5 mt-sm-0 pt-5" id="projects">
                     <projects/>
                 </section>
 
-                <section class="contact-section row mx-0 mx-sm-5 ms-md-0 pb-sm-5" id="contact">
+                <section class="contact-section row mx-0 mx-sm-5 ms-md-0 pb-sm-5 pt-4" id="contact">
                     <contact/>
                 </section>
             </div>

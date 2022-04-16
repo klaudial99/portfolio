@@ -407,16 +407,11 @@ span {
 }
 
 .basic-info-header, .project-subtitle {
-    font-weight: 600;
     color: var(--PLANSZAPPKA);
 }
 
 li {
     color: var(--PLANSZAPPKA-LIGHT);
-}
-
-li span, li div {
-    color: var(--BLACK);
 }
 
 .img {
