@@ -344,19 +344,16 @@ span {
 }
 
 .github-heading-link {
-    color: #655a7c;
+    color: #0d3b66;
     text-decoration: none;
 }
 
 .basic-info-header, .project-subtitle {
-    font-weight: 600;
     color: var(--WELLBEEING);
 }
 
 .project-subtitle-2 {
-    font-weight: 500;
-    color: var(--WELLBEEING);
-    font-size: 115%;
+    color: var(--WELLBEEING);;
 }
 
 .screen-title {
@@ -369,10 +366,6 @@ span {
 
 li {
     color: var(--WELLBEEING-LIGHT);
-}
-
-li span, li div {
-    color: var(--BLACK);
 }
 
 .demo-here {

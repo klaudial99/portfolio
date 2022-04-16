@@ -63,6 +63,83 @@ const messages = {
         },
         rent4events: {
             about: 'Web application supporting management of event rental company.',
+            heading: {
+                title: 'rent4events',
+                subject: 'Web Development',
+                code: 'Check out code ',
+                link: 'here'
+            },
+            basicInfo: {
+                roleHeading: 'Role',
+                roleInfo: 'Frontend Developer',
+                timelineHeading: 'Timeline',
+                timelineInfo: 'Mar 2022 - now',
+                platformHeading: 'Platform',
+                platformInfo: 'Web',
+                toolsHeading: 'Technology and Tools',
+                toolsInfo: 'Vue.js'
+            },
+            background: {
+                title: 'Background',
+                info: 'The project is being created in a group of two divided into Frontend and Backend. It was inspired by our previous work experience in a company that organizes events and rents out event equipment. During one of the courses in college, we had the opportunity to design a database scheme for such a company as part of a semester project. So we decided to use it and implement a web application that would help manage the company and speed up the ordering process. This project is also being carried out as a semester project in college and is scheduled to be completed in June 2022.'
+            },
+            description: {
+                title: 'Reality description',
+                info1: 'An event rental company is a company that rents out its inventory and transports it to the venue of special events. It employs drivers who use a fleet of company vehicles. The assortment is stored in a warehouse in Wrocław.',
+                info2: 'However, inventory data is not systematized in any way. Examples of losses in the assortment are not recorded on an ongoing basis, which translates into difficulties in estimating the current number of products, and thus to decisions on the possibility of carrying out the order.',
+                info3: 'In addition, there is no single standardized way to place an order, they are taken both by email and phone, and it is difficult for the customer to view products.',
+            },
+            improvement: {
+                title: 'Suggested improvements',
+                subtitle1: 'Rental management improvement',
+                usersInfo1: 'The new system assumes that its users are divided into:',
+                usersList: {
+                    item1: 'manager,',
+                    item2: 'drivers,',
+                    item3: 'clients.'
+                },
+                usersInfo2: 'Each of them should have access to basic account management functionalities. Additionally, individual users should have the following capabilities:',
+                user1: 'Manager:',
+                user1List: {
+                    item1: 'managing (creating, reading, updating and deleting) the assortment,',
+                    item2: 'vehicle management,',
+                    item3: 'employee management,',
+                    item4: 'browsing placed orders,',
+                    item5: 'deciding on the execution of an order,',
+                    item6: 'assigning drivers and vehicles to courses within an order.'
+                },
+                user2: 'Driver:',
+                user2List: {
+                    item1: 'browsing their courses and editing their status,',
+                    item2: 'browsing placed orders.'
+                },
+                user3: 'Client:',
+                user3List: {
+                    item1: 'browsing the company\'s offer,',
+                    item2: 'placing a new order,',
+                    item3: 'browsing their placed orders,',
+                    item4: 'editing or canceling an order, if no decision has yet been made to execute it.'
+                },
+                usersInfo3: 'Moreover, every Internet user visiting the website should be able to create an account in the system.',
+                subtitle2: 'Ordering process improvement',
+                orderInfo1: 'The system assumes a uniform ordering process consisting of the following steps:',
+                orderList: {
+                    item1: 'selecting the start and end date of the event,',
+                    item2: 'determining the event\'s location,',
+                    item3: 'selection of the assortment,',
+                    item4: 'determining if delivery is required.'
+                },
+                orderInfo2: 'Then, due to the nature of the industry, each order should be individually approved by a manager. Once the order is accepted, if transport to the event venue is required, a driver and vehicle should be assigned to deliver and collect the equipment.'
+            },
+            current: {
+                title: 'Current status of work',
+                info1: 'The current version of the system can be found ',
+                link: 'here',
+                info2: '. It will be updated consistently as major changes are made. So far, the following have been completed:',
+                currentList: {
+                    item1: 'the homepage with the possibility of logging in and registering in the system.'
+                },
+            }
         },
         planszappka: {
             about: 'UX research and prototype of a mobile app uniting people who play board games.',
@@ -398,14 +475,14 @@ const messages = {
         wellbeeing: {
             about: 'A web service that allows you to take care of your health.',
             heading: {
-                title: 'WeelBeeing',
+                title: 'WellBeeing',
                 subject: 'Web Development',
                 code: 'Check out code ',
                 link: 'here'
             },
             basicInfo: {
                 roleHeading: 'Role',
-                roleInfo1: 'Full-Stack Developer,',
+                roleInfo1: 'Fullstack Developer,',
                 roleInfo2: 'Business Analyst',
                 timelineHeading: 'Timeline',
                 timelineInfo1: '2 months',
@@ -424,7 +501,7 @@ const messages = {
                     item3: 'sports,',
                     item4: 'telemedicine.'
                 },
-                info2: 'This is the project, on the basis of which I wrote my Engineering Thesis. My role was to create a social module that would spread the community and provide an opportunity to share relevant content within the whole system. It should allow for mutual motivation in pursuit of a goal and bind the whole website together, making it more attractive to the user. The project was not strictly related to UX/UI, so I will only present its elements most related to this topic.'
+                info2: 'This is the project, on the basis of which I wrote my Engineering Thesis. My role was to create a social module that would spread the community and provide an opportunity to share relevant content within the whole system. It should allow for mutual motivation in pursuit of a goal and bind the whole website together, making it more attractive to the user.'
             },
             problem: {
                 title: 'Problem recognition',
@@ -568,6 +645,83 @@ const messages = {
         },
         rent4events: {
             about: 'Aplikacja webowa wspomagająca zarządzanie wypożyczalnią eventową.',
+            heading: {
+                title: 'rent4events',
+                subject: 'Web Development',
+                code: 'Kod dostępny ',
+                link: 'tutaj'
+            },
+            basicInfo: {
+                roleHeading: 'Rola',
+                roleInfo: 'Frontend Developer',
+                timelineHeading: 'Czas',
+                timelineInfo: 'marzec 2022 - teraz',
+                platformHeading: 'Platforma',
+                platformInfo: 'Web',
+                toolsHeading: 'Technologie i narzędzia',
+                toolsInfo: 'Vue.js'
+            },
+            background: {
+                title: 'Kontekst',
+                info: 'Projekt powstaje w grupie 2-osobowej z podziałem na Frontend i Backend. Inspiracją do niego była nasza wcześniejsza praca w firmie zajmującej się organizacją imprez i wypożyczaniem sprzętu eventowego. W czasie trwania studiów, podczas jednego z kursów mieliśmy okazję w ramach semestralnego projektu zaprojektować schemat bazy danych dla takiej firmy. Postanowiliśmy więc z niego skorzystać i zaimplementować aplikację webową, która pomogłaby zarządzać firmą oraz przyspieszyć proces składania zamówienia. Projekt ten jest również realizowany w ramach semestralnego projektu na studiach i jego zakończenie planowane jest na czerwiec 2022.'
+            },
+            description: {
+                title: 'Opis wycinka rzeczywistości',
+                info1: 'Wypożyczalnia eventowa jest firmą, która zajmuje się wypożyczaniem posiadanego asortymentu i jego transportem na miejsce imprez okolicznościowych. Zatrudniani są kierowcy, którzy korzystają z floty firmowych pojazdów. Asortyment przechowywany jest w magazynie na terenie Wrocławia.',
+                info2: 'Dane dotyczące stanów magazynowych nie są jednak w żaden sposób usystematyzowane. Przykładowe straty w asortymencie nie są na bieżąco odnotowywane, co przekłada się na trudności w oszacowaniu aktualnej liczby posiadanych produktów, a co za tym idzie do decyzji o możliwości realizacji zamówienia.',
+                info3: 'Ponadto, nie istnieje jeden ustandaryzowany sposób składania zamówienia, są one przyjmowane zarówno mailowo jak i telefonicznie, a klient ma utrudniony dostęp do przeglądania produktów.',
+            },
+            improvement: {
+                title: 'Proponowane usprawnienia',
+                subtitle1: 'Usprawnienie zarządzania wypożyczalnią',
+                usersInfo1: 'Nowy system zakłada podział jego użytkowników na:',
+                usersList: {
+                    item1: 'kierownika firmy,',
+                    item2: 'kierowców,',
+                    item3: 'klientów.'
+                },
+                usersInfo2: 'Każdy z nich powinien mieć dostęp do podstawowych funkcjonalności z zakresu zarządzania kontem. Ponadto poszczególni użytkownicy powinni mieć następujące możliwości:',
+                user1: 'Kierownik:',
+                user1List: {
+                    item1: 'zarządzanie (dodawanie, przeglądanie, edycja i usuwanie) asortymentem,',
+                    item2: 'zarządzanie pojazdami,',
+                    item3: 'zarządzanie pracownikami,',
+                    item4: 'przeglądanie złożonych zamówień,',
+                    item5: 'decydowanie o realizacji zamówienia,',
+                    item6: 'przydzielanie kierowców i pojazdów do kursów w ramach zamówienia.'
+                },
+                user2: 'Kierowca:',
+                user2List: {
+                    item1: 'przeglądanie swoich kursów i edycji ich statusu,',
+                    item2: 'przeglądanie złożonych zamówień.'
+                },
+                user3: 'Klient:',
+                user3List: {
+                    item1: 'przeglądanie oferty firmy,',
+                    item2: 'składanie nowego zamówienia,',
+                    item3: 'przeglądanie swoich złożonych zamówień,',
+                    item4: 'edycja lub anulowanie zamówienia, jeśli nie została jeszcze podjęta decyzja o jego realizacji.'
+                },
+                usersInfo3: 'Co więcej każdy internauta odwiedzający stronę powinien mieć możliwość założenia konta w systemie.',
+                subtitle2: 'Usprawnienie procesu składania zamówienia',
+                orderInfo1: 'System zakłada wprowadzenie jednolitego procesu składania zamówienia, składającego się z następujących etapów:',
+                orderList: {
+                    item1: 'wybór daty rozpoczęcia i zakończenia imprezy,',
+                    item2: 'określenie miejsca organizacji imprezy,',
+                    item3: 'wybór asortymentu,',
+                    item4: 'określenie czy wymagana jest dostawa.'
+                },
+                orderInfo2: 'Następnie za względu na specyfikę branży każde zamówienie powinno zostać indywidualnie zaakceptowane przez kierownika. Po przyjęciu zamówienia, jeżeli wymagany jest transport na miejsce imprezy, przydzielony powinien zostać kierowca oraz pojazd do dostarczenia i odebrania sprzętu.'
+            },
+            current: {
+                title: 'Aktualny stan prac',
+                info1: 'Aktualna wersja systemu znajduje się ',
+                link: 'tutaj',
+                info2: '. Będzie on aktualizowany konsekwentnie po wprowadzeniu większych zmian. Do tej pory zrealizowane zostały:',
+                currentList: {
+                    item1: 'strona startowa z możliwością logowania i rejestracji w systemie.'
+                },
+            }
         },
         planszappka: {
             about: 'Badania UX i prototyp aplikacji mobilnej zrzeszającej osoby grające w gry planszowe.',
@@ -903,14 +1057,14 @@ const messages = {
         wellbeeing: {
             about: 'Serwis internetowy umożliwiający zadbanie o swoje zdrowie.',
             heading: {
-                title: 'WeelBeeing',
+                title: 'WellBeeing',
                 subject: 'Web Development',
                 code: 'Kod dostępny ',
                 link: 'tutaj'
             },
             basicInfo: {
                 roleHeading: 'Rola',
-                roleInfo1: 'Full-Stack Developer,',
+                roleInfo1: 'Fullstack Developer,',
                 roleInfo2: 'Analityk Biznesowy',
                 timelineHeading: 'Czas',
                 timelineInfo1: '2 miesiące',
@@ -929,7 +1083,7 @@ const messages = {
                     item3: 'sportowy,',
                     item4: 'telemedyczny.'
                 },
-                info2: 'Jest to projekt, na podstawie którego napisałam swoją pracę inżynierską. Moją rolą było stworzenie modułu społecznościowego, którego zadaniem jest szerzenie się społeczności i zapewnienie możliwości dzielenia się istotnymi treściami w ramach całego systemu. Powinien on pozwalać na wzajemną motywację w dążeniu do celu i spajać cały serwis, sprawiając, że ten staje się bardziej atrakcyjny dla użytkownika. Projekt nie był ściśle związany z UX/UI, więc przedstawię jedynie jego elementy najbardziej związane z tą tematyką.'
+                info2: 'Jest to projekt, na podstawie którego napisałam swoją pracę inżynierską. Moją rolą było stworzenie modułu społecznościowego, którego zadaniem jest szerzenie się społeczności i zapewnienie możliwości dzielenia się istotnymi treściami w ramach całego systemu. Powinien on pozwalać na wzajemną motywację w dążeniu do celu i spajać cały serwis, sprawiając, że ten staje się bardziej atrakcyjny dla użytkownika.'
             },
             problem: {
                 title: 'Rozpoznanie problemu',
