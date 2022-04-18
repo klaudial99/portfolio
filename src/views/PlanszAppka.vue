@@ -1,7 +1,7 @@
 <template>
     <div class="container-fluid px-0">
         <section id="planszappka-header">
-            <div class="row py-4">
+            <div class="row py-4 mx-0">
                 <div class="col-12 col-sm-7 my-4 my-sm-0 text-white d-flex justify-content-center align-items-center">
                     <div class="text-start px-3">
                         <span class="project-title">{{ $t("planszappka.heading.title") }}</span>

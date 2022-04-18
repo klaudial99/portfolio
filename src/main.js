@@ -137,7 +137,7 @@ const messages = {
                 link: 'here',
                 info2: '. It will be updated consistently as major changes are made. So far, the following have been completed:',
                 currentList: {
-                    item1: 'the homepage with the possibility of logging in and registering in the system.'
+                    item1: 'the homepage with login and registration forms.'
                 },
             }
         },
@@ -719,7 +719,7 @@ const messages = {
                 link: 'tutaj',
                 info2: '. Będzie on aktualizowany konsekwentnie po wprowadzeniu większych zmian. Do tej pory zrealizowane zostały:',
                 currentList: {
-                    item1: 'strona startowa z możliwością logowania i rejestracji w systemie.'
+                    item1: 'strona startowa z formularzami do logowania i rejestracji w systemie.'
                 },
             }
         },
