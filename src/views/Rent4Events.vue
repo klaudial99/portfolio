@@ -1,7 +1,7 @@
 <template>
     <div class="container-fluid px-0">
         <section id="rent4events-header">
-            <div class="row py-4">
+            <div class="row py-4 mx-0">
                 <div class="col-12 col-sm-6 col-md-7 my-4 my-sm-0 text-white d-flex justify-content-center align-items-center">
                     <div class="text-start px-3">
                         <span class="project-title">{{ $t("rent4events.heading.title") }}</span>
@@ -101,7 +101,7 @@
                     <span class="project-subtitle">{{ $t("rent4events.current.title") }}</span>
                     <p class="project-text">
                         {{ $t("rent4events.current.info1") }}
-                        <a href="" class="d-inline heroku-link">{{ $t("rent4events.current.link") }}</a>{{ $t("rent4events.current.info2") }}
+                        <a href="https://rent4event.herokuapp.com/" class="d-inline heroku-link">{{ $t("rent4events.current.link") }}</a>{{ $t("rent4events.current.info2") }}
                     </p>
 
                     <ul>
