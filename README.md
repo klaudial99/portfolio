@@ -1,24 +1,7 @@
 # portfolio
 
-## Project setup
-```
-npm install
-```
+My personal portfolio that was created using Vue.js, detailing my recent, larger projects.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+During the implementation I additionally used: VueRouter, ApexCharts, EmailJS, i18n, Vuex, Bootstrap and Font Awesome.
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+You can check the effects [here](http://www.klaudia-laskowska.pl/).
