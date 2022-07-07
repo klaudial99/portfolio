@@ -63,7 +63,7 @@
                     <p class="project-text">{{ $t("rent4events.description.info3") }}</p>
                 </section>
 
-                <section id="rent4events-improvement" class="mt-5">
+                <section id="rent4events-improvement" class="my-5">
                     <span class="project-subtitle">{{ $t("rent4events.improvement.title") }}</span>
                     <p class="project-subtitle-2">{{ $t("rent4events.improvement.subtitle1") }}</p>
                     <p class="project-text">{{ $t("rent4events.improvement.usersInfo1") }}</p>
