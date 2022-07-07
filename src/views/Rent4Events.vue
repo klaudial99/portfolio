@@ -6,7 +6,16 @@
                     <div class="text-start px-3">
                         <span class="project-title">{{ $t("rent4events.heading.title") }}</span>
                         <span class="project-subject text-center text-sm-start">{{ $t("rent4events.heading.subject") }}</span>
-                        <span class="mt-2 github-heading text-center text-sm-start">{{ $t("rent4events.heading.code") }}<a href="https://github.com/klaudial99/rent4events-front-mobile" class="fw-bolder github-heading-link">{{ $t("rent4events.heading.link") }}</a></span>
+                        <span class="mt-2 github-heading text-center text-sm-start">
+                            {{ $t("rent4events.heading.links.info1") }}
+                            <a href="https://github.com/klaudial99/rent4events-front-mobile" class="fw-bolder github-heading-link">
+                                {{ $t("rent4events.heading.links.code") }}
+                            </a>
+                            {{ $t("rent4events.heading.links.info2") }}
+                            <a href="https://github.com/klaudial99/rent4events-front-mobile" class="fw-bolder github-heading-link">
+                                {{ $t("rent4events.heading.links.demo") }}
+                            </a>
+                        </span>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-5 my-4 my-sm-0">
@@ -97,17 +106,6 @@
                     <p class="project-text">{{ $t("rent4events.improvement.orderInfo2") }}</p>
                 </section>
 
-                <section id="rent4events-current" class="mt-5">
-                    <span class="project-subtitle">{{ $t("rent4events.current.title") }}</span>
-                    <p class="project-text">
-                        {{ $t("rent4events.current.info1") }}
-                        <a href="https://rent4event.herokuapp.com/" class="d-inline heroku-link">{{ $t("rent4events.current.link") }}</a>{{ $t("rent4events.current.info2") }}
-                    </p>
-
-                    <ul>
-                        <li><span>{{ $t("rent4events.current.currentList.item1") }}</span></li>
-                    </ul>
-                </section>
             </div>
         </div>
 
@@ -166,9 +164,4 @@ li {
     color: var(--RENT4EVENTS-LIGHT);
 }
 
-.heroku-link {
-    color: var(--RENT4EVENTS);
-    font-weight: 600;
-    text-decoration: none;
-}
 </style>

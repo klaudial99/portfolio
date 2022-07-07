@@ -66,14 +66,18 @@ const messages = {
             heading: {
                 title: 'rent4events',
                 subject: 'Web Development',
-                code: 'Check out code ',
-                link: 'here'
+                links: {
+                    info1: 'Check out',
+                    code: 'code',
+                    info2: 'and',
+                    demo: 'demo'
+                }
             },
             basicInfo: {
                 roleHeading: 'Role',
                 roleInfo: 'Frontend Developer',
                 timelineHeading: 'Timeline',
-                timelineInfo: 'Mar 2022 - now',
+                timelineInfo: 'Mar 2022 - Jun 2022',
                 platformHeading: 'Platform',
                 platformInfo: 'Web',
                 toolsHeading: 'Technology and Tools',
@@ -81,7 +85,7 @@ const messages = {
             },
             background: {
                 title: 'Background',
-                info: 'The project is being created in a group of two divided into Frontend and Backend. It was inspired by our previous work experience in a company that organizes events and rents out event equipment. During one of the courses in college, we had the opportunity to design a database scheme for such a company as part of a semester project. So we decided to use it and implement a web application that would help manage the company and speed up the ordering process. This project is also being carried out as a semester project in college and is scheduled to be completed in June 2022.'
+                info: 'The project has been created in a group of two divided into Frontend and Backend. It was inspired by our previous work experience in a company that organizes events and rents out event equipment. During one of the courses in college, we had the opportunity to design a database scheme for such a company as part of a semester project. So we decided to use it and implement a web application that would help manage the company and speed up the ordering process. This project was also carried out as a semester project in college.'
             },
             description: {
                 title: 'Reality description',
@@ -90,15 +94,15 @@ const messages = {
                 info3: 'In addition, there is no single standardized way to place an order, they are taken both by email and phone, and it is difficult for the customer to view products.',
             },
             improvement: {
-                title: 'Suggested improvements',
+                title: 'Improvements made',
                 subtitle1: 'Rental management improvement',
-                usersInfo1: 'The new system assumes that its users are divided into:',
+                usersInfo1: 'The new system divides its users into:',
                 usersList: {
                     item1: 'manager,',
                     item2: 'drivers,',
                     item3: 'clients.'
                 },
-                usersInfo2: 'Each of them should have access to basic account management functionalities. Additionally, individual users should have the following capabilities:',
+                usersInfo2: 'Each of them have access to basic account management functionalities. Additionally, individual users have the following capabilities:',
                 user1: 'Manager:',
                 user1List: {
                     item1: 'managing (creating, reading, updating and deleting) the assortment,',
@@ -120,25 +124,16 @@ const messages = {
                     item3: 'browsing their placed orders,',
                     item4: 'editing or canceling an order, if no decision has yet been made to execute it.'
                 },
-                usersInfo3: 'Moreover, every Internet user visiting the website should be able to create an account in the system.',
+                usersInfo3: 'Moreover, every Internet user visiting the website is able to create an account in the system.',
                 subtitle2: 'Ordering process improvement',
-                orderInfo1: 'The system assumes a uniform ordering process consisting of the following steps:',
+                orderInfo1: 'The system implements a unified ordering process consisting of the following steps:',
                 orderList: {
                     item1: 'selecting the start and end date of the event,',
                     item2: 'determining the event\'s location,',
                     item3: 'selection of the assortment,',
                     item4: 'determining if delivery is required.'
                 },
-                orderInfo2: 'Then, due to the nature of the industry, each order should be individually approved by a manager. Once the order is accepted, if transport to the event venue is required, a driver and vehicle should be assigned to deliver and collect the equipment.'
-            },
-            current: {
-                title: 'Current status of work',
-                info1: 'The current version of the system can be found ',
-                link: 'here',
-                info2: '. It will be updated consistently as major changes are made. So far, the following have been completed:',
-                currentList: {
-                    item1: 'the homepage with login and registration forms.'
-                },
+                orderInfo2: 'Then, due to the nature of the industry, each order is individually approved by a manager. Once the order is accepted, if transport to the event venue is required, a driver and vehicle are assigned to deliver and collect the equipment.'
             }
         },
         planszappka: {
@@ -648,14 +643,18 @@ const messages = {
             heading: {
                 title: 'rent4events',
                 subject: 'Web Development',
-                code: 'Kod dostępny ',
-                link: 'tutaj'
+                links: {
+                    info1: 'Sprawdź',
+                    code: 'kod',
+                    info2: 'i',
+                    demo: 'demo'
+                }
             },
             basicInfo: {
                 roleHeading: 'Rola',
                 roleInfo: 'Frontend Developer',
                 timelineHeading: 'Czas',
-                timelineInfo: 'marzec 2022 - teraz',
+                timelineInfo: 'marzec 2022 - czerwiec 2022',
                 platformHeading: 'Platforma',
                 platformInfo: 'Web',
                 toolsHeading: 'Technologie i narzędzia',
@@ -663,7 +662,7 @@ const messages = {
             },
             background: {
                 title: 'Kontekst',
-                info: 'Projekt powstaje w grupie 2-osobowej z podziałem na Frontend i Backend. Inspiracją do niego była nasza wcześniejsza praca w firmie zajmującej się organizacją imprez i wypożyczaniem sprzętu eventowego. W czasie trwania studiów, podczas jednego z kursów mieliśmy okazję w ramach semestralnego projektu zaprojektować schemat bazy danych dla takiej firmy. Postanowiliśmy więc z niego skorzystać i zaimplementować aplikację webową, która pomogłaby zarządzać firmą oraz przyspieszyć proces składania zamówienia. Projekt ten jest również realizowany w ramach semestralnego projektu na studiach i jego zakończenie planowane jest na czerwiec 2022.'
+                info: 'Projekt powstał w grupie 2-osobowej z podziałem na Frontend i Backend. Inspiracją do niego była nasza wcześniejsza praca w firmie zajmującej się organizacją imprez i wypożyczaniem sprzętu eventowego. W czasie trwania studiów, podczas jednego z kursów mieliśmy okazję w ramach semestralnego projektu zaprojektować schemat bazy danych dla takiej firmy. Postanowiliśmy więc z niego skorzystać i zaimplementować aplikację webową, która pomogłaby zarządzać firmą oraz przyspieszyć proces składania zamówienia. Projekt ten również został zrealizowany w ramach semestralnego projektu na studiach.'
             },
             description: {
                 title: 'Opis wycinka rzeczywistości',
@@ -672,15 +671,15 @@ const messages = {
                 info3: 'Ponadto, nie istnieje jeden ustandaryzowany sposób składania zamówienia, są one przyjmowane zarówno mailowo jak i telefonicznie, a klient ma utrudniony dostęp do przeglądania produktów.',
             },
             improvement: {
-                title: 'Proponowane usprawnienia',
+                title: 'Wprowadzone  usprawnienia',
                 subtitle1: 'Usprawnienie zarządzania wypożyczalnią',
-                usersInfo1: 'Nowy system zakłada podział jego użytkowników na:',
+                usersInfo1: 'Nowy system wprowadza podział jego użytkowników na:',
                 usersList: {
                     item1: 'kierownika firmy,',
                     item2: 'kierowców,',
                     item3: 'klientów.'
                 },
-                usersInfo2: 'Każdy z nich powinien mieć dostęp do podstawowych funkcjonalności z zakresu zarządzania kontem. Ponadto poszczególni użytkownicy powinni mieć następujące możliwości:',
+                usersInfo2: 'Każdy z nich ma dostęp do podstawowych funkcjonalności z zakresu zarządzania kontem. Ponadto poszczególni użytkownicy posiadają następujące możliwości:',
                 user1: 'Kierownik:',
                 user1List: {
                     item1: 'zarządzanie (dodawanie, przeglądanie, edycja i usuwanie) asortymentem,',
@@ -702,25 +701,16 @@ const messages = {
                     item3: 'przeglądanie swoich złożonych zamówień,',
                     item4: 'edycja lub anulowanie zamówienia, jeśli nie została jeszcze podjęta decyzja o jego realizacji.'
                 },
-                usersInfo3: 'Co więcej każdy internauta odwiedzający stronę powinien mieć możliwość założenia konta w systemie.',
+                usersInfo3: 'Co więcej każdy internauta odwiedzający stronę ma możliwość założenia konta w systemie.',
                 subtitle2: 'Usprawnienie procesu składania zamówienia',
-                orderInfo1: 'System zakłada wprowadzenie jednolitego procesu składania zamówienia, składającego się z następujących etapów:',
+                orderInfo1: 'System wprowadza jednolity proces składania zamówienia, składający się z następujących etapów:',
                 orderList: {
                     item1: 'wybór daty rozpoczęcia i zakończenia imprezy,',
                     item2: 'określenie miejsca organizacji imprezy,',
                     item3: 'wybór asortymentu,',
                     item4: 'określenie czy wymagana jest dostawa.'
                 },
-                orderInfo2: 'Następnie za względu na specyfikę branży każde zamówienie powinno zostać indywidualnie zaakceptowane przez kierownika. Po przyjęciu zamówienia, jeżeli wymagany jest transport na miejsce imprezy, przydzielony powinien zostać kierowca oraz pojazd do dostarczenia i odebrania sprzętu.'
-            },
-            current: {
-                title: 'Aktualny stan prac',
-                info1: 'Aktualna wersja systemu znajduje się ',
-                link: 'tutaj',
-                info2: '. Będzie on aktualizowany konsekwentnie po wprowadzeniu większych zmian. Do tej pory zrealizowane zostały:',
-                currentList: {
-                    item1: 'strona startowa z formularzami do logowania i rejestracji w systemie.'
-                },
+                orderInfo2: 'Następnie za względu na specyfikę branży każde zamówienie jest indywidualnie akceptowane przez kierownika. Po przyjęciu zamówienia, jeżeli wymagany jest transport na miejsce imprezy, przydzielony zostaje kierowca oraz pojazd do dostarczenia i odebrania sprzętu.'
             }
         },
         planszappka: {
